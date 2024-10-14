@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GrabWork</title>
+
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header">
+
+      <header class="main-header">
+
+        <!-- Main box -->
+        <div class="main-box">
+          <!--Nav Outer -->
+          <div class="nav-outer">
+            <div class="logo-box">
+              <div class="logo"><a href="index.html"><img src="images/favicon.png" alt="" title=""></a></div>
+            </div>
+
+            <nav class="nav main-menu">
+              <ul class="navigation" id="navbar">
+                <li class="current dropdown">
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li class="dropdown has-mega-menu" id="has-mega-menu">
+                  <a href="job-list-v1.html">Jobs</a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="employers-list-v1.html">Company</a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="blog-list-v1.html">Blog</a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="about.html">About Us</a>
+                </li>
+
+                <!-- Only for Mobile View -->
+                <li class="mm-add-listing">
+                  <a href="add-listing.html" class="theme-btn btn-style-one">Job Post</a>
+                  <span>
+                    <span class="contact-info">
+                      <span class="phone-num"><span>Call us</span><a href="tel:1234567890">123 456 7890</a></span>
+                      <span class="address">329 Queensberry Street, North Melbourne VIC <br>3051, Australia.</span>
+                      <a href="mailto:support@superio.com" class="email">support@superio.com</a>
+                    </span>
+                    <span class="social-links">
+                      <a href="#"><span class="fab fa-facebook-f"></span></a>
+                      <a href="#"><span class="fab fa-twitter"></span></a>
+                      <a href="#"><span class="fab fa-instagram"></span></a>
+                      <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <!-- Main Menu End-->
+          </div>
+
+          <div class="outer-box">
+            <!-- Add Listing -->
+            <a href="candidate-dashboard-cv-manager.html" class="upload-cv"> Upload your CV</a>
+            <!-- Login/Register -->
+            <div class="btn-box">
+              <a href="login.html" class="theme-btn btn-style-three">Login / Register</a>
+              <a href="dashboard-post-job.html" class="theme-btn btn-style-one">Job Post</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+          <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
+
+          <!--Nav Box-->
+          <div class="nav-outer clearfix">
+
+            <div class="outer-box">
+              <!-- Login/Register -->
+              <div class="login-box">
+                <a href="login.html" class="call-modal"><span class="icon-user"></span></a>
+              </div>
+
+              <a href="#nav-mobile" class="mobile-nav-toggler"><span class="flaticon-menu-1"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="nav-mobile"></div>
+      </header>
+
+      <!-- Mobile Header -->
+      <div class="mobile-header">
+        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile"></div>
+    </header>
+    <!--End Main Header -->
+
+    <!-- Info Section -->
+    <div class="login-section">
+      <div class="container">
+        <div class="card-login">
+          <h4 class="card-title text-center mb-4">Đăng ký tài khoản</h4>
+
+          <!-- Step 1: User Information -->
+          <div class="form-step active" id="step-1">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="fullname" class="form-label">Họ và tên <span class="required">*</span></label>
+                <input type="text" class="form-control" id="fullname" placeholder="Nhập họ và tên" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="fullname" class="form-label">Email <span class="required">*</span></label>
+                <input type="text" class="form-control" id="fullname" placeholder="Nhập email" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Mật khẩu <span class="required">*</span></label>
+                <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="confirm-password" class="form-label">Mật khẩu xác nhận <span
+                    class="required">*</span></label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Nhập mật khẩu xác nhận"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <button class="theme-btn btn-style-one-login " type="submit" name="Register">Register</button>
+              </div>
+             
+            </form>
+          </div>
+
+        
+          <div class="text-center mt-4 mb-4">
+            <a href="login.html">Đã có tài khoản? Đăng nhập ngay</a>
+          </div>
+
+          <div class="bottom-box">
+            <div class="btn-box row">
+              <div class="col-lg-6 col-md-12">
+                <a href="#" class="theme-btn social-btn-two facebook-btn"><i class="fab fa-facebook-f"></i> Log In via Facebook</a>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <a href="#" class="theme-btn social-btn-two google-btn"><i class="fab fa-google"></i> Log In via Gmail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/chosen.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/jquery.modal.min.js"></script>
+  <script src="js/mmenu.polyfills.js"></script>
+  <script src="js/mmenu.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/rellax.min.js"></script>
+  <script src="js/owl.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
