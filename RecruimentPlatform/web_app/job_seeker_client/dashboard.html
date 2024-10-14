@@ -2,601 +2,893 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Superio | Just another HTML Template | Dashboard</title>
 
-  <!-- Stylesheets -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="" />
 
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
-  <!-- Responsive -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- PAGE TITLE HERE -->
+    <title>Bảng điều khiển</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/feather.css"><!-- FEATHER ICON SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css"><!-- Lc light box popup -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"><!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap5.min.css"><!-- DATA table STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/select.bootstrap5.min.css">
+    <!-- DASHBOARD select bootstrap  STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css"><!-- DROPZONE STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/scrollbar.css"><!-- CUSTOM SCROLL BAR STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"><!-- DATEPICKER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css"> <!-- Flaticon -->
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
+
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
+    <!-- SIDE SWITCHER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/switcher.css">
+
+
 
 </head>
 
 <body>
 
-  <div class="page-wrapper dashboard ">
-
-    <!-- Preloader -->
-    <div class="preloader"></div>
-
-    <!-- Header Span -->
-    <span class="header-span"></span>
-
-    <!-- Main Header-->
-    <header class="main-header header-shaddow">
-      <div class="container-fluid">
-        <!-- Main box -->
-        <div class="main-box">
-          <!--Nav Outer -->
-          <div class="nav-outer">
-            <div class="logo-box">
-              <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="wrapper">
+                <div class="cssload-loader"></div>
             </div>
-
-            <nav class="nav main-menu">
-              <ul class="navigation" id="navbar">
-                <li class="current dropdown">
-                  <a href="index.html">Home</a>
-                </li>
-
-                <li class="dropdown has-mega-menu" id="has-mega-menu">
-                  <a href="job-list-v1.html">Jobs</a>
-                </li>
-
-                <li class="dropdown">
-                  <a href="employers-list-v1.html">Company</a>
-                </li>
-
-                <li class="dropdown">
-                  <a href="blog-list-v1.html">Blog</a>
-                </li>
-
-                <li class="dropdown">
-                  <a href="about.html">About Us</a>
-                </li>
-
-                <!-- Only for Mobile View -->
-                <li class="mm-add-listing">
-                  <a href="add-listing.html" class="theme-btn btn-style-one">Job Post</a>
-                  <span>
-                    <span class="contact-info">
-                      <span class="phone-num"><span>Call us</span><a href="tel:1234567890">123 456 7890</a></span>
-                      <span class="address">329 Queensberry Street, North Melbourne VIC <br>3051, Australia.</span>
-                      <a href="mailto:support@superio.com" class="email">support@superio.com</a>
-                    </span>
-                    <span class="social-links">
-                      <a href="#"><span class="fab fa-facebook-f"></span></a>
-                      <a href="#"><span class="fab fa-twitter"></span></a>
-                      <a href="#"><span class="fab fa-instagram"></span></a>
-                      <a href="#"><span class="fab fa-linkedin-in"></span></a>
-                    </span>
-                  </span>
-                </li>
-              </ul>
-            </nav>
-
-          </div>
-
-          <div class="outer-box">
-
-            <button class="menu-btn">
-              <span class="count">1</span>
-              <span class="icon la la-heart-o"></span>
-            </button>
-
-            <button class="menu-btn">
-              <span class="icon la la-bell"></span>
-            </button>
-
-            <!-- Dashboard Option -->
-            <div class="dropdown dashboard-option">
-              <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
-                <img src="images/resource/company-6.png" alt="avatar" class="thumb">
-                <span class="name">My Account</span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="dashboard.html"> <i class="la la-home"></i> Dashboard</a>
-                </li>
-                <li>
-                  <a href="dashboard-company-profile.html"><i class="la la-user-alt"></i>Acccount</a>
-                </li>
-                <li>
-                  <a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a>
-                </li>
-                <li>
-                  <a href="index.html"><i class="la la-sign-out"></i>Logout</a>
-                </li>
-
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <!-- Mobile Header -->
-      <div class="mobile-header">
-        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
-
-        <!--Nav Box-->
-        <div class="nav-outer clearfix">
-
-          <div class="outer-box">
-            <!-- Login/Register -->
-            <div class="login-box">
-              <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
-            </div>
-
-            <button id="toggle-user-sidebar"><img src="images/resource/company-6.png" alt="avatar"
-                class="thumb"></button>
-            <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Mobile Nav -->
-      <div id="nav-mobile"></div>
-    </header>
-
-    <!-- Sidebar Backdrop -->
-    <div class="sidebar-backdrop"></div>
-
-    <!-- User Sidebar -->
-    <div class="user-sidebar">
-
-      <div class="sidebar-inner">
-        <ul class="navigation">
-          <li class="active"><a href="dashboard.html"> <i class="la la-home"></i>Dashboard</a>
-          </li>
-          <li>
-            <a href="dashboard-company-profile.html"><i class="la la-user-tie"></i>Thông tin công ty</a>
-          </li>
-          <li>
-            <a href="dashboard-post-job.html"><i class="la la-paper-plane"></i>Đăng tin</a>
-          </li>
-          <li>
-            <a href="dashboard-manage-job.html"><i class="la la-briefcase"></i>Danh sách công việc</a>
-          </li>
-          <li>
-            <a href="dashboard-applicants.html"><i class="la la-file-invoice"></i>Danh sách ứng tuyển</a>
-          </li>
-          <li>
-            <a href="dashboard-find-applicants.html"><i class="la la-search"></i>Tìm ứng viên</a>
-          </li>
-          <li>
-            <a href="dashboard-resumes.html"><i class="la la-bookmark-o"></i>Hồ sơ đã lưu</a>
-          </li>
-          <li>
-            <a href="dashboard-messages.html"><i class="la la-comment-o"></i>Tin nhắn</a>
-          </li>
-          <li>
-            <a href="dashboard-resume-alerts.html"><i class="la la-bell"></i>Thông báo</a>
-          </li>
-          <li>
-            <a href="dashboard-profile.html"><i class="la la-user-alt"></i>Tài khoản</a>
-          </li>
-          <li>
-            <a href="index.html"><i class="la la-sign-out"></i>Logout</a>
-          </li>
-
-        </ul>
-      </div>
     </div>
+    <!-- LOADING AREA  END ====== -->
+
+    <div class="page-wraper">
+
+        <header id="header-admin-wrap" class="header-admin-fixed">
+            <!-- Header Start -->
+            <div id="header-admin">
+                <div class="container">
+
+                    <!-- Left Side Content -->
+                    <div class="header-left">
+                        <div class="nav-btn-wrap">
+                            <a class="nav-btn-admin" id="sidebarCollapse">
+                                <span class="fa fa-angle-left"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Left Side Content End -->
+
+                    <!-- Right Side Content -->
+                    <div class="header-right">
+                        <ul class="header-widget-wrap">
+                            <!--Message-->
+                            <li class="header-widget dashboard-message-dropdown">
+
+                                <div class="dropdown">
+                                    <a href="javascript:;" class="dropdown-toggle jobzilla-admin-messange"
+                                        id="ID-MSG_dropdown" data-bs-toggle="dropdown">
+                                        <i class="far fa-envelope"></i>
+                                        <span class="notification-animate">4</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="ID-MSG_dropdown">
+                                        <div class="message-list dashboard-widget-scroll">
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span class="msg-avtar">
+                                                        <img src="images/user-avtar/pic1.jpg" alt="">
+                                                    </span>
+
+                                                    <div class="msg-texting">
+                                                        <strong>Alexa Johnson</strong>
+                                                        <small class="msg-time">
+                                                            <span class="far fa-clock p-r-5"></span>12 mins ago
+                                                        </small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="msg-avtar">
+                                                        <img src="images/user-avtar/pic2.jpg" alt="">
+                                                    </span>
+
+                                                    <div class="msg-texting">
+                                                        <strong>Johan Smith</strong>
+                                                        <small class="msg-time">
+                                                            <span class="far fa-clock p-r-5"></span>2 hours ago
+                                                        </small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="msg-avtar">
+                                                        <img src="images/user-avtar/pic3.jpg" alt="">
+                                                    </span>
+
+                                                    <div class="msg-texting">
+                                                        <strong>Bobby Brown</strong>
+                                                        <small class="msg-time">
+                                                            <span class="far fa-clock p-r-5"></span>3 hours ago
+                                                        </small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="msg-avtar">
+                                                        <img src="images/user-avtar/pic4.jpg" alt="">
+                                                    </span>
+
+                                                    <div class="msg-texting">
+                                                        <strong>David Deo</strong>
+                                                        <small class="msg-time">
+                                                            <span class="far fa-clock p-r-5"></span>4 hours ago
+                                                        </small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="message-view-all">
+                                                <a href="javascript:;">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <!--Notification-->
+                            <li class="header-widget dashboard-noti-dropdown">
+
+                                <div class="dropdown">
+                                    <a href="javascript:;" class="dropdown-toggle jobzilla-admin-notification"
+                                        id="ID-NOTI_dropdown" data-bs-toggle="dropdown">
+                                        <i class="far fa-bell"></i>
+                                        <span class="notification-animate">8</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="ID-NOTI_dropdown">
+                                        <div class="dashboard-widgets-header">You have 7 notifications</div>
+                                        <div class="noti-list dashboard-widget-scroll">
+                                            <ul>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">Devid applied for <b>Webdesigner.</b>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">Nikol sent you a message. </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">lucy bookmarked your <b>SEO
+                                                                Expert</b> Job! </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">Your job for <b>teacher</b> has been
+                                                            approved! </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">Thor applied for <b>Team Leader</b>.
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="noti-view-all">
+                                                <a href="javascript:;">View All</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
 
 
-    <!-- Dashboard -->
-    <section class="user-dashboard">
-      <div class="dashboard-outer">
-        <div class="upper-title-box">
-          <h3>Howdy, Invision!</h3>
-          <div class="text">Ready to jump back in?</div>
-        </div>
-        <div class="row">
-          <div class="ui-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
-            <div class="ui-item">
-              <div class="left">
-                <i class="icon flaticon-briefcase"></i>
-              </div>
-              <div class="right">
-                <h4>22</h4>
-                <p>Posted Jobs</p>
-              </div>
-            </div>
-          </div>
-          <div class="ui-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
-            <div class="ui-item ui-red">
-              <div class="left">
-                <i class="icon la la-file-invoice"></i>
-              </div>
-              <div class="right">
-                <h4>9382</h4>
-                <p>Application</p>
-              </div>
-            </div>
-          </div>
-          <div class="ui-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
-            <div class="ui-item ui-yellow">
-              <div class="left">
-                <i class="icon la la-comment-o"></i>
-              </div>
-              <div class="right">
-                <h4>74</h4>
-                <p>Messages</p>
-              </div>
-            </div>
-          </div>
-          <div class="ui-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
-            <div class="ui-item ui-green">
-              <div class="left">
-                <i class="icon la la-bookmark-o"></i>
-              </div>
-              <div class="right">
-                <h4>32</h4>
-                <p>Shortlist</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
+                            </li>
+
+                            <!--Account-->
+                            <li class="header-widget">
+                                <div class="dashboard-user-section">
+                                    <div class="listing-user">
+                                        <div class="dropdown">
+                                            <a href="javascript:;" class="dropdown-toggle" id="ID-ACCOUNT_dropdown"
+                                                data-bs-toggle="dropdown">
+                                                <div class="user-name text-black">
+                                                    <span>
+                                                        <img src="images/user-avtar/pic4.jpg" alt="">
+                                                    </span>Nikola Tesla
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="ID-ACCOUNT_dropdown">
+
+                                                <ul>
+                                                    <li><a href="dashboard.html"><i class="fa fa-home"></i>Dashboard</a>
+                                                    </li>
+                                                    <li><a href="dash-messages.html"><i class="fa fa-envelope"></i>
+                                                            Messages</a></li>
+                                                    <li><a href="dash-my-profile.html"><i class="fa fa-user"></i>
+                                                            Profile</a></li>
+                                                    <li><a href="index.html"><i class="fa fa-share-square"></i>
+                                                            Logout</a></li>
+                                                </ul>
 
 
-          <div class="col-xl-7 col-lg-12">
-            <!-- Graph widget -->
-            <div class="graph-widget ls-widget">
-              <div class="tabs-box">
-                <div class="widget-title">
-                  <h4>Your Profile Views</h4>
-                  <div class="chosen-outer">
-                    <!--Tabs Box-->
-                    <select class="chosen-select">
-                      <option>Last 6 Months</option>
-                      <option>Last 12 Months</option>
-                      <option>Last 16 Months</option>
-                      <option>Last 24 Months</option>
-                      <option>Last 5 year</option>
-                    </select>
-                  </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Right Side Content End -->
+
                 </div>
-
-                <div class="widget-content">
-                  <canvas id="chart" width="100" height="45"></canvas>
-                </div>
-              </div>
             </div>
-          </div>
+            <!-- Header End -->
 
-          <div class="col-xl-5 col-lg-12">
-            <!-- Notification Widget -->
-            <div class="notification-widget ls-widget">
-              <div class="widget-title">
-                <h4>Notifications</h4>
-              </div>
-              <div class="widget-content">
-                <ul class="notification-list">
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Wade Warren</strong> applied for a job <span
-                      class="colored">Web Developer</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Henry Wilson</strong> applied for a job
-                    <span class="colored">Senior Product Designer</span>
-                  </li>
-                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Raul Costa</strong> applied
-                    for a job <span class="colored">Product Manager, Risk</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Jack Milk</strong> applied for a job <span
-                      class="colored">Technical Architect</span></li>
-                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Michel Arian</strong>
-                    applied for a job <span class="colored">Software Engineer</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Ali Tufan</strong> applied for a job <span
-                      class="colored">UI Designer</span></li>
+        </header>
+
+        <!-- Sidebar Holder -->
+        <nav id="sidebar-admin-wraper">
+            <div class="page-logo">
+                <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
+            </div>
+
+            <div class="admin-nav scrollbar-macosx">
+                <ul>
+                    <li class="active">
+                        <a href="dashboard.html"><i class="fa fa-home"></i><span
+                                class="admin-nav-text">Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="dash-company-profile.html"><i class="fa fa-user-tie"></i><span
+                                class="admin-nav-text">Thông tin công ty</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="fa fa-suitcase"></i><span class="admin-nav-text">Công
+                                việc</span></a>
+                        <ul class="sub-menu">
+                            <li> <a href="dash-post-job.html"><span class="admin-nav-text">Đăng tin</span></a></li>
+                            <li> <a href="dash-manage-jobs.html"><span class="admin-nav-text">Danh sách công
+                                        việc</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dash-candidates.html"><i class="fa fa-user-friends"></i><span
+                                class="admin-nav-text">Danh sách ứng tuyển</span></a>
+                    </li>
+                    <li>
+                        <a href="dash-bookmark.html"><i class="fa fa-bookmark"></i><span class="admin-nav-text">Hồ sơ đã
+                                lưu</span></a>
+                    </li>
+                    <li>
+                        <a href="dash-package.html"><i class="fa fa-money-bill-alt"></i><span class="admin-nav-text">Gói
+                                đăng tin</span></a>
+                    </li>
+                    <li>
+                        <a href="dash-messages.html"><i class="fa fa-envelope"></i><span class="admin-nav-text">Tin nhắn
+                                <sup class="twm-msg-noti">5</sup></span></a>
+                    </li>
+                    <li>
+                        <a href="dash-resume-alert.html"><i class="fa fa-bell"></i><span class="admin-nav-text">Thông
+                                báo</span></a>
+                    </li>
+                    <li>
+                        <a href="dash-my-profile.html"><i class="fa fa-user"></i><span class="admin-nav-text">Tài
+                                khoản</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#logout-dash-profile"><i
+                                class="fa fa-share-square"></i><span class="admin-nav-text">Logout</span></a>
+                    </li>
+
                 </ul>
-              </div>
             </div>
-          </div>
+        </nav>
 
+        <!-- Page Content Holder -->
+        <div id="content">
 
-          <div class="col-lg-12">
-            <!-- applicants Widget -->
-            <div class="applicants-widget ls-widget">
-              <div class="widget-title">
-                <h4>Recent Applicants</h4>
-              </div>
-              <div class="widget-content">
-                <div class="row">
-                  <!-- Candidate block three -->
-                  <div class="candidate-block-three col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-box">
-                      <div class="content">
-                        <figure class="image"><img src="images/resource/candidate-1.png" alt=""></figure>
-                        <h4 class="name"><a href="#">Darlene Robertson</a></h4>
-                        <ul class="candidate-info">
-                          <li class="designation">UI Designer</li>
-                          <li><span class="icon flaticon-map-locator"></span> London, UK</li>
-                          <li><span class="icon flaticon-money"></span> $99 / hour</li>
-                        </ul>
-                        <ul class="post-tags">
-                          <li><a href="#">App</a></li>
-                          <li><a href="#">Design</a></li>
-                          <li><a href="#">Digital</a></li>
-                        </ul>
-                      </div>
-                      <div class="option-box">
-                        <ul class="option-list">
-                          <li><button data-text="View Aplication"><span class="la la-eye"></span></button></li>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span></button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span></button>
-                          </li>
-                          <li><button data-text="Delete Aplication"><span class="la la-trash"></span></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+            <div class="content-admin-main">
 
-                  <!-- Candidate block three -->
-                  <div class="candidate-block-three col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-box">
-                      <div class="content">
-                        <figure class="image"><img src="images/resource/candidate-2.png" alt=""></figure>
-                        <h4 class="name"><a href="#">Wade Warren</a></h4>
-                        <ul class="candidate-info">
-                          <li class="designation">UI Designer</li>
-                          <li><span class="icon flaticon-map-locator"></span> London, UK</li>
-                          <li><span class="icon flaticon-money"></span> $99 / hour</li>
-                        </ul>
-                        <ul class="post-tags">
-                          <li><a href="#">App</a></li>
-                          <li><a href="#">Design</a></li>
-                          <li><a href="#">Digital</a></li>
-                        </ul>
-                      </div>
-                      <div class="option-box">
-                        <ul class="option-list">
-                          <li><button data-text="View Aplication"><span class="la la-eye"></span></button></li>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span></button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span></button>
-                          </li>
-                          <li><button data-text="Delete Aplication"><span class="la la-trash"></span></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Candidate block three -->
-                  <div class="candidate-block-three col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-box">
-                      <div class="content">
-                        <figure class="image"><img src="images/resource/candidate-3.png" alt=""></figure>
-                        <h4 class="name"><a href="#">Leslie Alexander</a></h4>
-                        <ul class="candidate-info">
-                          <li class="designation">UI Designer</li>
-                          <li><span class="icon flaticon-map-locator"></span> London, UK</li>
-                          <li><span class="icon flaticon-money"></span> $99 / hour</li>
-                        </ul>
-                        <ul class="post-tags">
-                          <li><a href="#">App</a></li>
-                          <li><a href="#">Design</a></li>
-                          <li><a href="#">Digital</a></li>
-                        </ul>
-                      </div>
-                      <div class="option-box">
-                        <ul class="option-list">
-                          <li><button data-text="View Aplication"><span class="la la-eye"></span></button></li>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span></button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span></button>
-                          </li>
-                          <li><button data-text="Delete Aplication"><span class="la la-trash"></span></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Candidate block three -->
-                  <div class="candidate-block-three col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-box">
-                      <div class="content">
-                        <figure class="image"><img src="images/resource/candidate-1.png" alt=""></figure>
-                        <h4 class="name"><a href="#">Darlene Robertson</a></h4>
-                        <ul class="candidate-info">
-                          <li class="designation">UI Designer</li>
-                          <li><span class="icon flaticon-map-locator"></span> London, UK</li>
-                          <li><span class="icon flaticon-money"></span> $99 / hour</li>
-                        </ul>
-                        <ul class="post-tags">
-                          <li><a href="#">App</a></li>
-                          <li><a href="#">Design</a></li>
-                          <li><a href="#">Digital</a></li>
-                        </ul>
-                      </div>
-                      <div class="option-box">
-                        <ul class="option-list">
-                          <li><button data-text="View Aplication"><span class="la la-eye"></span></button></li>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span></button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span></button>
-                          </li>
-                          <li><button data-text="Delete Aplication"><span class="la la-trash"></span></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Candidate block three -->
-                  <div class="candidate-block-three col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-box">
-                      <div class="content">
-                        <figure class="image"><img src="images/resource/candidate-2.png" alt=""></figure>
-                        <h4 class="name"><a href="#">Wade Warren</a></h4>
-                        <ul class="candidate-info">
-                          <li class="designation">UI Designer</li>
-                          <li><span class="icon flaticon-map-locator"></span> London, UK</li>
-                          <li><span class="icon flaticon-money"></span> $99 / hour</li>
-                        </ul>
-                        <ul class="post-tags">
-                          <li><a href="#">App</a></li>
-                          <li><a href="#">Design</a></li>
-                          <li><a href="#">Digital</a></li>
-                        </ul>
-                      </div>
-                      <div class="option-box">
-                        <ul class="option-list">
-                          <li><button data-text="View Aplication"><span class="la la-eye"></span></button></li>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span></button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span></button>
-                          </li>
-                          <li><button data-text="Delete Aplication"><span class="la la-trash"></span></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Candidate block three -->
-                  <div class="candidate-block-three col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-box">
-                      <div class="content">
-                        <figure class="image"><img src="images/resource/candidate-3.png" alt=""></figure>
-                        <h4 class="name"><a href="#">Leslie Alexander</a></h4>
-                        <ul class="candidate-info">
-                          <li class="designation">UI Designer</li>
-                          <li><span class="icon flaticon-map-locator"></span> London, UK</li>
-                          <li><span class="icon flaticon-money"></span> $99 / hour</li>
-                        </ul>
-                        <ul class="post-tags">
-                          <li><a href="#">App</a></li>
-                          <li><a href="#">Design</a></li>
-                          <li><a href="#">Digital</a></li>
-                        </ul>
-                      </div>
-                      <div class="option-box">
-                        <ul class="option-list">
-                          <li><button data-text="View Aplication"><span class="la la-eye"></span></button></li>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span></button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span></button>
-                          </li>
-                          <li><button data-text="Delete Aplication"><span class="la la-trash"></span></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                <div class="wt-admin-right-page-header clearfix">
+                    <h2>Hello, Nikola Tesla</h2>
+                    <div class="breadcrumbs"><a href="#">Home</a><span>Dasboard</span></div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Dashboard -->
 
-    <!-- Copyright -->
-    <div class="copyright-text">
-      <p>© 2021 Superio. All Right Reserved.</p>
+                <div class="twm-dash-b-blocks mb-5">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-12 mb-3">
+                            <div class="panel panel-default">
+                                <div class="panel-body wt-panel-body gradi-1 dashboard-card ">
+                                    <div class="wt-card-wrap">
+                                        <div class="wt-card-icon"><i class="far fa-address-book"></i></div>
+                                        <div class="wt-card-right wt-total-active-listing counter ">25</div>
+                                        <div class="wt-card-bottom ">
+                                            <h4 class="m-b0">Posted Jobs</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12 mb-3">
+                            <div class="panel panel-default">
+                                <div class="panel-body wt-panel-body gradi-2 dashboard-card ">
+                                    <div class="wt-card-wrap">
+                                        <div class="wt-card-icon"><i class="far fa-file-alt"></i></div>
+                                        <div class="wt-card-right  wt-total-listing-view counter ">435</div>
+                                        <div class="wt-card-bottom">
+                                            <h4 class="m-b0">Total Applications</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12 mb-3">
+                            <div class="panel panel-default">
+                                <div class="panel-body wt-panel-body gradi-3 dashboard-card ">
+                                    <div class="wt-card-wrap">
+                                        <div class="wt-card-icon"><i class="far fa-envelope"></i></div>
+                                        <div class="wt-card-right wt-total-listing-review counter ">28</div>
+                                        <div class="wt-card-bottom">
+                                            <h4 class="m-b0">Messages</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12 mb-3">
+                            <div class="panel panel-default">
+                                <div class="panel-body wt-panel-body gradi-4 dashboard-card ">
+                                    <div class="wt-card-wrap">
+                                        <div class="wt-card-icon"><i class="far fa-bell"></i></div>
+                                        <div class="wt-card-right wt-total-listing-bookmarked counter ">18</div>
+                                        <div class="wt-card-bottom">
+                                            <h4 class="m-b0">Notifications</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="twm-pro-view-chart-wrap">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12 col-md-12 mb-4">
+                            <div class="panel panel-default site-bg-white">
+                                <div class="panel-heading wt-panel-heading p-a20">
+                                    <h4 class="panel-tittle m-a0"><i class="far fa-chart-bar"></i>Your Profile Views
+                                    </h4>
+                                </div>
+                                <div class="panel-body wt-panel-body twm-pro-view-chart">
+                                    <canvas id="profileViewChart"></canvas>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-xl-6 col-lg-12 col-md-12 mb-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading wt-panel-heading p-a20">
+                                    <h4 class="panel-tittle m-a0">Inbox</h4>
+                                </div>
+                                <div class="panel-body wt-panel-body bg-white">
+                                    <div class="dashboard-messages-box-scroll scrollbar-macosx">
+
+                                        <div class="dashboard-messages-box">
+                                            <div class="dashboard-message-avtar"><img src="images/user-avtar/pic1.jpg"
+                                                    alt=""></div>
+                                            <div class="dashboard-message-area">
+                                                <h5>Lucy Smith<span>18 June 2023</span></h5>
+                                                <p>Bring to the table win-win survival strategies to ensure proactive
+                                                    domination. at the end of the day, going forward, a new normal that
+                                                    has evolved from generation.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dashboard-messages-box">
+                                            <div class="dashboard-message-avtar"><img src="images/user-avtar/pic3.jpg"
+                                                    alt=""></div>
+                                            <div class="dashboard-message-area">
+                                                <h5>Richred paul<span>19 June 2023</span></h5>
+                                                <p>Bring to the table win-win survival strategies to ensure proactive
+                                                    domination. at the end of the day, going forward, a new normal that
+                                                    has evolved from generation.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dashboard-messages-box">
+                                            <div class="dashboard-message-avtar"><img src="images/user-avtar/pic4.jpg"
+                                                    alt=""></div>
+                                            <div class="dashboard-message-area">
+                                                <h5>Jon Doe<span>20 June 2023</span></h5>
+                                                <p>Bring to the table win-win survival strategies to ensure proactive
+                                                    domination. at the end of the day, going forward, a new normal that
+                                                    has evolved from generation.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dashboard-messages-box">
+                                            <div class="dashboard-message-avtar"><img src="images/user-avtar/pic1.jpg"
+                                                    alt=""></div>
+                                            <div class="dashboard-message-area">
+                                                <h5>Thomas Smith<span>22 June 2023</span></h5>
+                                                <p>Bring to the table win-win survival strategies to ensure proactive
+                                                    domination. at the end of the day, going forward, a new normal that
+                                                    has evolved from generation. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 mb-4">
+                            <div class="panel panel-default site-bg-white m-t30">
+                                <div class="panel-heading wt-panel-heading p-a20">
+                                    <h4 class="panel-tittle m-a0"><i class="far fa-list-alt"></i>Recent Activities</h4>
+                                </div>
+                                <div class="panel-body wt-panel-body">
+
+                                    <div class="dashboard-list-box list-box-with-icon">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-envelope text-success list-box-icon"></i>Nikol Tesla has
+                                                sent you <a href="#" class="text-success">private message!</a>
+                                                <a href="#" class="close-list-item color-lebel clr-red">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-suitcase text-primary list-box-icon"></i>Your job for
+                                                <a href="#" class="text-primary">Web Designer</a>
+                                                has been approved!
+                                                <a href="#" class="close-list-item color-lebel clr-red">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <i class="fa fa-bookmark text-warning list-box-icon"></i>
+                                                Someone bookmarked your
+                                                <a href="#" class="text-warning">SEO Expert</a>
+                                                Job listing!
+                                                <a href="#" class="close-list-item color-lebel clr-red">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-tasks text-info list-box-icon"></i>
+                                                Your job listing Core
+                                                <a href="#" class="text-info">PHP Developer</a> for Site Maintenance is
+                                                expiring!
+                                                <a href="#" class="close-list-item color-lebel clr-red">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-paperclip text-success list-box-icon"></i>
+                                                You have new application for
+                                                <a href="#" class="text-success"> UI/UX Developer & Designer! </a>
+                                                <a href="#" class="close-list-item color-lebel clr-red">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-suitcase text-danger list-box-icon"></i>
+                                                Your Magento Developer job expire
+                                                <a href="#" class="text-danger">Renew</a> now it.
+                                                <a href="#" class="close-list-item color-lebel clr-red">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-star site-text-orange list-box-icon"></i>
+                                                David cope left a
+                                                <a href="#" class="site-text-orange"> review 4.5</a> for Real Estate
+                                                Logo
+                                                <a href="#" class="close-list-item color-lebel clr-red">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 mb-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading wt-panel-heading p-a20">
+                                    <h4 class="panel-tittle m-a0">Recent Applicants</h4>
+                                </div>
+                                <div class="panel-body wt-panel-body bg-white">
+                                    <div class="twm-dashboard-candidates-wrap">
+                                        <div class="row">
+
+                                            <div class="col-xl-6 col-lg-12 col-md-12">
+                                                <div class="twm-dash-candidates-list">
+                                                    <div class="twm-media">
+                                                        <div class="twm-media-pic">
+                                                            <img src="images/candidates/pic1.jpg" alt="#">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="twm-mid-content">
+                                                        <a href="#" class="twm-job-title">
+                                                            <h4>Wanda Montgomery </h4>
+                                                        </a>
+                                                        <p>Charted Accountant</p>
+
+                                                        <div class="twm-fot-content">
+                                                            <div class="twm-left-info">
+                                                                <p class="twm-candidate-address"><i
+                                                                        class="feather-map-pin"></i>New York</p>
+                                                                <div class="twm-jobs-vacancies">$20<span>/ Day</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-right-btn">
+
+                                                                <ul class="twm-controls-icon list-unstyled">
+                                                                    <li>
+                                                                        <button title="View profile"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="fa fa-eye"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Send message"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-envelope-open"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Delete" data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-trash-alt"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-6 col-lg-12 col-md-12">
+                                                <div class="twm-dash-candidates-list">
+                                                    <div class="twm-media">
+                                                        <div class="twm-media-pic">
+                                                            <img src="images/candidates/pic2.jpg" alt="#">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="twm-mid-content">
+                                                        <a href="#" class="twm-job-title">
+                                                            <h4>Peter Hawkins</h4>
+                                                        </a>
+                                                        <p>Medical Professed</p>
+
+                                                        <div class="twm-fot-content">
+                                                            <div class="twm-left-info">
+                                                                <p class="twm-candidate-address"><i
+                                                                        class="feather-map-pin"></i>New York</p>
+                                                                <div class="twm-jobs-vacancies">$7<span>/ Hour</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-right-btn">
+
+                                                                <ul class="twm-controls-icon list-unstyled">
+                                                                    <li>
+                                                                        <button title="View profile"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="fa fa-eye"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Send message"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-envelope-open"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Delete" data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-trash-alt"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-6 col-lg-12 col-md-12">
+                                                <div class="twm-dash-candidates-list">
+                                                    <div class="twm-media">
+                                                        <div class="twm-media-pic">
+                                                            <img src="images/candidates/pic3.jpg" alt="#">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="twm-mid-content">
+                                                        <a href="#" class="twm-job-title">
+                                                            <h4>Ralph Johnson </h4>
+                                                        </a>
+                                                        <p>Bank Manger</p>
+
+                                                        <div class="twm-fot-content">
+                                                            <div class="twm-left-info">
+                                                                <p class="twm-candidate-address"><i
+                                                                        class="feather-map-pin"></i>New York</p>
+                                                                <div class="twm-jobs-vacancies">$180<span>/ Day</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-right-btn">
+                                                                <ul class="twm-controls-icon list-unstyled">
+                                                                    <li>
+                                                                        <button title="View profile"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="fa fa-eye"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Send message"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-envelope-open"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Delete" data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-trash-alt"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-6 col-lg-12 col-md-12">
+                                                <div class="twm-dash-candidates-list">
+                                                    <div class="twm-media">
+                                                        <div class="twm-media-pic">
+                                                            <img src="images/candidates/pic4.jpg" alt="#">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="twm-mid-content">
+                                                        <a href="#" class="twm-job-title">
+                                                            <h4>Randall Henderson </h4>
+                                                        </a>
+                                                        <p>IT Contractor</p>
+
+                                                        <div class="twm-fot-content">
+                                                            <div class="twm-left-info">
+                                                                <p class="twm-candidate-address"><i
+                                                                        class="feather-map-pin"></i>New York</p>
+                                                                <div class="twm-jobs-vacancies">$90<span>/ Week</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-right-btn">
+                                                                <ul class="twm-controls-icon list-unstyled">
+                                                                    <li>
+                                                                        <button title="View profile"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="fa fa-eye"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Send message"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-envelope-open"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Delete" data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-trash-alt"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-6 col-lg-12 col-md-12">
+                                                <div class="twm-dash-candidates-list">
+                                                    <div class="twm-media">
+                                                        <div class="twm-media-pic">
+                                                            <img src="images/candidates/pic6.jpg" alt="#">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="twm-mid-content">
+                                                        <a href="#" class="twm-job-title">
+                                                            <h4>Christina Fischer </h4>
+                                                        </a>
+                                                        <p>Charity &amp; Voluntary</p>
+
+                                                        <div class="twm-fot-content">
+                                                            <div class="twm-left-info">
+                                                                <p class="twm-candidate-address"><i
+                                                                        class="feather-map-pin"></i>New York</p>
+                                                                <div class="twm-jobs-vacancies">$19<span>/ Hour</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-right-btn">
+                                                                <ul class="twm-controls-icon list-unstyled">
+                                                                    <li>
+                                                                        <button title="View profile"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="fa fa-eye"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Send message"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-envelope-open"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button title="Delete" data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top">
+                                                                            <span class="far fa-trash-alt"></span>
+                                                                        </button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Delete Profile Popup-->
+        <div class="modal fade twm-model-popup" id="delete-dash-profile" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Do you want to delete your profile?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="site-button outline-primary">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Logout Profile Popup-->
+        <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Do you want to Logout your profile?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="site-button outline-primary">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
-  </div><!-- End Page Wrapper -->
 
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script><!-- STICKY HEADER -->
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
+    <script src="js/bootstrap-select.min.js"></script><!-- Form js -->
+    <script src="js/dropzone.js"></script><!-- IMAGE UPLOAD  -->
+    <script src="js/jquery.scrollbar.js"></script><!-- scroller -->
+    <script src="js/bootstrap-datepicker.js"></script><!-- scroller -->
+    <script src="js/jquery.dataTables.min.js"></script><!-- Datatable -->
+    <script src="js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
+    <script src="js/chart.js"></script><!-- Chart -->
+    <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
+    <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
 
-  <script src="js/jquery.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/chosen.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/jquery.fancybox.js"></script>
-  <script src="js/jquery.modal.min.js"></script>
-  <script src="js/mmenu.polyfills.js"></script>
-  <script src="js/mmenu.js"></script>
-  <script src="js/appear.js"></script>
-  <script src="js/ScrollMagic.min.js"></script>
-  <script src="js/rellax.min.js"></script>
-  <script src="js/owl.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/script.js"></script>
-
-  <!-- Chart.js // documentation: http://www.chartjs.org/docs/latest/ -->
-  <script src="js/chart.min.js"></script>
-  <script>
-    Chart.defaults.global.defaultFontFamily = "Sofia Pro";
-    Chart.defaults.global.defaultFontColor = '#888';
-    Chart.defaults.global.defaultFontSize = '14';
-
-    var ctx = document.getElementById('chart').getContext('2d');
-
-    var chart = new Chart(ctx, {
-
-      type: 'line',
-      // The data for our dataset
-      data: {
-        labels: ["January", "February", "March", "April", "May", "June"],
-        // Information about the dataset
-        datasets: [{
-          label: "Views",
-          backgroundColor: 'transparent',
-          borderColor: '#1967D2',
-          borderWidth: "1",
-          data: [196, 132, 215, 362, 210, 252],
-          pointRadius: 3,
-          pointHoverRadius: 3,
-          pointHitRadius: 10,
-          pointBackgroundColor: "#1967D2",
-          pointHoverBackgroundColor: "#1967D2",
-          pointBorderWidth: "2",
-        }]
-      },
-
-      // Configuration options
-      options: {
-
-        layout: {
-          padding: 10,
-        },
-
-        legend: {
-          display: false
-        },
-        title: {
-          display: false
-        },
-
-        scales: {
-          yAxes: [{
-            scaleLabel: {
-              display: false
-            },
-            gridLines: {
-              borderDash: [6, 10],
-              color: "#d8d8d8",
-              lineWidth: 1,
-            },
-          }],
-          xAxes: [{
-            scaleLabel: {
-              display: false
-            },
-            gridLines: {
-              display: false
-            },
-          }],
-        },
-
-        tooltips: {
-          backgroundColor: '#333',
-          titleFontSize: 13,
-          titleFontColor: '#fff',
-          bodyFontColor: '#fff',
-          bodyFontSize: 13,
-          displayColors: false,
-          xPadding: 10,
-          yPadding: 10,
-          intersect: false
-        }
-      },
-    });
-  </script>
+    </script>
 
 </body>
-
 
 </html>

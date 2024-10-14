@@ -90,16 +90,19 @@ alter table job_seeker_user_login_data_external add constraint user_login_data_e
 -- Thong tin ca nhan cua ung vien 
 create table job_seeker_candidate_profile (
 candidate_id uniqueidentifier default newsequentialid() not null primary key,
-dob date, 
-gender nvarchar(10) check (gender in ('Nam', 'Nữ', 'Khác')),
-phone_numb varchar(20),
-avartar_url varchar(500),
-cv_url varchar(max),
+dob date not null, -- ngay sing
+gender nvarchar(10) check (gender in ('Nam', 'Nữ', 'Khác')), -- gioi tinh
+phone_numb varchar(20), -- sdt
+avartar_url varchar(500), -- anh dai dien
+cv_url varchar(max), -- cv
 slug varchar(200) not null,
 facbook_link varchar(max),
 linkedin_link varchar(max),
-academic_level nvarchar(100) check(academic_level in('Cao Đẳng', 'Đại học', 'THPT')),
+github_url varchar(max),
+twitter_url varchar(max),
+portfolio_url varchar(max),
 province nvarchar(200) not null,
+district nvarchar(200),
 is_allowed_public bit default 0 not null,
 is_created_at datetime default getdate() not null,
 is_updated_at datetime default getdate(),
@@ -113,12 +116,12 @@ alter table job_seeker_candidate_profile add constraint candidate_id_fk foreign 
 -- Luu chi tiet thong tin hoc van
 create table job_seeker_education_detail (
 education_id uniqueidentifier default newsequentialid() not null primary key,
-school_name nvarchar(200) not null,
-major nvarchar(100) not null,
+school_name nvarchar(200) not null, -- ten truong
+major nvarchar(100) not null, -- chuyen nganh
 degree nvarchar(100) check (degree in ('Cử Nhân','Thạc Sĩ','Tiến Sĩ', 'Kỹ Sư')) not null,
-description nvarchar(200),
-start_date date not null,
-end_date date not null,
+description nvarchar(200), -- mo ta
+start_date date not null, -- ngay nhap hoc 
+end_date date not null, -- nagy tot nghiep 
 candidate_id uniqueidentifier not null, -- fk candidate
 is_created_at datetime default getdate() not null,
 is_updated_at datetime default getdate(),
@@ -200,9 +203,9 @@ founded_date date not null, -- ngay thanh lap
 enterprise_size varchar(100) not null, -- quy mo cong ty
 job_field_id int not null, --fk linh vuc cong ty
 address nvarchar(200),
-province nvarchar(100),
-district nvarchar(100), 
-ward nvarchar(100),
+province nvarchar(100), -- tinh/thanh pho
+district nvarchar(100), -- quan/ huyen
+ward nvarchar(100), -- phuong
 descriptions nvarchar(max),
 is_created_at datetime default getdate() not null,
 is_updated_at datetime default getdate(),
@@ -234,32 +237,41 @@ values ('Thực tập sinh'),
 	  ('Phó giám đốc'),
 	  ('Trưởng nhóm');
 
+-- Nganh nghe
+create table job_seeker_job_category (
+id int identity(1,1) not null primary key,
+job_category_name nvarchar(200) not null,
+app_icon_name varchar(200),
+is_created_at datetime default getdate() not null,
+is_updated_at datetime default getdate() not null
+);
 
 -- Thong tin cong viec
 create table job_seeker_job_posting (
 id uniqueidentifier default newsequentialid() not null primary key,
-job_title nvarchar(200) not null,
-job_desc nvarchar(max) not null,
-job_requirement nvarchar(max) not null,
-benefit_enjoyed nvarchar(max) not null,
-quantity int not null,
-salary_min int not null,
-salary_max int not null,
-exp_requirement nvarchar(100) not null,
-job_level_code int not null, -- fk
-working_type nvarchar(50) check (working_type in ('Fulltime','Part time','Remote')) not null,
+job_title nvarchar(200) not null, -- ten cv
+job_desc nvarchar(max) not null, -- mo ta cv
+job_requirement nvarchar(max) not null, -- y/c cv
+benefit_enjoyed nvarchar(max) not null, -- quyen loi
+quantity int not null, -- so luong
+salary_min int not null, -- toi thieu
+salary_max int not null, -- toi da
+exp_requirement nvarchar(100) not null, -- y/c kinh nghiem
+job_level_code int not null, -- fk -- vi tri, chuc vu
+working_type nvarchar(50) not null, -- hinh thuc lam viec
 gender_require nvarchar(50) check (gender_require in ('Nam', 'Nữ', 'Không yêu cầu')) not null,
 academic_level nvarchar(100) check (academic_level in ('Đại Học', 'Cao Đẳng', 'Trung Cấp', 'THPT')) not null,
-address nvarchar(100) not null,
-province nvarchar(100) not null,
-district nvarchar(100) not null,
-ward nvarchar(100) not null,
-time_post datetime default getdate() not null,
-expired_time datetime not null,
-is_urgent bit default 0,
-is_hot bit default 0,
+address nvarchar(100) not null, -- dia chi
+province nvarchar(100) not null, -- tp
+district nvarchar(100) not null, -- quan
+ward nvarchar(100) not null, -- phuong
+time_post datetime default getdate() not null, -- tg dang
+expired_time datetime not null, -- het han
+is_urgent bit default 0, -- gap
+is_hot bit default 0, -- nong
 status_code varchar(15) not null, --fk
 enterprise_id uniqueidentifier not null, -- fk
+job_category_id int not null, -- fk
 is_created_at datetime default getdate() not null,
 is_updated_at datetime default getdate(),
 is_deleted_at datetime,
@@ -267,6 +279,9 @@ is_deleted_at datetime,
 
 alter table job_seeker_job_posting add constraint job_posting_job_level_code_fk 
 			foreign key (job_level_code) references job_seeker_job_level (id);
+
+alter table job_seeker_job_posting add constraint job_posting_job_category_id_fk 
+			foreign key (job_category_id) references job_seeker_job_category (id);
 
 alter table job_seeker_job_posting add constraint job_posting_status_code_fk 
 			foreign key (status_code) references job_seeker_status_code (id);
