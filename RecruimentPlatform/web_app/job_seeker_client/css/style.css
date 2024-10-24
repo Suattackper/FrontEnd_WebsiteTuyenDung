@@ -8002,7 +8002,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   font-size: 14px;
 }
 
-/*LOGIN SECTOION*/
+/* ================= LOGIN SECTOION ==============*/
 .card-login {
   max-width: 700px;
   margin: 50px auto;
@@ -8055,6 +8055,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   max-width: 610px;
   width: 100%;
   padding: 0 30px;
+}
+
+.panel-title {
+  font-weight: 500;
+  font-size: 15px;
 }
 
 
@@ -8160,6 +8165,127 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .login-form .bottom-box .btn-box {
   position: relative;
 }
+
+/*===== Education list detail ====*/
+.experience-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35px;
+  width: 1px;
+  /* Set the line width to 1px */
+  background-color: #dcdcdc;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 80px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  background-color: #e7f3ff;
+  /* Light blue background */
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.timeline-item .content {
+  display: flex;
+  align-items: center;
+  /* Vertically centers the content */
+}
+
+.timeline-item .job-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.timeline-item .job-duration {
+  color: #6c757d;
+  background-color: #e7f3ff;
+  /* Light blue */
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #007bff;
+  margin-right: 10px;
+  /* Adds space between duration and icons */
+}
+
+.timeline-item .company-name {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.timeline-item .reference {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.timeline-item .actions {
+  display: flex;
+  gap: 5px;
+}
+
+.timeline-item .actions button {
+  background-color: #e7f3ff;
+  border: none;
+  /* Removed the border */
+  border-radius: 10px;
+  color: #007bff;
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.timeline-item .actions button:focus {
+  background-color: #d0e6f7; /* Optional subtle background color change */
+  outline: none;
+  box-shadow: none;
+}
+
+.timeline-item .actions img {
+  width: 16px;
+  height: 16px;
+}
+
+/*=========================================*/
 
 /* Progress tracker */
 .step-progress {
@@ -17631,8 +17757,9 @@ strong {
 }
 
 .twm-saved-jobs-view .modal-dialog {
-  max-width: 590px;
+  max-width: 800px;
 }
+
 
 @media (max-width: 575px) {
   .twm-saved-jobs-view .modal-dialog {

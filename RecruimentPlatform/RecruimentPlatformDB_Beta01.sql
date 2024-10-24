@@ -8,9 +8,9 @@ role_name varchar(50) not null
 );
 
 insert into authentication_role
-values ('Admin'),
-	   ('Recruiter'),
-	   ('Candidate');
+values ('Admin'), -- quan tri vien
+	   ('Recruiter'), -- Nha tuyen dung
+	   ('Candidate'); -- ung vien
 
 create table authentication_permission (
 permission_id int identity(1,1) not null primary key,
