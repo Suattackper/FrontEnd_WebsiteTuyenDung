@@ -1,4 +1,4 @@
-﻿create database job_seeker;
+﻿--create database job_seeker;
 
 use job_seeker;
 
@@ -63,12 +63,8 @@ is_created_at datetime default getdate() not null,
 is_updated_at datetime default getdate(),
 );
 
-alter table job_seeker_user_login_data add constraint user_login_data_role_id_fk foreign key 
-		(role_id) references authentication_role (role_id);
-
 alter table job_seeker_user_login_data add constraint user_login_data_status_code_fk 
 			foreign key (status_code) references job_seeker_status_code (id);
-
 
 
 -- Thong tin nguoi dung khi dang nhap tk bang facebook, gg...
@@ -81,10 +77,6 @@ extra_data varchar(max) not null,
 is_created_at datetime default getdate() not null,
 is_updated_at datetime default getdate(),
 );
-
-alter table job_seeker_user_login_data_external
-add user_login_data_id uniqueidentifier not null;
-alter table job_seeker_user_login_data_external add constraint user_login_data_external_fk foreign key (user_login_data_id) references job_seeker_user_login_data (id);
 
 
 -- Thong tin ca nhan cua ung vien 
@@ -103,6 +95,7 @@ twitter_url varchar(max),
 portfolio_url varchar(max),
 province nvarchar(200) not null,
 district nvarchar(200),
+role_id int not null,
 is_allowed_public bit default 0 not null,
 is_created_at datetime default getdate() not null,
 is_updated_at datetime default getdate(),
@@ -112,6 +105,14 @@ is_deleted_at datetime,
 alter table job_seeker_candidate_profile add constraint candidate_id_fk foreign key (candidate_id)
 											references job_seeker_user_login_data (id);
 
+alter table job_seeker_candidate_profile add constraint candidate_id_external_fk foreign key (candidate_id)
+											references job_seeker_user_login_data_external (id);
+
+alter table job_seeker_candidate_profile add constraint role_id_two_fk foreign key (role_id)
+											references authentication_role (role_id);
+
+alter table job_seeker_candidate_profile
+add address_detail nvarchar(200)
 
 -- Luu chi tiet thong tin hoc van
 create table job_seeker_education_detail (
@@ -175,6 +176,7 @@ phone_numb varchar(20) not null,
 avatar_link varchar(500),
 linkedin_url varchar(500),
 enterprise_id uniqueidentifier not null, -- fk
+role_id int not null, -- fk
 is_created_at datetime default getdate() not null,
 is_updated_at datetime default getdate(),
 );
@@ -185,6 +187,8 @@ alter table job_seeker_recruiter_profile add constraint recruiter_id_fk foreign 
 alter table job_seeker_recruiter_profile add constraint enterprise_id_fk 
 			foreign key (enterprise_id) references job_seeker_enterprise (enterprise_id);
 
+alter table job_seeker_recruiter_profile add constraint role_id_three_fk foreign key (role_id)
+											references authentication_role (role_id);
 
 -- Thong tin cong ty
 create table job_seeker_enterprise (
@@ -335,15 +339,12 @@ alter table job_seeker_district add constraint province_code_fk
 alter table job_seeker_ward add constraint district_code_fk 
     foreign key (district_code) references job_seeker_district(code);
 
-
-
 -- Cac loai thong bao
 create table job_seeker_notification_type (
 id varchar(50) not null primary key,
 type_name nvarchar(100) not null,
 description nvarchar(200) not null,
 );
-
 
 -- Luu cac thong tin cac loai thong bao
 create table job_seeker_notification (

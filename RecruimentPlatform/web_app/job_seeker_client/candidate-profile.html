@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- META -->
     <meta charset="utf-8">
@@ -329,6 +330,10 @@
                                         type="button" role="tab">Thông tin cá nhân</button>
                                 </li>
                                 <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#MyResume"
+                                        type="button" role="tab">Hồ sơ đính kèm</button>
+                                </li>
+                                <li class="nav-item">
                                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#SocialMedia"
                                         type="button" role="tab">Mạng xã hội</button>
                                 </li>
@@ -350,84 +355,74 @@
                                 <!-- Basic info -->
                                 <div class="tab-pane fade show active" id="BasicInfo">
                                     <div class="row">
+
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <div class="dashboard-profile-pic">
+                                                    <div class="dashboard-profile-photo">
+                                                        <img src="images/user-avtar/pic4.jpg" alt="">
+                                                        <div class="upload-btn-wrapper">
+                                                            <div id="upload-image-grid"></div>
+                                                            <button class="site-button button-sm">Upload
+                                                                Photo</button>
+                                                            <input type="file" name="myfile" id="file-uploader"
+                                                                accept=".jpg, .jpeg, .png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="col-xl-12 col-lg-12 col-md-12">
                                             <div class="form-group">
-                                                <label for="companyName" class="form-label">Tên công ty <span
+                                                <label for="candidateName" class="form-label">Họ tên <span
                                                         class="required">*</span></label>
                                                 <div class="ls-inputicon-box">
-                                                    <input class="form-control" name="company_name" type="text"
-                                                        placeholder="KMS Technology" id="companyName">
-                                                    <i class="fs-input-icon fa fa-building"></i>
+                                                    <input class="form-control" name="candidate_name" type="text"
+                                                        placeholder="Huynh Nhu" id="candidateName">
+                                                    <i class="fs-input-icon fa fa-user"></i>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-xl-6 col-lg-6 col-md-12">
                                             <div class="form-group">
-                                                <label for="companyBusinessSector" class="form-label">Lĩnh vực hoạt động
+                                                <label for="candidateEmail" class="form-label">Email <span
+                                                        class="required">*</span></label>
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="candidate_email" type="email"
+                                                        placeholder="hyf123@gmail.com" id="candidateEmail">
+                                                    <i class="fs-input-icon fas feather-mail"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="candidateGender" class="form-label">Giới tính
                                                     <span class="required">*</span></label>
                                                 <div class="ls-inputicon-box">
                                                     <select class="wt-select-box selectpicker" data-live-search="true"
-                                                        title="" id="companyBusinessSector" data-bv-field="size">
-                                                        <option class="bs-title-option" value="">Xuất nhập khẩu
+                                                        title="" id="candidateGender" data-bv-field="size">
+                                                        <option class="bs-title-option" value="">Giới tính
                                                         </option>
-                                                        <option>Sản xuất</option>
-                                                        <option>Xuất nhập khẩu</option>
-                                                        <option>Truyền thông</option>
-                                                        <option>Chế biến và sản xuất</option>
-                                                        <option>Giáo dục</option>
-                                                        <option>Viễn thông</option>
+                                                        <option>Nam</option>
+                                                        <option>Nữ</option>
+                                                        <option>Khác</option>
                                                     </select>
-                                                    <i class="fs-input-icon fa fa-briefcase"></i>
+                                                    <i class="fs-input-icon fa fa-genderless"></i>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-xl-6 col-lg-6 col-md-12">
                                             <div class="form-group">
-                                                <label for="companySize" class="form-label">Quy mô công ty <span
+                                                <label for="candidateDob" class="form-label">Ngày sinh <span
                                                         class="required">*</span></label>
                                                 <div class="ls-inputicon-box">
-                                                    <select class="wt-select-box selectpicker" data-live-search="true"
-                                                        title="" id="companySize" data-bv-field="size">
-                                                        <option class="bs-title-option" value="">Thousand
-                                                        </option>
-                                                        <option> 05 Thousand </option>
-                                                        <option> 10 Thousand </option>
-                                                        <option> 15 Thousand </option>
-                                                        <option> 20 Thousand </option>
-                                                        <option> 25 Thousand </option>
-                                                        <option> 30 Thousand </option>
-                                                        <option> 35 Thousand </option>
-                                                        <option> 40 Thousand </option>
-                                                        <option> 45 Thousand </option>
-                                                        <option> 50 Thousand </option>
-                                                    </select>
-                                                    <i class="fs-input-icon fa fa-dollar-sign"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xl-6 col-lg-6 col-md-12">
-                                            <div class="form-group">
-                                                <label for="companyTaxCode" class="form-label">Mã số thuế <span
-                                                        class="required">*</span></label>
-                                                <div class="ls-inputicon-box">
-                                                    <input class="form-control" name="company_tax_code" type="text"
-                                                        placeholder="0e7458" id="companyTaxCode">
-                                                    <i class="fs-input-icon fas feather-file-text"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xl-6 col-lg-6 col-md-12">
-                                            <div class="form-group">
-                                                <label for="companyFoundedDate" class="form-label">Ngày thành lập <span
-                                                        class="required">*</span></label>
-                                                <div class="ls-inputicon-box">
-                                                    <input class="form-control datepicker" name="company_est_since"
+                                                    <input class="form-control datepicker" name="candidate_dob"
                                                         type="text" data-provide="datepicker" placeholder="dd/mm/yyyy"
-                                                        id="companyFoundedDate">
+                                                        id="candidateDob">
                                                     <i class="fs-input-icon fa fa-calendar"></i>
                                                 </div>
                                             </div>
@@ -435,36 +430,248 @@
 
                                         <div class="col-xl-6 col-lg-6 col-md-12">
                                             <div class="form-group">
-                                                <label for="companyEmail" class="form-label">Email công ty <span
+                                                <label for="candidatePhoneNumber" class="form-label">Số điện thoại <span
                                                         class="required">*</span></label>
                                                 <div class="ls-inputicon-box">
-                                                    <input class="form-control datepicker" name="company_email"
-                                                        type="email" placeholder="devid@gmail.com" id="companyEmail">
-                                                    <i class="fs-input-icon fa fa-envelope"></i>
+                                                    <input class="form-control datepicker" name="candidate_phone"
+                                                        type="text" placeholder="(84) 1234567892"
+                                                        id="candidatePhoneNumber">
+                                                    <i class="fs-input-icon fa fa-phone-alt"></i>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-xl-6 col-lg-6 col-md-12">
                                             <div class="form-group">
-                                                <label for="companyPhoneNumber" class="form-label">Số điện thoại <span
+                                                <label for="city" class="form-label">Tỉnh/ Thành phố <span
                                                         class="required">*</span></label>
                                                 <div class="ls-inputicon-box">
-                                                    <input class="form-control datepicker" name="company_phone"
-                                                        type="text" placeholder="(84) 1234567892"
-                                                        id="companyPhoneNumber">
-                                                    <i class="fs-input-icon fa fa-phone-alt"></i>
+                                                    <select class="wt-select-box selectpicker" data-live-search="true"
+                                                        title="" id="city" data-bv-field="size">
+                                                        <option class="bs-title-option" value="">Tỉnh/ Thành phố
+                                                        </option>
+                                                        <option>Hồ Chí Minh</option>
+                                                        <option>Hà Nội</option>
+                                                        <option>Đà Nẵng</option>
+                                                        <option>Nha Trang</option>
+                                                        <option>Lâm Đồng</option>
+                                                        <option>Antigua and Barbuda</option>
+                                                        <option>Argentina</option>
+                                                        <option>Armenia</option>
+                                                        <option>Australia</option>
+                                                        <option>Austria</option>
+                                                        <option>Azerbaijan</option>
+                                                        <option>The Bahamas</option>
+                                                        <option>Bahrain</option>
+                                                        <option>Bangladesh</option>
+                                                        <option>Barbados</option>
+                                                    </select>
+                                                    <i class="fs-input-icon fa fa-city"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="district" class="form-label">Quận/ Huyện <span
+                                                        class="required"> *</span></label>
+                                                <div class="ls-inputicon-box">
+                                                    <select class="wt-select-box selectpicker" data-live-search="true"
+                                                        title="" id="district" data-bv-field="size">
+                                                        <option class="bs-title-option" value="">Quận</option>
+                                                        <option>Quận 12</option>
+                                                        <option>Quận 1</option>
+                                                        <option>Quận 2</option>
+                                                        <option>Quận 3</option>
+                                                        <option>Quận Phú Nhuận</option>
+                                                        <option>Quận Tân Bình</option>
+                                                        <option>Quận Bình Tân</option>
+                                                        <option>Quận 5</option>
+                                                        <option>Quận 8</option>
+                                                        <option>Quận 10</option>
+                                                        <option>Quận Bình Chánh</option>
+                                                        <option>Quận Tân Phú</option>
+                                                        <option>Quận Nhà Bè</option>
+                                                    </select>
+                                                    <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-12 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="address" class="form-label">Địa chỉ</label>
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="address" id="address" type="text"
+                                                        placeholder="11/23 khu phố 16 đường Nguyễn Văn Quá">
+                                                    <i class="fs-input-icon fa fa-building"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="text-left">
+                                                <button type="submit" class="site-button">Lưu thay đổi</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                 <!-- Basic info -->
+                                 <div class="tab-pane fade show active" id="MyResume">
+                                    <div class="row">
+
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <div class="dashboard-profile-pic">
+                                                    <div class="dashboard-profile-photo">
+                                                        <img src="images/user-avtar/pic4.jpg" alt="">
+                                                        <div class="upload-btn-wrapper">
+                                                            <div id="upload-image-grid"></div>
+                                                            <button class="site-button button-sm">Upload
+                                                                Photo</button>
+                                                            <input type="file" name="myfile" id="file-uploader"
+                                                                accept=".jpg, .jpeg, .png">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-xl-12 col-lg-12 col-md-12">
                                             <div class="form-group">
-                                                <label for="companyDesc" class="form-label">Mô tả công ty <span
+                                                <label for="candidateName" class="form-label">Họ tên <span
                                                         class="required">*</span></label>
-                                                <textarea id="richTextEditor" rows="15" class="form-control">
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="candidate_name" type="text"
+                                                        placeholder="Huynh Nhu" id="candidateName">
+                                                    <i class="fs-input-icon fa fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                                </textarea>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="candidateEmail" class="form-label">Email <span
+                                                        class="required">*</span></label>
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="candidate_email" type="email"
+                                                        placeholder="hyf123@gmail.com" id="candidateEmail">
+                                                    <i class="fs-input-icon fas feather-mail"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="candidateGender" class="form-label">Giới tính
+                                                    <span class="required">*</span></label>
+                                                <div class="ls-inputicon-box">
+                                                    <select class="wt-select-box selectpicker" data-live-search="true"
+                                                        title="" id="candidateGender" data-bv-field="size">
+                                                        <option class="bs-title-option" value="">Giới tính
+                                                        </option>
+                                                        <option>Nam</option>
+                                                        <option>Nữ</option>
+                                                        <option>Khác</option>
+                                                    </select>
+                                                    <i class="fs-input-icon fa fa-genderless"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="candidateDob" class="form-label">Ngày sinh <span
+                                                        class="required">*</span></label>
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control datepicker" name="candidate_dob"
+                                                        type="text" data-provide="datepicker" placeholder="dd/mm/yyyy"
+                                                        id="candidateDob">
+                                                    <i class="fs-input-icon fa fa-calendar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="candidatePhoneNumber" class="form-label">Số điện thoại <span
+                                                        class="required">*</span></label>
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control datepicker" name="candidate_phone"
+                                                        type="text" placeholder="(84) 1234567892"
+                                                        id="candidatePhoneNumber">
+                                                    <i class="fs-input-icon fa fa-phone-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="city" class="form-label">Tỉnh/ Thành phố <span
+                                                        class="required">*</span></label>
+                                                <div class="ls-inputicon-box">
+                                                    <select class="wt-select-box selectpicker" data-live-search="true"
+                                                        title="" id="city" data-bv-field="size">
+                                                        <option class="bs-title-option" value="">Tỉnh/ Thành phố
+                                                        </option>
+                                                        <option>Hồ Chí Minh</option>
+                                                        <option>Hà Nội</option>
+                                                        <option>Đà Nẵng</option>
+                                                        <option>Nha Trang</option>
+                                                        <option>Lâm Đồng</option>
+                                                        <option>Antigua and Barbuda</option>
+                                                        <option>Argentina</option>
+                                                        <option>Armenia</option>
+                                                        <option>Australia</option>
+                                                        <option>Austria</option>
+                                                        <option>Azerbaijan</option>
+                                                        <option>The Bahamas</option>
+                                                        <option>Bahrain</option>
+                                                        <option>Bangladesh</option>
+                                                        <option>Barbados</option>
+                                                    </select>
+                                                    <i class="fs-input-icon fa fa-city"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="district" class="form-label">Quận/ Huyện <span
+                                                        class="required"> *</span></label>
+                                                <div class="ls-inputicon-box">
+                                                    <select class="wt-select-box selectpicker" data-live-search="true"
+                                                        title="" id="district" data-bv-field="size">
+                                                        <option class="bs-title-option" value="">Quận</option>
+                                                        <option>Quận 12</option>
+                                                        <option>Quận 1</option>
+                                                        <option>Quận 2</option>
+                                                        <option>Quận 3</option>
+                                                        <option>Quận Phú Nhuận</option>
+                                                        <option>Quận Tân Bình</option>
+                                                        <option>Quận Bình Tân</option>
+                                                        <option>Quận 5</option>
+                                                        <option>Quận 8</option>
+                                                        <option>Quận 10</option>
+                                                        <option>Quận Bình Chánh</option>
+                                                        <option>Quận Tân Phú</option>
+                                                        <option>Quận Nhà Bè</option>
+                                                    </select>
+                                                    <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-12 col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label for="address" class="form-label">Địa chỉ</label>
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="address" id="address" type="text"
+                                                        placeholder="11/23 khu phố 16 đường Nguyễn Văn Quá">
+                                                    <i class="fs-input-icon fa fa-building"></i>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -604,8 +811,10 @@
                                                     </div>
                                                     <div class="company-name">KMS Technology</div>
 
-                                                    <p class="job-description">In publishing and graphic design, Lorem ipsum is a placeholder text commonly
-                                                        used to demonstrate the visual form of a document or a typeface without relying on meaningful
+                                                    <p class="job-description">In publishing and graphic design, Lorem
+                                                        ipsum is a placeholder text commonly
+                                                        used to demonstrate the visual form of a document or a typeface
+                                                        without relying on meaningful
                                                         content.</p>
                                                 </li>
 
@@ -628,8 +837,10 @@
                                                     </div>
                                                     <div class="company-name">Axon Active</div>
 
-                                                    <p class="job-description">In publishing and graphic design, Lorem ipsum is a placeholder text commonly
-                                                        used to demonstrate the visual form of a document or a typeface without relying on meaningful
+                                                    <p class="job-description">In publishing and graphic design, Lorem
+                                                        ipsum is a placeholder text commonly
+                                                        used to demonstrate the visual form of a document or a typeface
+                                                        without relying on meaningful
                                                         content.</p>
                                                 </li>
                                             </ul>
@@ -637,7 +848,6 @@
                                     </div>
 
                                     <div class="panel panel-default mb-3">
-                                        <!-- Job Experience -->
                                         <div class="modal fade twm-saved-jobs-view" id="JobExpModal" tabindex="-1">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
@@ -764,7 +974,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
 
@@ -828,7 +1037,6 @@
                                     </div>
 
                                     <div class="panel panel-default mb-3">
-                                        <!--Education -->
                                         <div class="modal fade twm-saved-jobs-view" id="EducationModal" tabindex="-1">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
@@ -950,6 +1158,168 @@
                                                                 data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="site-button">Save</button>
                                                         </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Certificate -->
+                                <div class="tab-pane fade" id="Certificate">
+                                    <div class="panel-heading wt-panel-heading p-a20 panel-heading-with-btn">
+                                        <h4 class="panel-tittle m-a0"><i class="fa fa-certificate"></i> Chứng chỉ
+                                        </h4>
+                                        <a data-bs-toggle="modal" href="#CertificateModal" role="button" title="Edit"
+                                            class="site-text-primary">
+                                            <span class="fa fa-edit"></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="panel-body wt-panel-body p-a20 ">
+                                        <div class="twm-panel-inner">
+                                            <ul class="timeline">
+
+                                                <li class="timeline-item">
+                                                    <div class="icon">H</div>
+                                                    <div class="content">
+                                                        <span class="job-title">Tên chứng chỉ</span>
+                                                        <div class="actions">
+                                                            <button class="btn" data-bs-toggle="modal"
+                                                                data-bs-target="#CertificateModal">
+                                                                <i class="feather-edit"></i>
+                                                            </button>
+                                                            <button class="btn" data-bs-toggle="modal"
+                                                                data-bs-target="#delete-education-detail">
+                                                                <i class="feather-trash"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="company-name">Trung tâm đào tạo B</div>
+                                                </li>
+
+                                                <li class="timeline-item">
+                                                    <div class="icon">H</div>
+                                                    <div class="content">
+                                                        <span class="job-title">Tên chứng chỉ</span>
+                                                        <div class="actions">
+                                                            <button class="btn" data-bs-toggle="modal"
+                                                                data-bs-target="#CertificateModal">
+                                                                <i class="feather-edit"></i>
+                                                            </button>
+                                                            <button class="btn" data-bs-toggle="modal"
+                                                                data-bs-target="#delete-education-detail">
+                                                                <i class="feather-trash"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="company-name">Trung tâm đào tạo B</div>
+                                                </li>
+
+                                                <li class="timeline-item">
+                                                    <div class="icon">H</div>
+                                                    <div class="content">
+                                                        <span class="job-title">Tên chứng chỉ</span>
+                                                        <div class="actions">
+                                                            <button class="btn" data-bs-toggle="modal"
+                                                                data-bs-target="#CertificateModal">
+                                                                <i class="feather-edit"></i>
+                                                            </button>
+                                                            <button class="btn" data-bs-toggle="modal"
+                                                                data-bs-target="#delete-education-detail">
+                                                                <i class="feather-trash"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="company-name">Trung tâm đào tạo B</div>
+                                                    <div class="job-description">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing elit. Voluptatibus suscipit, libero, quia, nesciunt
+                                                        odio debitis beatae perferendis id voluptas sapiente magni sunt
+                                                        eos cumque repudiandae deserunt atque voluptatum? Soluta, ab!
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default mb-3">
+                                        <div class="modal fade twm-saved-jobs-view" id="CertificateModal" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <form>
+                                                        <div class="modal-header">
+                                                            <h3 class="modal-title  fw-bold">Chứng chỉ</h3>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <div class="row">
+                                                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="certificateName"
+                                                                            class="form-label">Tên chứng chỉ 
+                                                                            <span class="required">*</span></label>
+                                                                        <div class="ls-inputicon-box">
+                                                                            <input class="form-control"
+                                                                                name="certificate_name" type="text"
+                                                                                placeholder="Chung chi B"
+                                                                                id="certificateName">
+                                                                            <i class="fs-input-icon fa fa-certificate"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="certificateOrganization"
+                                                                            class="form-label">Tổ chức
+                                                                            <span class="required">*</span></label>
+                                                                        <div class="ls-inputicon-box">
+                                                                            <input class="form-control"
+                                                                                name="certificate_name" type="text"
+                                                                                placeholder="IDP Education Limited"
+                                                                                id="certificateOrganization">
+                                                                            <i class="fs-input-icon fa fa-building"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="certificateLink"
+                                                                            class="form-label">Link chứng chỉ 
+                                                                            <span class="required">*</span></label>
+                                                                        <div class="ls-inputicon-box">
+                                                                            <input class="form-control"
+                                                                                name="certificate_link" type="text"
+                                                                                placeholder="Link chứng chỉ"
+                                                                                id="certificateLink">
+                                                                            <i class="fs-input-icon fa fa-link"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="jobExpDesc" class="form-label">Mô
+                                                                            tả công việc <span
+                                                                                class="required">*</span></label>
+                                                                        <textarea id="richTextEditor" rows="15"
+                                                                            class="form-control">
+                                                                        </textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="site-button"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="site-button">Save</button>
+                                                        </div>
+
+                                                      
                                                     </form>
                                                 </div>
                                             </div>
