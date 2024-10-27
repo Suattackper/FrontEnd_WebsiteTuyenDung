@@ -8275,7 +8275,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .timeline-item .actions button:focus {
-  background-color: #d0e6f7; /* Optional subtle background color change */
+  background-color: #d0e6f7;
+  /* Optional subtle background color change */
   outline: none;
   box-shadow: none;
 }
@@ -9560,7 +9561,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   border: 10px;
   border: 1px solid #efefef;
   position: relative;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -9577,8 +9578,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .twm-jobs-list-style1 .twm-media {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   display: inline-block;
   text-align: center;
   background-color: #fff;
@@ -9606,11 +9607,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .twm-jobs-list-style1 p {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .twm-jobs-list-style1 .twm-mid-content {
-  padding-left: 170px;
+  padding-left: 150px;
 }
 
 @media (max-width: 767px) {
@@ -9663,8 +9664,24 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .twm-jobs-category span {
   color: #fff;
   border-radius: 5px;
+  font-size: 14px;
   padding: 5px 12px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   white-space: nowrap;
+}
+
+.twm-jobs-category span.badge-success {
+  color: #09AD95;
+}
+
+.twm-jobs-category span.badge-danger {
+  color: #F96768;
+}
+
+.twm-jobs-category span.badge-pending {
+  background: rgba(113, 103, 255, .2);
+  color: #3C65F5;
 }
 
 @media (max-width: 767px) {
@@ -9991,11 +10008,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .twm-bg-red {
-  background-color: rgba(249, 171, 0, 0.15);
+  background: rgba(249, 103, 104, .2);
 }
 
 .twm-bg-green {
-  background: rgba(52, 168, 83, 0.15);
+  background: rgb(209, 238, 232);
 }
 
 .twm-bg-brown {
@@ -14257,13 +14274,14 @@ strong {
 }
 
 .wt-card-icon {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 0px;
   color: rgba(0, 0, 0, 0.1);
   z-index: -1;
   position: absolute;
   left: 20px;
   top: 20px;
+  color: #1967d3;
 }
 
 /*Upload Video Button*/
