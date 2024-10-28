@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- META -->
     <meta charset="utf-8">
@@ -210,15 +211,24 @@
                                                 </div>
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="ID-ACCOUNT_dropdown">
+
                                                 <ul>
-                                                    <li><a href="dashboard.html"><i class="fa fa-home"></i>Dashboard</a>
+                                                    <li>
+                                                        <a href="candidate-dashboard.html"><i
+                                                                class="feather-home"></i>Dashboard</a>
                                                     </li>
-                                                    <li><a href="dash-messages.html"><i class="fa fa-envelope"></i>
-                                                            Messages</a></li>
-                                                    <li><a href="dash-my-profile.html"><i class="fa fa-user"></i>
-                                                            Profile</a></li>
-                                                    <li><a href="index.html"><i class="fa fa-share-square"></i>
-                                                            Logout</a></li>
+                                                    <li>
+                                                        <a href="candidate-chat.html"><i class="feather-mail"></i>
+                                                            Tin nhắn</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="candidate-profile.html"><i class="feather-user"></i>
+                                                            Thông tin hồ sơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html"><i class="feather-log-out"></i>
+                                                            Logout</a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -280,6 +290,230 @@
                 </ul>
             </div>
         </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <div class="content-admin-main">
+                <div class="wt-admin-right-page-header clearfix">
+                    <h2>Manage Jobs</h2>
+                    <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a
+                            href="dashboard.html">Dasboard</a><span>Danh sách việc đã tứng tuyển</span></div>
+                </div>
+
+                <!--Basic Information-->
+                <div class="panel panel-default">
+                    <div class="panel-heading wt-panel-heading p-a20">
+                        <h4 class="panel-tittle m-a0"><i class="fa fa-briefcase"></i> Danh sách việc làm đã ứng tuyển
+                        </h4>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 m-b30">
+                        <div class="twm-right-section-panel candidate-save-job site-bg-gray">
+                            <!--Filter Short By-->
+                            <div class="product-filter-wrap d-flex justify-content-between align-items-center">
+                                <form class="woocommerce-ordering twm-filter-select" method="get">
+                                    <span class="woocommerce-result-count">Short By</span>
+                                    <select class="wt-select-bar-2 selectpicker" data-live-search="true"
+                                        data-bv-field="size">
+                                        <option>Last 2 Months</option>
+                                        <option>Last 1 Months</option>
+                                        <option>15 days ago</option>
+                                        <option>Weekly</option>
+                                        <option>Yesterday</option>
+                                        <option>Today</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="twm-cv-manager-list-wrap">
+                                <ul>
+                                    <li>
+                                        <div class="twm-cv-manager-list-style1">
+                                            <div class="twm-media">
+                                                <div class="twm-media-pic">
+                                                    <img src="images/jobs-company/pic1.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="twm-mid-content">
+                                                <a href="job-detail.html" class="twm-job-title">
+                                                    <h5>Senior Web Designer</h5>
+                                                </a>
+                                                <p class="company-name">KMS Technology</p>
+
+                                                <div class="twm-fot-content">
+                                                    <div class="twm-left-info">
+                                                        <p class="twm-job-address"><i
+                                                                class="feather-map-pin"></i>New York</p>
+                                                    </div>
+                                                    <div class="twm-view-button">
+                                                        <div class="twm-jobs-category green">
+                                                            <span
+                                                                class="twm-bg-green">New</span>
+                                                        </div>
+                                                        <a href="files/pdf-sample.pdf" title="Download" target="blank"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"><i
+                                                                class="fa fa-download"></i></a>
+                                                        <a href="javascript:;" title="Delete" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top"><i class="fa fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="twm-cv-manager-list-style1">
+                                            <div class="twm-media">
+                                                <div class="twm-media-pic">
+                                                    <img src="images/candidates/pic2.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="twm-mid-content">
+                                                <a href="candidate-detail.html" class="twm-job-title">
+                                                    <h4>Peter Hawkins</h4>
+                                                </a>
+                                                <p>Medical Professed</p>
+                                                <div class="twm-fot-content">
+                                                    <div class="twm-left-info">
+                                                        <p class="twm-candidate-address"><i
+                                                                class="feather-map-pin"></i>New York</p>
+                                                        <div class="twm-job-post-duration">1 days ago</div>
+                                                        <div class="twm-candidates-tag"><span>Full Time</span></div>
+                                                    </div>
+                                                    <div class="twm-view-button">
+                                                        <a href="files/pdf-sample.pdf" title="Download" target="blank"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"><i
+                                                                class="fa fa-download"></i></a>
+                                                        <a href="javascript:;" title="Delete" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top"><i class="fa fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="twm-cv-manager-list-style1">
+                                            <div class="twm-media">
+                                                <div class="twm-media-pic">
+                                                    <img src="images/candidates/pic3.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="twm-mid-content">
+                                                <a href="candidate-detail.html" class="twm-job-title">
+                                                    <h4>Ralph Johnson </h4>
+                                                </a>
+                                                <p>Bank Manger</p>
+
+                                                <div class="twm-fot-content">
+                                                    <div class="twm-left-info">
+                                                        <p class="twm-candidate-address"><i
+                                                                class="feather-map-pin"></i>New York</p>
+                                                        <div class="twm-job-post-duration">1 days ago</div>
+                                                        <div class="twm-candidates-tag"><span>Full Time</span></div>
+                                                    </div>
+                                                    <div class="twm-view-button">
+                                                        <a href="files/pdf-sample.pdf" title="Download" target="blank"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"><i
+                                                                class="fa fa-download"></i></a>
+                                                        <a href="javascript:;" title="Delete" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top"><i class="fa fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="twm-cv-manager-list-style1">
+                                            <div class="twm-media">
+                                                <div class="twm-media-pic">
+                                                    <img src="images/candidates/pic4.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="twm-mid-content">
+                                                <a href="candidate-detail.html" class="twm-job-title">
+                                                    <h4>Randall Henderson </h4>
+                                                </a>
+                                                <p>IT Contractor</p>
+
+                                                <div class="twm-fot-content">
+                                                    <div class="twm-left-info">
+                                                        <p class="twm-candidate-address"><i
+                                                                class="feather-map-pin"></i>New York</p>
+                                                        <div class="twm-job-post-duration">1 days ago</div>
+                                                        <div class="twm-candidates-tag"><span>Full Time</span></div>
+                                                    </div>
+                                                    <div class="twm-view-button">
+                                                        <a href="files/pdf-sample.pdf" title="Download" target="blank"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"><i
+                                                                class="fa fa-download"></i></a>
+                                                        <a href="javascript:;" title="Delete" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top"><i class="fa fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="twm-cv-manager-list-style1">
+                                            <div class="twm-media">
+                                                <div class="twm-media-pic">
+                                                    <img src="images/candidates/pic5.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="twm-mid-content">
+                                                <a href="candidate-detail.html" class="twm-job-title">
+                                                    <h4>Randall Warren</h4>
+                                                </a>
+                                                <p>Digital & Creative</p>
+
+                                                <div class="twm-fot-content">
+                                                    <div class="twm-left-info">
+                                                        <p class="twm-candidate-address"><i
+                                                                class="feather-map-pin"></i>New York</p>
+                                                        <div class="twm-job-post-duration">1 days ago</div>
+                                                        <div class="twm-candidates-tag"><span>Full Time</span></div>
+                                                    </div>
+                                                    <div class="twm-view-button">
+                                                        <a href="files/pdf-sample.pdf" title="Download" target="blank"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"><i
+                                                                class="fa fa-download"></i></a>
+                                                        <a href="javascript:;" title="Delete" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top"><i class="fa fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="pagination-outer">
+                                <div class="pagination-style1">
+                                    <ul class="clearfix">
+                                        <li class="prev"><a href="javascript:;"><span> <i class="fa fa-angle-left"></i>
+                                                </span></a></li>
+                                        <li><a href="javascript:;">1</a></li>
+                                        <li class="active"><a href="javascript:;">2</a></li>
+                                        <li><a href="javascript:;">3</a></li>
+                                        <li><a class="javascript:;" href="javascript:;"><i
+                                                    class="fa fa-ellipsis-h"></i></a></li>
+                                        <li><a href="javascript:;">5</a></li>
+                                        <li class="next"><a href="javascript:;"><span> <i class="fa fa-angle-right"></i>
+                                                </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--Logout Profile Popup-->
         <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
