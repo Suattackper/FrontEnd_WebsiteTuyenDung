@@ -917,7 +917,7 @@ All JavaScript fuctions Start
 			delay: 10,
 			time: 3000
 		});	
-	}	
+	}
 
 		
 	// sidebarCollapse function by = custom.js
