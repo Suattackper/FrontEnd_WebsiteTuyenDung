@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- META -->
     <meta charset="utf-8">
@@ -193,24 +194,45 @@
                                                             lập</label>
                                                         <input type="date" class="form-control" id="establish-date">
                                                     </div>
+                                                    <!-- Fix: 31/10/24 -->
                                                     <div class="col-md-6 mb-3">
-                                                        <label for="field" class="form-label">Lĩnh vực hoạt động</label>
-                                                        <input type="text" class="form-control" id="field"
-                                                            placeholder="Nhập lĩnh vực hoạt động">
+                                                        <label for="companyBusinessSector" class="form-label">Lĩnh vực
+                                                            hoạt động
+                                                            <span class="required">*</span></label>
+                                                        <div class="ls-inputicon-box">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title=""
+                                                                id="companyBusinessSector" data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Lĩnh vực
+                                                                </option>
+                                                                <option>Sản xuất</option>
+                                                                <option>Xuất nhập khẩu</option>
+                                                                <option>Truyền thông</option>
+                                                                <option>Chế biến và sản xuất</option>
+                                                                <option>Giáo dục</option>
+                                                                <option>Viễn thông</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
 
                                                 <!-- Quy mô công ty and Website on the same row -->
                                                 <div class="row">
                                                     <div class="col-md-6 mb-3">
-                                                        <label for="company-size" class="form-label">Quy mô công
-                                                            ty</label>
-                                                        <select id="company-size" class="form-select form-control">
-                                                            <option value="">Chọn quy mô công ty</option>
-                                                            <option value="small">Dưới 50 nhân viên</option>
-                                                            <option value="medium">50-200 nhân viên</option>
-                                                            <option value="large">Trên 200 nhân viên</option>
-                                                        </select>
+                                                        <label for="companySize" class="form-label">Quy mô công ty <span
+                                                                class="required">*</span></label>
+                                                        <div class="ls-inputicon-box">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="companySize"
+                                                                data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Chọn quy mô công ty
+                                                                </option>
+                                                                <option> 100 nhân viên </option>
+                                                                <option> 200 nhân viên </option>
+                                                                <option> 300 - 400 nhân viên </option>
+                                                                <option> Trên 500 nhân viên </option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-6 mb-3">
                                                         <label for="website" class="form-label">Website</label>
@@ -219,21 +241,79 @@
                                                     </div>
                                                 </div>
 
-                                                <!-- Tỉnh/Thành phố and Quận/Huyện on the same row -->
+                                                <!-- Fix 31/10/24 Tỉnh/Thành phố and Quận/Huyện on the same row -->
                                                 <div class="row">
                                                     <div class="col-md-6 mb-3">
-                                                        <label for="city" class="form-label">Tỉnh/Thành phố</label>
-                                                        <select id="city" class="form-select form-control">
-                                                            <option value="">Chọn tỉnh/thành phố</option>
-                                                            <!-- Add city options here -->
-                                                        </select>
+                                                        <label for="city" class="form-label">Tỉnh/ Thành phố <span
+                                                                class="required">*</span></label>
+                                                        <div class="ls-inputicon-box">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="city"
+                                                                data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Tỉnh/ Thành phố
+                                                                </option>
+                                                                <option>Hồ Chí Minh</option>
+                                                                <option>Hà Nội</option>
+                                                                <option>Đà Nẵng</option>
+                                                                <option>Nha Trang</option>
+                                                                <option>Lâm Đồng</option>
+                                                                <option>Antigua and Barbuda</option>
+                                                                <option>Argentina</option>
+                                                                <option>Armenia</option>
+                                                                <option>Australia</option>
+                                                                <option>Austria</option>
+                                                                <option>Azerbaijan</option>
+                                                                <option>The Bahamas</option>
+                                                                <option>Bahrain</option>
+                                                                <option>Bangladesh</option>
+                                                                <option>Barbados</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-6 mb-3">
-                                                        <label for="district" class="form-label">Quận/Huyện</label>
-                                                        <select id="district" class="form-select form-control">
-                                                            <option value="">Chọn quận/huyện</option>
-                                                            <!-- Add district options here -->
-                                                        </select>
+                                                        <label for="district" class="form-label">Quận/ Huyện <span
+                                                                class="required"> *</span></label>
+                                                        <div class="ls-inputicon-box">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="district"
+                                                                data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Quận</option>
+                                                                <option>Quận 12</option>
+                                                                <option>Quận 1</option>
+                                                                <option>Quận 2</option>
+                                                                <option>Quận 3</option>
+                                                                <option>Quận Phú Nhuận</option>
+                                                                <option>Quận Tân Bình</option>
+                                                                <option>Quận Bình Tân</option>
+                                                                <option>Quận 5</option>
+                                                                <option>Quận 8</option>
+                                                                <option>Quận 10</option>
+                                                                <option>Quận Bình Chánh</option>
+                                                                <option>Quận Tân Phú</option>
+                                                                <option>Quận Nhà Bè</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="ward" class="form-label">Phường/ Xã</label>
+                                                        <div class="ls-inputicon-box">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="ward"
+                                                                data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Phường/ Xã
+                                                                </option>
+                                                                <option>Đông Hưng Thuận</option>
+                                                                <option>Tân Hưng Thuận</option>
+                                                                <option>Tân Định</option>
+                                                                <option>Hiệp Thành</option>
+                                                                <option>Cầu Ông Lãnh</option>
+                                                                <option>Linh Xuân</option>
+                                                                <option>Trung Mỹ Tây</option>
+                                                            </select>
+                                                            <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -253,7 +333,8 @@
                                         </div>
 
                                         <div class="text-center mt-4 mb-4">
-                                            <a href="login.html" class="site-text-primary">Đã có tài khoản? Đăng nhập</a>
+                                            <a href="login.html" class="site-text-primary">Đã có tài khoản? Đăng
+                                                nhập</a>
                                         </div>
                                     </div>
                                 </div>
