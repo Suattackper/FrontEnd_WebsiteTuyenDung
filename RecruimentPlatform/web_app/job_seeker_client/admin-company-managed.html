@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +12,10 @@
 
     <!-- FAVICONS ICON -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/job_seeker_logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
     <!-- PAGE TITLE HERE -->
-    <title>Grabwork - Danh sách các tin đăng tuyển</title>
+    <title>Bảng điều khiển</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +27,6 @@
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css"><!-- Lc light box popup -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"><!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
-    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap5.min.css"><!-- DATA table STYLE SHEET  -->
     <link rel="stylesheet" type="text/css" href="css/select.bootstrap5.min.css">
     <!-- DASHBOARD select bootstrap  STYLE SHEET  -->
     <link rel="stylesheet" type="text/css" href="css/dropzone.css"><!-- DROPZONE STYLE SHEET -->
@@ -56,9 +54,11 @@
             </div>
         </div>
     </div>
+    <!-- LOADING AREA  END ====== -->
 
     <div class="page-wraper">
         <header id="header-admin-wrap" class="header-admin-fixed">
+            <!-- Header Start -->
             <div id="header-admin">
                 <div class="container">
 
@@ -151,7 +151,6 @@
 
                             <!--Notification-->
                             <li class="header-widget dashboard-noti-dropdown">
-
                                 <div class="dropdown">
                                     <a href="javascript:;" class="dropdown-toggle jobzilla-admin-notification"
                                         id="ID-NOTI_dropdown" data-bs-toggle="dropdown">
@@ -197,19 +196,16 @@
                                                         </span>
                                                     </a>
                                                 </li>
-
                                             </ul>
 
                                             <div class="noti-view-all">
-                                                <a href="javascript:;">View All</a>
+                                                <a href="admin-message.html">View All</a>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
                             </li>
 
-                            <!--Account-->
                             <li class="header-widget">
                                 <div class="dashboard-user-section">
                                     <div class="listing-user">
@@ -219,21 +215,21 @@
                                                 <div class="user-name text-black">
                                                     <span>
                                                         <img src="images/user-avtar/pic4.jpg" alt="">
-                                                    </span>Nikola Tesla
+                                                    </span>Hello Admin
                                                 </div>
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="ID-ACCOUNT_dropdown">
                                                 <ul>
                                                     <li>
-                                                        <a href="dashboard.html"><i
+                                                        <a href="admin-dashboard.html"><i
                                                                 class="feather-home"></i>Dashboard</a>
                                                     </li>
                                                     <li>
-                                                        <a href="dash-messages.html"><i class="feather-mail"></i>
-                                                            Tin nhắn</a>
+                                                        <a href="admin-notification.html"><i class="feather-mail"></i>
+                                                            Thông báo</a>
                                                     </li>
                                                     <li>
-                                                        <a href="dash-my-profile.html"><i class="feather-user"></i>
+                                                        <a href="admin-account.html"><i class="feather-user"></i>
                                                             Thông tin hồ sơ</a>
                                                     </li>
                                                     <li>
@@ -253,69 +249,50 @@
         </header>
 
         <nav id="sidebar-admin-wraper">
-            <div class="page-logo">
+            <div class="page-logo d-flex align-items-center">
                 <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
+                <h3 class="m-l10">Grabword</h3>
             </div>
 
             <div class="admin-nav scrollbar-macosx">
                 <ul>
                     <li>
                         <a href="dashboard.html"><i class="feather-home"></i><span
-                                class="admin-nav-text">Dashboard</span></a>
+                                class="admin-nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-notification.html"><i class="feather-bell"></i><span class="admin-nav-text">Thông
+                                báo
+                                <sup class="twm-msg-noti">5</sup></span>
+                        </a>
                     </li>
                     <li class="active">
-                        <a href="javascript:;"><i class="feather-briefcase"></i><span class="admin-nav-text">Công
-                                ty</span></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="dash-company-profile.html"><span class="admin-nav-text">Thông tin công
-                                        ty</span></a>
-                            </li>
-                            <li>
-                                <a href="dash-post-job.html"><span class="admin-nav-text">Đăng tin</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="dash-manage-jobs.html"><span class="admin-nav-text">Danh sách công
-                                        việc</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <a href="admin-company-managed.html"><i class="feather-file-text"></i><span
+                                class="admin-nav-text">Quản lý doanh
+                                nghiệp</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="javascript:;"><i class="feather-users"></i><span class="admin-nav-text">Hồ
-                                sơ</span></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="dash-candidates.html"><span class="admin-nav-text">Danh sách ứng tuyển</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="dash-bookmark.html"><span class="admin-nav-text">Hồ sơ đã lưu</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <a href="admin-job-posting.html"><i class="feather-briefcase"></i><span
+                                class="admin-nav-text">Quản lý các
+                                bài đăng</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="dash-package.html"><i class="feather-dollar-sign"></i><span class="admin-nav-text">Gói
-                                đăng tin</span></a>
+                        <a href="admin-account-managed.html"><i class="feather-users"></i><span
+                                class="admin-nav-text">Quản lý tài khoản</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="dash-messages.html"><i class="feather-mail"></i><span class="admin-nav-text">Tin nhắn
-                                <sup class="twm-msg-noti">5</sup></span></a>
-                    </li>
-                    <li>
-                        <a href="dash-resume-alert.html"><i class="feather-bell"></i><span class="admin-nav-text">Thông
-                                báo</span></a>
-                    </li>
-                    <li>
-                        <a href="dash-my-profile.html"><i class="feather-user-check"></i><span
-                                class="admin-nav-text">Tài
-                                khoản</span></a>
+                        <a href="admin-account.html"><i class="feather-user-check"></i><span class="admin-nav-text">Tài
+                                khoản</span>
+                        </a>
                     </li>
                     <li>
                         <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#logout-dash-profile"><i
-                                class="feather-log-out"></i><span class="admin-nav-text">Logout</span></a>
+                                class="feather-log-out"></i><span class="admin-nav-text">Logout</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -325,189 +302,114 @@
         <div id="content">
             <div class="content-admin-main">
                 <div class="wt-admin-right-page-header clearfix">
-                    <h2>Manage Jobs</h2>
-                    <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a
-                            href="dashboard.html">Dasboard</a><span>Danh sách tin đăng</span></div>
+                    <h3>Job Admin Dashboard</h3>
+                    <div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>Dasboard</span></div>
                 </div>
 
-                <!--Basic Information-->
-                <div class="panel panel-default">
-                    <div class="panel-heading wt-panel-heading p-a20">
-                        <h4 class="panel-tittle m-a0"><i class="fa fa-suitcase"></i> Danh sách tin đăng</h4>
-                    </div>
-                    <div class="panel-body wt-panel-body p-a20 m-b30 ">
-                        <div class="twm-D_table p-a20 table-responsive">
-                            <table id="jobs_bookmark_table" class="table table-bordered twm-bookmark-list-wrap">
-                                <thead>
-                                    <tr>
-                                        <th>Tên công việc</th>
-                                        <th>Ngày đăng</th>
-                                        <th>Thời hạn nộp</th>
-                                        <th>Lượt xem</th>
-                                        <th>Lượt nộp</th>
-                                        <th>Trạng thái</th>
-                                        <th>Hành động</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!--1-->
-                                    <tr>
-                                        <td>
-                                            <div class="twm-bookmark-list">
-                                                <div class="twm-mid-content">
-                                                    <a href="#" class="twm-job-title">
-                                                        <h6>Senior Web Designer</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>08/06/2023</td>
-                                        <td>08/10/2023</td>
-                                        <td>100</td>
-                                        <td>3</td>
-                                        <td>
-                                            <div class="twm-jobs-category"><span
-                                                    class="twm-bg-green status-title">Approved</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="twm-table-controls">
-                                                <ul class="twm-DT-controls-icon list-unstyled">
-                                                    <li>
-                                                        <button title="View profile" data-bs-toggle="tooltip" data-
-                                                            data-bs-placement="top">
-                                                            <span class="fa fa-eye"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Edit" data-bs-toggle="modal"
-                                                            data-bs-target="#JobEditModal" data-bs-placement="top">
-                                                            <span class="far fa-edit"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Delete" data-bs-toggle="modal"
-                                                            data-bs-target="#delete_job_modal" data-bs-placement="top">
-                                                            <span class="far fa-trash-alt"></span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
+                <div class="twm-pro-view-chart-wrap">
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="panel panel-default site-bg-white m-t30">
+                            <div class="panel-heading wt-panel-heading p-a20">
+                                <h4 class="panel-tittle m-a0"><i class="far fa-list-alt"></i>Danh sách các bài đăng</h4>
+                            </div>
 
-                                    <!-- 2 -->
-                                    <tr>
-                                        <td>
-                                            <div class="twm-bookmark-list">
-                                                <div class="twm-mid-content">
-                                                    <a href="#" class="twm-job-title">
-                                                        <h6>Senior Web Designer</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>08/06/2023</td>
-                                        <td>08/10/2023</td>
-                                        <td>100</td>
-                                        <td>3</td>
-                                        <td>
-                                            <div class="twm-jobs-category"><span
-                                                    class="twm-bg-green status-title">Approved</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="twm-table-controls">
-                                                <ul class="twm-DT-controls-icon list-unstyled">
-                                                    <li>
-                                                        <button title="View profile" data-bs-toggle="tooltip"
-                                                            data-bs-placement="top">
-                                                            <span class="fa fa-eye"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Edit" data-bs-toggle="tooltip"
-                                                            data-bs-placement="top">
-                                                            <span class="far fa-edit"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Delete" data-bs-toggle="modal"
-                                                            data-bs-target="#delete_job_modal" data-bs-placement="top">
-                                                            <span class="far fa-trash-alt"></span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-8 mt-3">
+                                    <div class="ls-inputicon-box">
+                                        <input class="form-control"
+                                            name="search" type="text"
+                                            placeholder="Tìm kiếm" />
+                                        <i class="fs-input-icon feather-search"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 mt-3">
+                                    <div class="ls-inputicon-box">
+                                        <select class="wt-select-box selectpicker" data-live-search="true" title=""
+                                            id="candidateMajor" data-bv-field="size">
+                                            <option class="bs-title-option" value="">
+                                                Trạng thái duyệt
+                                            </option>
+                                            <option>Đang chờ duyệt</option>
+                                            <option>Từ chối</option>
+                                            <option>Đã duyệt</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
 
-                                    <!-- 3 -->
-                                    <tr>
-                                        <td>
-                                            <div class="twm-bookmark-list">
-                                                <div class="twm-mid-content">
-                                                    <a href="#" class="twm-job-title">
-                                                        <h6>Senior Web Designer</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>08/06/2023</td>
-                                        <td>08/10/2023</td>
-                                        <td>100</td>
-                                        <td>3</td>
-                                        <td>
-                                            <div class="twm-jobs-category"><span
-                                                    class="twm-bg-red badge-danger">Rejected</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="twm-table-controls">
-                                                <ul class="twm-DT-controls-icon list-unstyled">
-                                                    <li>
-                                                        <button title="View profile" data-bs-toggle="tooltip"
-                                                            data-bs-placement="top">
-                                                            <span class="fa fa-eye"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Edit" data-bs-toggle="tooltip"
-                                                            data-bs-placement="top">
-                                                            <span class="far fa-edit"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Delete" data-bs-toggle="modal"
-                                                            data-bs-target="#delete_job_modal" data-bs-placement="top">
-                                                            <span class="far fa-trash-alt"></span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <!-- Table -->
+                            <div class="twm-D_table table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Tên tin đăng</th>
+                                            <th>Ngày đăng <i class="fas fa-sort"></i></th>
+                                            <th>Thời hạn nộp</th>
+                                            <th>Lượt nộp</th>
+                                            <th>Lượt xem</th>
+                                            <th>Trạng thái</th>
+                                            <th>Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sales Assistant <span class="badge badge-urgent">Tuyển gấp</span></td>
+                                            <td>21/04/2024</td>
+                                            <td>29/06/2024</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td><span class="status-waiting">Chờ duyệt</span></td>
+                                            <td class="action-icons">
+                                                <i class="feather-edit" data-toggle="modal" data-target="#editJobPostingModal" title="Edit"></i>
+                                                <i class="feather-trash" title="Delete"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sales Assistant <span class="badge badge-urgent">Tuyển gấp</span></td>
+                                            <td>21/04/2024</td>
+                                            <td>29/06/2024</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td><span class="status-waiting">Chờ duyệt</span></td>
+                                            <td class="action-icons">
+                                                <i class="feather-edit" title="Edit"></i>
+                                                <i class="feather-trash" title="Delete"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Pagination and Row Selector -->
+                            <div class="pagination-controls ">
+                                <div class="col-xl-2 col-lg-2 col-md-3">
+                                    <select class="d-inline-block wt-select-box selectpicker">
+                                        <option class="bs-title-option" value="">
+                                            Số hàng
+                                        </option>
+                                        <option>5</option>
+                                        <option>10</option>
+                                        <option>20</option>
+                                    </select>
+                                </div>
+                                <div class="pagination-outer">
+                                    <div class="pagination-style1">
+                                        <ul class="clearfix">
+                                            <li class="prev"><a href="javascript:;"><span> <i class="fa fa-angle-left"></i>
+                                                    </span></a></li>
+                                            <li><a href="javascript:;">1</a></li>
+                                            <li class="active"><a href="javascript:;">2</a></li>
+                                            <li><a href="javascript:;">3</a></li>
+                                            <li><a class="javascript:;" href="javascript:;"><i
+                                                        class="fa fa-ellipsis-h"></i></a></li>
+                                            <li><a href="javascript:;">5</a></li>
+                                            <li class="next"><a href="javascript:;"><span> <i class="fa fa-angle-right"></i>
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!--Delete Profile Popup-->
-        <div class="modal fade twm-model-popup" id="JobEditModal" data-bs-backdrop="static" data-bs-keyboard="false"
-            tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="modal-title">Do you want to delete your profile?</h4>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="site-button outline-primary">Yes</button>
                     </div>
                 </div>
             </div>
@@ -531,28 +433,7 @@
                 </div>
             </div>
         </div>
-
-        <!--Delete Job Popup-->
-        <div class="modal fade twm-model-popup" id="delete_job_modal" data-bs-backdrop="static" data-bs-keyboard="false"
-            tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="modal-title">Bạn có chắc muốn xóa công việc?</h4>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="site-button" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="site-button outline-primary">Xóa</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-
 
     <!-- JAVASCRIPT  FILES ========================================= -->
     <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
@@ -571,14 +452,12 @@
     <script src="js/dropzone.js"></script><!-- IMAGE UPLOAD  -->
     <script src="js/jquery.scrollbar.js"></script><!-- scroller -->
     <script src="js/bootstrap-datepicker.js"></script><!-- scroller -->
-    <script src="js/jquery.dataTables.min.js"></script><!-- Datatable -->
-    <script src="js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
     <script src="js/chart.js"></script><!-- Chart -->
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="js/script.js"></script>
     <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
-
 
 </body>
 

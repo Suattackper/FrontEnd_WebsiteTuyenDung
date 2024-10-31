@@ -8166,34 +8166,137 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: relative;
 }
 
-/*============= profile job list ==================*/
-.user-profile-job .job-item {
-  border: 1px solid rgba(0, 0, 0, .08);
+/*============== CARD COMMON ======================*/
+.card {
+  border: 0;
+  border-radius: 16px;
 }
 
-.profile-job-info {
+.card .card-header,
+.card .card-footer {
+  padding: 20px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card .card-header .title {
+  color: hsl(var(--white));
+  margin-block-end: 0;
+}
+
+.card .card-body {
+  padding: 20px;
+}
+
+.card .card-footer {
+  border-top: 1px solid var(--border-color);
+  border-bottom: 0;
+}
+
+.flex-center {
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
-.profile-job-info img {
-  width: 60px;
-  height: 60px;
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
+
+/*============= profile job list ==================*/
+.user-profile-card {
+  background: #fff;
+  padding: 25px 30px 30px 30px;
   border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
 }
 
-.profile-job-list {
-  margin-top: 5px;
+.user-profile-card-title {
+  color: #05264E;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 19px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
-.profile-job-list li {
-  display: inline-block;
-  margin-right: 8px;
+.user-profile-card .text-success {
+  color: #3C65F5 !important;
 }
 
-.profile-job-list li h6 a:hover {
-  color: #3C65F5;
+.user-profile-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
+
+.user-profile-card-header .user-profile-card-title {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.user-profile-card-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-profile-search .form-group {
+  position: relative;
+}
+
+.user-profile-search .form-control {
+  padding: 8px 12px 9px 35px;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.user-profile-search .form-control:focus {
+  border-color: #3C65F5;
+}
+
+.user-profile-search i {
+  position: absolute;
+  left: 12px;
+  top: 7px;
+}
+
+.user-profile-sort .nice-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+.user-profile-sort .nice-select::after {
+  width: 7px;
+  height: 7px;
+  margin-top: -6px;
+}
+
+.user-profile-sort .nice-select .list {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.user-profile-sort .nice-select:focus {
+  border-color: #3C65F5;
+}
+
+.user-profile-card-header .theme-btn {
+  padding: 8px 15px;
+}
+
 
 /*===== Education list detail ====*/
 .experience-section {
@@ -9733,6 +9836,89 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   white-space: nowrap;
+}
+
+.badge-pending {
+  background: rgba(113, 103, 255, .2);
+  color: #3C65F5;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px 12px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+}
+
+.btn-search,
+.btn-create {
+  color: #fff;
+}
+
+.btn-search {
+  background-color: #ff6600;
+  border: none;
+}
+
+.btn-create {
+  background-color: #6f42c1;
+  border: none;
+}
+
+.table th {
+  color: #6c757d;
+  font-weight: normal;
+}
+
+.badge-urgent {
+  background-color: #fde2e2;
+  color: #ff6666;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+.status-waiting {
+  color: #ff9900;
+  background-color: #fff7e6;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.action-icons i {
+  color: #6c757d;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+select.form-control {
+  width: auto;
+  display: inline-block;
+}
+
+.filter-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-inputs {
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
 }
 
 @media (max-width: 767px) {
@@ -14213,7 +14399,7 @@ strong {
 }
 
 .ls-inputicon-box .bootstrap-select .dropdown-toggle {
-  padding-left: 35px;
+  padding-left: 20px;
 }
 
 .ls-inputicon-box .remove_field {
@@ -14262,7 +14448,7 @@ strong {
 }
 
 .dropdown.bootstrap-select.wt-select-box .dropdown-toggle {
-  height: 60px;
+  height: 50px;
   border-radius: 10px;
   font-size: 14px;
 }
