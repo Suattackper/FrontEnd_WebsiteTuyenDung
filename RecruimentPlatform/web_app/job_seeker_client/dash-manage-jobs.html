@@ -335,166 +335,73 @@
                     <div class="panel-heading wt-panel-heading p-a20">
                         <h4 class="panel-tittle m-a0"><i class="fa fa-suitcase"></i> Danh sách tin đăng</h4>
                     </div>
-                    <div class="panel-body wt-panel-body p-a20 m-b30 ">
-                        <div class="twm-D_table p-a20 table-responsive">
-                            <table id="jobs_bookmark_table" class="table table-bordered twm-bookmark-list-wrap">
-                                <thead>
-                                    <tr>
-                                        <th>Tên công việc</th>
-                                        <th>Ngày đăng</th>
-                                        <th>Thời hạn nộp</th>
-                                        <th>Lượt xem</th>
-                                        <th>Lượt nộp</th>
-                                        <th>Trạng thái</th>
-                                        <th>Hành động</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!--1-->
-                                    <tr>
-                                        <td>
-                                            <div class="twm-bookmark-list">
-                                                <div class="twm-mid-content">
-                                                    <a href="#" class="twm-job-title">
-                                                        <h6>Senior Web Designer</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>08/06/2023</td>
-                                        <td>08/10/2023</td>
-                                        <td>100</td>
-                                        <td>3</td>
-                                        <td>
-                                            <div class="twm-jobs-category"><span
-                                                    class="twm-bg-green status-title">Approved</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="twm-table-controls">
-                                                <ul class="twm-DT-controls-icon list-unstyled">
-                                                    <li>
-                                                        <button title="View profile" data-bs-toggle="tooltip" data-
-                                                            data-bs-placement="top">
-                                                            <span class="fa fa-eye"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Edit" data-bs-toggle="modal"
-                                                            data-bs-target="#JobEditModal" data-bs-placement="top">
-                                                            <span class="far fa-edit"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Delete" data-bs-toggle="modal"
-                                                            data-bs-target="#delete_job_modal" data-bs-placement="top">
-                                                            <span class="far fa-trash-alt"></span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
+                    <div class="panel-body wt-panel-body m-b30 ">
+                        <div class="twm-D_table table-responsive">
+                            <div class="widget-content">
+                                <div class="table-outer">
+                                    <table class="default-table manage-job-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>Applications</th>
+                                                <th>Created & Expired</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
 
-                                    <!-- 2 -->
-                                    <tr>
-                                        <td>
-                                            <div class="twm-bookmark-list">
-                                                <div class="twm-mid-content">
-                                                    <a href="#" class="twm-job-title">
-                                                        <h6>Senior Web Designer</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>08/06/2023</td>
-                                        <td>08/10/2023</td>
-                                        <td>100</td>
-                                        <td>3</td>
-                                        <td>
-                                            <div class="twm-jobs-category"><span
-                                                    class="twm-bg-green status-title">Approved</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="twm-table-controls">
-                                                <ul class="twm-DT-controls-icon list-unstyled">
-                                                    <li>
-                                                        <button title="View profile" data-bs-toggle="tooltip"
-                                                            data-bs-placement="top">
-                                                            <span class="fa fa-eye"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Edit" data-bs-toggle="tooltip"
-                                                            data-bs-placement="top">
-                                                            <span class="far fa-edit"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Delete" data-bs-toggle="modal"
-                                                            data-bs-target="#delete_job_modal" data-bs-placement="top">
-                                                            <span class="far fa-trash-alt"></span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <!-- 3 -->
-                                    <tr>
-                                        <td>
-                                            <div class="twm-bookmark-list">
-                                                <div class="twm-mid-content">
-                                                    <a href="#" class="twm-job-title">
-                                                        <h6>Senior Web Designer</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>08/06/2023</td>
-                                        <td>08/10/2023</td>
-                                        <td>100</td>
-                                        <td>3</td>
-                                        <td>
-                                            <div class="twm-jobs-category"><span
-                                                    class="twm-bg-red badge-danger">Rejected</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="twm-table-controls">
-                                                <ul class="twm-DT-controls-icon list-unstyled">
-                                                    <li>
-                                                        <button title="View profile" data-bs-toggle="tooltip"
-                                                            data-bs-placement="top">
-                                                            <span class="fa fa-eye"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Edit" data-bs-toggle="tooltip"
-                                                            data-bs-placement="top">
-                                                            <span class="far fa-edit"></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button title="Delete" data-bs-toggle="modal"
-                                                            data-bs-target="#delete_job_modal" data-bs-placement="top">
-                                                            <span class="far fa-trash-alt"></span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="twm-mid-content">
+                                                        <a href="#" class="twm-job-title">
+                                                            <h6>Senior Web Designer</h6>
+                                                            <p class="info">
+                                                                <i class="feather-map m-r5"></i> 1363-1385 Sunset Blvd
+                                                                Los Angeles, CA 90026, USA
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="applied"><a href="#">3+ Applied</a></td>
+                                                <td>October 27, 2017 <br>April 25, 2011</td>
+                                                <td class="status">Active</td>
+                                                <td>
+                                                    <div class="twm-table-controls">
+                                                        <ul class="twm-DT-controls-icon list-unstyled">
+                                                            <li>
+                                                                <button title="View profile" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top">
+                                                                    <span class="fa fa-eye"></span>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button title="Edit" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top">
+                                                                    <span class="far fa-edit"></span>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button title="Delete" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top">
+                                                                    <span class="far fa-trash-alt"></span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
-        <!--Delete Profile Popup-->
+        <!-- Delete Profile Popup -->
         <div class="modal fade twm-model-popup" id="JobEditModal" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -513,7 +420,7 @@
             </div>
         </div>
 
-        <!--Logout Profile Popup-->
+        <!-- Logout Popup-->
         <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -532,7 +439,7 @@
             </div>
         </div>
 
-        <!--Delete Job Popup-->
+        <!-- Delete Job Popup -->
         <div class="modal fade twm-model-popup" id="delete_job_modal" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -550,7 +457,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -571,15 +477,11 @@
     <script src="js/dropzone.js"></script><!-- IMAGE UPLOAD  -->
     <script src="js/jquery.scrollbar.js"></script><!-- scroller -->
     <script src="js/bootstrap-datepicker.js"></script><!-- scroller -->
-    <script src="js/jquery.dataTables.min.js"></script><!-- Datatable -->
-    <script src="js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
     <script src="js/chart.js"></script><!-- Chart -->
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
     <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
-
-
 </body>
 
 </html>

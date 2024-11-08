@@ -8166,6 +8166,134 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: relative;
 }
 
+.table-outer {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.default-table {
+  position: relative;
+  background: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 550px;
+}
+
+.default-table thead {
+  background: #F5F7FC;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.default-table thead th {
+  position: relative;
+  padding: 14px;
+  font-size: 14px;
+  color: #1967D2;
+  font-weight: 400;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.default-table tbody tr {
+  position: relative;
+  border-bottom: 1px solid #ECEDF2;
+}
+
+.default-table tr td {
+  position: relative;
+  padding: 10px;
+  font-size: 12px;
+  color: #696969;
+  font-weight: 400;
+}
+
+.manage-job-table {
+  position: relative;
+}
+
+.manage-job-table tbody td {
+  font-size: 13px;
+  line-height: 20px;
+  color: #696969;
+}
+
+.manage-job-table h6 {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #202124;
+  margin-bottom: 10px;
+}
+
+.manage-job-table .info {
+  font-size: 13px;
+  line-height: 19px;
+  color: #696969;
+  word-wrap: break-word;
+}
+
+.manage-job-table .package,
+.manage-job-table .colored,
+.manage-job-table .applied {
+  font-size: 13px;
+  line-height: 15x;
+  color: #1967D2;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.manage-job-table a {
+  color: inherit;
+}
+
+.manage-job-table .status {
+  color: #34A853;
+}
+
+.icon {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  background-color: #e7f3ff;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.verification-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.verification-container img {
+  width: 80px;
+  height: 80px;
+}
+
+.text-secondary {
+  color: #343638 !important;
+}
+
+.resend-link {
+  color: #dc3545;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resend-link:hover {
+  text-decoration: underline;
+}
+
 /*============== CARD COMMON ======================*/
 .card {
   border: 0;
