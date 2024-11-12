@@ -299,7 +299,7 @@ h4 {
 
 h5 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h6 {
@@ -1210,6 +1210,10 @@ ol li {
 
 .m-l30 {
   margin-left: 30px;
+}
+
+.m-l35 {
+  margin-left: 35px;
 }
 
 .m-l40 {
@@ -6088,6 +6092,7 @@ button.scroltop span {
 /*Pagination Style*/
 .pagination-outer {
   padding-top: 30px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -7374,6 +7379,125 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: relative;
 }
 
+/* === JOB LIST ===*/
+
+.job-area {
+  position: relative;
+}
+
+.job-item {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  transition: all .5s ease-in-out;
+  box-shadow: 0px 0px 25px rgba(56, 152, 226, 0.3);
+}
+
+.job-item:hover {
+  transform: translateY(-7px);
+}
+
+.job-bookmark {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  background: rgba(60, 101, 245, .1);
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  text-align: center;
+  color: #3C65F5;
+  border-radius: 50px;
+}
+
+.job-bookmark:hover {
+  background: #3C65F5;
+  color: #fff;
+}
+
+.job-top {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.job-title a:hover {
+  color: #3C65F5;
+}
+
+.job-employer {
+  margin-top: 5px;
+  color: #3C65F5;
+  font-weight: 500;
+}
+
+.job-employer:hover {
+  color: #3C65F5;
+}
+
+.job-img {
+  width: 60px;
+}
+
+.job-img img {
+  border-radius: 15px;
+}
+
+.job-info-list li {
+  display: inline-block;
+  margin: 0 10px 8px 0;
+}
+
+.job-tag {
+  margin-top: 5px;
+}
+
+.job-tag .job-tag-new {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  background: rgba(9, 173, 149, .2);
+  color: #09AD95;
+}
+
+.job-tag .job-tag-urgent {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  background: #fff7d3;
+  color: #ffb642;
+}
+
+.job-skill a:hover {
+  background: #3C65F5;
+  color: #fff;
+}
+
+.job-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, .04);
+}
+
+.job-salary-amount {
+  color: #3C65F5;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.job-salary-type {
+  font-size: 15px;
+}
+
+.job-bottom .theme-btn {
+  padding: 7px 15px;
+}
+
 /*=== SEARCH FORM ===*/
 .search-form {
   position: relative;
@@ -7382,7 +7506,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .search-form-wrapper {
   background: #fff;
   border-radius: 15px;
-  padding: 10px 20px 8px 15px;
+  padding: 10px;
   box-shadow: 0px 10px 20px rgb(10 42 105 / 7%);
 }
 
@@ -7402,12 +7526,12 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 .search-form .form-group-icon i {
   position: absolute;
-  left: 10px;
-  top: 17px;
+  left: 9px;
+  top: 19px;
 }
 
 .search-form .form-control {
-  padding: 12px 10px 12px 35px;
+  padding: 12px 10px 5px 25px;
   border-radius: 0px;
   border: none;
   box-shadow: none;
@@ -7495,14 +7619,14 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .theme-btn {
-  font-size: 16px;
+  font-size: 15px;
   color: #ffffff;
   padding: 10px 20px;
   transition: all 0.5s;
   text-transform: capitalize;
   position: relative;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   text-align: center;
   overflow: hidden;
@@ -7533,6 +7657,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .theme-btn:hover::before {
   transform: translateY(-50%) translateX(-50%) scale(1);
 }
+
 /*==================*/
 
 .table-outer {
@@ -9750,8 +9875,9 @@ select.form-control {
 }
 
 .follow-us {
-  background-color: #1967d2;;
-  color:  #fff;
+  background-color: #1967d2;
+  ;
+  color: #fff;
   display: inline-block;
   white-space: nowrap;
   line-height: 20px;
@@ -11114,8 +11240,8 @@ select.form-control {
 }
 
 .product-filter-wrap .twm-filter-select .woocommerce-result-count {
-  margin-right: 15px;
-  font-size: 16px;
+  margin-right: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -17667,7 +17793,7 @@ strong {
 }
 
 .wt-select-bar-2 {
-  width: 160px !important;
+  width: 175px !important;
   margin-right: 20px;
 }
 
