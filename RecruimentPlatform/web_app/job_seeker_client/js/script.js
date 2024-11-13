@@ -44,7 +44,7 @@ tinymce.init({
 });
 
 // ========================== Export Js Start ==============================
-document.getElementById("exportOptions").addEventListener("change", function () {
+document.getElementById("exportOptions").addEventListener('change', function () {
   const format = this.value;
   const table = document.getElementById("studentTable");
   let data = [];

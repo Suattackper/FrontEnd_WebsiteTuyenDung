@@ -303,8 +303,8 @@ h5 {
 }
 
 h6 {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 /*---Text align--- */
@@ -7834,23 +7834,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 
 /*============= profile job list ==================*/
-.user-profile-card {
-  background: #fff;
-  padding: 25px 30px 30px 30px;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
-}
 
-.user-profile-card-title {
-  color: #05264E;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  font-size: 19px;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-.user-profile-card .text-success {
+.text-success {
   color: #3C65F5 !important;
 }
 
@@ -7861,12 +7846,6 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   padding-bottom: 15px;
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-.user-profile-card-header .user-profile-card-title {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .user-profile-card-header-right {
@@ -7895,28 +7874,38 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   top: 7px;
 }
 
-.user-profile-sort .nice-select {
-  border-radius: 8px;
-  border: 1px solid #ced4da;
-}
-
-.user-profile-sort .nice-select::after {
-  width: 7px;
-  height: 7px;
-  margin-top: -6px;
-}
-
 .user-profile-sort .nice-select .list {
   width: 100%;
   border-radius: 8px;
 }
 
-.user-profile-sort .nice-select:focus {
-  border-color: #3C65F5;
-}
-
 .user-profile-card-header .theme-btn {
   padding: 8px 15px;
+}
+
+.profile-job-info {
+    display: flex;
+    gap: 15px;
+}
+
+.profile-job-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.profile-job-list {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.profile-job-list li {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.profile-applied-job th {
+  font-weight: 600;
 }
 
 
@@ -9487,8 +9476,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .table th {
-  color: #6c757d;
-  font-weight: normal;
+  color: #333;
+  font-weight: 600;
 }
 
 .badge-urgent {
@@ -13646,10 +13635,10 @@ strong {
 }
 
 .wt-admin-right-page-header h2 {
-  font-size: 28px;
+  font-size: 26px;
   color: #17171d;
-  font-weight: 400;
-  margin-bottom: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .wt-admin-right-page-header .breadcrumbs {
@@ -13657,7 +13646,7 @@ strong {
 }
 
 .wt-admin-right-page-header .breadcrumbs a {
-  margin-right: 24px;
+  margin-right: 18px;
   position: relative;
   font-weight: 400;
 }
@@ -17408,7 +17397,7 @@ strong {
 }
 
 .twm-right-section-panel {
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
 }
 
