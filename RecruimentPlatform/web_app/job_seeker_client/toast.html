@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOAST NOTIFICATION</title>
+
+    <link rel="stylesheet" type="text/css" href="css/feather.css"><!-- FEATHER ICON SHEET -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #f4f4f5;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            color: #f4f4f5;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+
+        .btn-success {
+            background: #71be34;
+        }
+
+        .btn-error {
+            background: #ff623d;
+        }
+
+        .btn-warning {
+            background: #ffb702;
+        }
+
+        .btn-info {
+            background: #2f86eb;
+        }
+
+        #toast {
+            position: fixed;
+            right: 32px;
+            top: 32px;
+            z-index: 99999;
+        }
+
+        .toast {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px 0;
+            max-width: 450px;
+            min-width: 400px;
+            border-left: 4px solid;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.25. 1.35);
+        }
+
+        .progress-track {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background: #ddd;
+        }
+
+        .progress-track-running {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            transition: all 0.5s;
+        }
+
+        .progress-track-running.success {
+            background: #71be34;
+        }
+
+        .progress-track-running.info {
+            background: #2f86eb;
+        }
+
+        .progress-track-running.warning {
+            background: #ffb702;
+        }
+
+        .progress-track-running.error {
+            background: #ff623d;
+        }
+
+        .toast+.toast {
+            margin-top: 24px;
+        }
+
+        .toast-success {
+            border-color: #47d864;
+        }
+
+        .toast-success .toast-icon {
+            color: #47d864;
+        }
+
+        .toast-warning {
+            border-color: #ffc021;
+        }
+
+        .toast-warning .toast-icon {
+            color: #ffc021;
+        }
+
+        .toast-error {
+            border-color: #ff623d;
+        }
+
+        .toast-error .toast-icon {
+            color: #ff623d;
+        }
+
+        .toast-info {
+            border-color: #2f86eb;
+        }
+
+        .toast-info .toast-icon {
+            color: #2f86eb;
+        }
+
+        .toast-icon {
+            font-size: 24px;
+        }
+
+        .toast-close,
+        .toast-icon {
+            padding: 0 16px;
+        }
+
+        .toast-body {
+            flex-grow: 1;
+        }
+
+        .toast-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .toast-msg {
+            font-size: 13px;
+            color: #888;
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+
+        .toast-close {
+            font-size: 17px;
+            color: rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .toast-close:hover {
+            opacity: 0.8;
+        }
+
+        /*=== ANIMATION ===*/
+        @keyframes progress {
+            to {
+                width: 0%;
+            }
+        }
+
+        /*=== SLIDE TOAST ANIMATION ===*/
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(calc(100% + 32px));
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /*=== FADE OUT TOAST ANIMATION ===*/
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                transform: translate(calc(100% + 32px));
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="buttons">
+        <button class="btn btn-success" onclick="showSuccessToast()">Success</button>
+        <button class="btn btn-error" onclick="showErrorToast()">Error</button>
+        <button class="btn btn-warning" onclick="showWarningToast()">Warning</button>
+        <button class="btn btn-info" onclick="showInfoToast()">Information</button>
+    </div>
+
+    <div id="toast"></div>
+
+    <script>
+        // toast main function
+
+        function toast({ title = "", message = "", type = "", duration = 3000 }) {
+            // Font awesome icons
+            const icons = {
+                success: "feather-check-circle",
+                info: "feather-info",
+                warning: "feather-alert-triangle",
+                error: "feather-x-circle"
+            };
+
+            // select icon for specified toast type
+            const icon = icons[type];
+
+            // Milisecond to second convert
+            const delay = durationInSecond = (duration / 1000).toFixed(2);
+
+            // Get toast div element
+            const main = document.getElementById("toast");
+
+            const toast = document.createElement("div");
+
+            toast.classList.add('toast', `toast-${type}`);
+            toast.style.animation = `slideInLeft ease 0.3s, fadeOut ease .5s ${delay}s forwards`;
+
+            toast.innerHTML = `
+    <div class="toast-icon">
+            <i class="${icon}"></i>    
+    </div>
+    
+    <div class="toast-body">
+            <h3 class="toast-title">${title}</h3>
+            <p class="toast-msg">${message}</p>
+    </div>
+    
+    <div class="toast-close">
+            <i class="feather-x"></i>
+    </div>
+    
+    <div class="progress-track"></div>
+    <div class="progress-track-running ${type}"></div>
+    `
+
+            const progressRunning = toast.querySelector(".progress-track-running");
+            progressRunning.style.animation = `progress linear ${durationInSecond}s forwards`;
+
+            main.appendChild(toast);
+
+            const autoRemoveToast = setTimeout(function () {
+                main.removeChild(toast);
+            }, duration);
+
+            const closeIcon = toast.querySelector('.toast-close');
+
+            closeIcon.addEventListener('click', () => {
+                main.removeChild(toast);
+                clearTimeout(autoRemoveToast);
+            });
+        }
+
+        function showSuccessToast() {
+            toast({
+                title: "Success!",
+                message: "Congratulation! Successfully submitted",
+                type: "success",
+                duration: 3000
+            });
+        }
+
+        function showInfoToast() {
+            toast({
+                title: "Information",
+                message: "Please verify your email",
+                type: "info",
+                duration: 3000
+            });
+        }
+
+        function showWarningToast() {
+            toast({
+                title: "Warning!",
+                message: "Email already existed in the database",
+                type: "warning",
+                duration: 3000
+            });
+        }
+
+        function showErrorToast() {
+            toast({
+                title: "Error!",
+                message: "Please fix the error",
+                type: "error",
+                duration: 3000
+            });
+        }
+    </script>
+
+</body>
+
+</html>
