@@ -242,7 +242,7 @@
                 </div>
             </div>
         </header>
-        <!-- Sidebar Holder -->
+
         <nav id="sidebar-admin-wraper">
             <div class="page-logo">
                 <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
@@ -293,6 +293,92 @@
             </div>
         </nav>
 
+        <div id="content">
+            <div class="content-admin-main">
+                <div class="wt-admin-right-page-header clearfix">
+                    <h2>Danh sách công việc ứng tuyển</h2>
+                    <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a
+                            href="dashboard.html">Dasboard</a><span>Việc đã lưu</span></div>
+                </div>
+
+                <!--Basic Information-->
+                <div class="panel panel-default">
+                    <div class="panel-heading wt-panel-heading p-a20">
+                        <h4 class="panel-tittle m-a0"><i class="feather-save"></i> Việc làm đã lưu
+                        </h4>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 m-b30">
+                        <div class="twm-right-section-panel candidate-save-job site-bg-gray">
+                            
+                            <div class="table-responsive profile-applied-job">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>Thông tin</th>
+                                            <th>Ngày ứng tuyển</th>
+                                            <th>Tải CV</th>
+                                            <th>Trạng thái</th>
+                                            <th>Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="profile-job-info">
+                                                    <img src="images/jobs-company/04.jpg" alt="">
+                                                    <div class="profile-job-content">
+                                                        <h6><a href="#">Senior Product Designer</a></h6>
+                                                        <ul class="profile-job-list">
+                                                            <li><i class="feather-clock"></i> Hạn chót <span
+                                                                    class="deadine">20/11/2024</span></li>
+                                                            <li><i class="feather-check-circle"></i> Full Time</li>
+                                                            <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Aug 05, 2024</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-secondary btn-sm"><i
+                                                        class="feather-download"></i> Download CV</a>
+                                            </td>
+                                            <td><span class="status">Active</span></td>
+                                            <td>
+                                                <a href="job-detail.html" class="btn btn-outline-secondary btn-sm"><i
+                                                        class="feather-eye"></i></a>
+                                                <a href="#" class="btn btn-outline-danger btn-sm"><i
+                                                        class="feather-trash"></i></a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                            <div class="pagination-outer">
+                                <div class="pagination-style1">
+                                    <ul class="clearfix">
+                                        <li class="prev"><a href="javascript:;"><span> <i class="fa fa-angle-left"></i>
+                                                </span></a></li>
+                                        <li><a href="javascript:;">1</a></li>
+                                        <li class="active"><a href="javascript:;">2</a></li>
+                                        <li><a href="javascript:;">3</a></li>
+                                        <li><a class="javascript:;" href="javascript:;"><i
+                                                    class="fa fa-ellipsis-h"></i></a></li>
+                                        <li><a href="javascript:;">5</a></li>
+                                        <li class="next"><a href="javascript:;"><span> <i class="fa fa-angle-right"></i>
+                                                </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--Logout Profile Popup-->
         <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
@@ -312,47 +398,7 @@
             </div>
         </div>
 
-        <!--saved-jobs-view-->
-        <div class="modal fade twm-saved-jobs-view" id="saved-jobs-view" aria-hidden="true"
-            aria-labelledby="sign_up_popupLabel-3" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <form>
-
-                        <div class="modal-header">
-                            <h2 class="modal-title" id="sign_up_popupLabel-3">Company Name</h2>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <ul class="list-unstyled">
-                                <li><strong>Job Title :</strong>
-                                    <p> Web Developer – PHP, HTML, CSS </p>
-                                </li>
-                                <li><strong>Experience :</strong>
-                                    <p>5 Year 3 Months</p>
-                                </li>
-                                <li><strong>Deseription :</strong>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has
-                                        been the industry's standard dummy text ever since.</p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="modal-footer">
-
-                            <button type="button" class="site-button" data-bs-dismiss="modal">Close</button>
-
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
     </div>
-
 
     <!-- JAVASCRIPT  FILES ========================================= -->
     <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
@@ -373,12 +419,10 @@
     <script src="js/bootstrap-datepicker.js"></script><!-- scroller -->
     <script src="js/jquery.dataTables.min.js"></script><!-- Datatable -->
     <script src="js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
-    <script src="js/chart.js"></script><!-- Chart -->
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
     <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
-
 
 </body>
 

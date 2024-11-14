@@ -7379,6 +7379,75 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: relative;
 }
 
+/*=== TAG STATUS ===*/
+.job-tag-new {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(9, 173, 149, .2);
+  color: #09AD95;
+}
+
+.job-tag-urgent {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fff7d3;
+  color: #ffb642;
+}
+
+.job-tag-danger {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  color: #F96768;
+  font-weight: 500;
+  background: rgba(249, 103, 104, .2);
+}
+
+.job-tag-pending {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(113, 103, 255, .2);
+  color: #3C65F5;
+}
+
+/*=== PAGINATION ===*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pagination .page-link {
+  border: none;
+  background: #1967d2;;
+  color: #fff;
+  margin: 0 10px;
+  border-radius: 10px !important;
+  width: 40px;
+  height: 40px;
+  line-height: 28px;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+
+.pagination .page-link:hover,
+.pagination .page-item.active .page-link {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.pagination-showing{
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* === JOB LIST ===*/
 
 .job-area {
@@ -7745,7 +7814,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .manage-job-table .status {
-  color: #34A853;
+  color: #09AD95;
 }
 
 .icon {
@@ -7834,9 +7903,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 
 /*============= profile job list ==================*/
-
-.text-success {
-  color: #3C65F5 !important;
+.user-profile-card {
+  background: #fff;
+  padding: 25px 30px 30px 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
 }
 
 .user-profile-card-header {
@@ -7851,11 +7922,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .user-profile-card-header-right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 20px;
-}
-
-.user-profile-search .form-group {
-  position: relative;
 }
 
 .user-profile-search .form-control {
@@ -7864,48 +7932,14 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   border-radius: 8px;
 }
 
-.user-profile-search .form-control:focus {
-  border-color: #3C65F5;
+.user-profile-search .form-group {
+  position: relative;
 }
 
 .user-profile-search i {
   position: absolute;
   left: 12px;
-  top: 7px;
-}
-
-.user-profile-sort .nice-select .list {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.user-profile-card-header .theme-btn {
-  padding: 8px 15px;
-}
-
-.profile-job-info {
-    display: flex;
-    gap: 15px;
-}
-
-.profile-job-info img {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-}
-
-.profile-job-list {
-  margin-top: 5px;
-  font-size: 13px;
-}
-
-.profile-job-list li {
-  display: inline-block;
-  margin-right: 3px;
-}
-
-.profile-applied-job th {
-  font-weight: 600;
+  top: 16px;
 }
 
 
@@ -8095,6 +8129,17 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
   .step-progress {
     flex-direction: column;
+  }
+
+  .user-profile-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .user-profile-card-header-right {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 
   .line {
@@ -17666,6 +17711,7 @@ strong {
 .twm-saved-jobs-view .modal-header .modal-title {
   font-size: 24px;
   margin-bottom: 0px;
+  font-weight: 600;
 }
 
 .twm-saved-jobs-view .modal-header .btn-close {

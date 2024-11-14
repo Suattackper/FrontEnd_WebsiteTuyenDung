@@ -1146,7 +1146,6 @@ All JavaScript fuctions Start
 		}
 	}
 	
-	initializeDropzone();
 	
 	//DropZone File Uploading Function End =========================//	
 
@@ -1361,7 +1360,7 @@ All JavaScript fuctions Start
 		//  Radius Range Slider function by = bootstrap-slider.min.js ========================== //
 	     radius_range(),
 		//DropZone File Uploading Function Start=========================//
-	    Dropzone_infut_file();
+		initializeDropzone();
 			
 	}); 	
 

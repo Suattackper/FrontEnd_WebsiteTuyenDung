@@ -44,32 +44,32 @@ tinymce.init({
 });
 
 // ========================== Export Js Start ==============================
-document.getElementById("exportOptions").addEventListener('change', function () {
-  const format = this.value;
-  const table = document.getElementById("studentTable");
-  let data = [];
-  const headers = [];
+// document.getElementById("exportOptions").addEventListener('change', function () {
+//   const format = this.value;
+//   const table = document.getElementById("studentTable");
+//   let data = [];
+//   const headers = [];
 
-  // Get the table headers
-  table.querySelectorAll("thead th").forEach((th) => {
-    headers.push(th.innerText.trim());
-  });
+//   // Get the table headers
+//   table.querySelectorAll("thead th").forEach((th) => {
+//     headers.push(th.innerText.trim());
+//   });
 
-  // Get the table rows
-  table.querySelectorAll("tbody tr").forEach((tr) => {
-    const row = {};
-    tr.querySelectorAll("td").forEach((td, index) => {
-      row[headers[index]] = td.innerText.trim();
-    });
-    data.push(row);
-  });
+//   // Get the table rows
+//   table.querySelectorAll("tbody tr").forEach((tr) => {
+//     const row = {};
+//     tr.querySelectorAll("td").forEach((td, index) => {
+//       row[headers[index]] = td.innerText.trim();
+//     });
+//     data.push(row);
+//   });
 
-  if (format === "csv") {
-    downloadCSV(data);
-  } else if (format === "json") {
-    downloadJSON(data);
-  }
-});
+//   if (format === "csv") {
+//     downloadCSV(data);
+//   } else if (format === "json") {
+//     downloadJSON(data);
+//   }
+// });
 
 function downloadCSV(data) {
   const csv = data.map((row) => Object.values(row).join(",")).join("\n");

@@ -350,6 +350,11 @@ th {
     text-align: -webkit-match-parent
 }
 
+td {
+    white-space: nowrap; /* Tránh cắt nội dung trong các ô */
+    vertical-align: middle;
+}
+
 tbody,
 td,
 tfoot,
@@ -2038,7 +2043,8 @@ progress {
     margin-bottom: 1rem;
     color: #212529;
     vertical-align: top;
-    border-color: #dee2e6
+    border-color: #dee2e6;
+    table-layout: auto;
 }
 
 .table>:not(caption)>*>* {
@@ -6384,6 +6390,7 @@ fieldset:disabled .btn {
 .modal-title {
     margin-bottom: 0;
     line-height: 1.5
+    
 }
 
 .modal-body {

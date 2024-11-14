@@ -37,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
     <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
 
-    <!-- THEME COLOR CHANGE STYLE SHEET -->
-    <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
-    <!-- SIDE SWITCHER STYLE SHEET -->
+    <script src="https://cdn.tiny.cloud/1/8ivs35ru2mam8hq598jmbtjfyjip1nk2c6oooirp315lcz5n/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
     <link rel="stylesheet" type="text/css" href="css/switcher.css">
 
 </head>
@@ -324,96 +324,170 @@
         <div id="content">
             <div class="content-admin-main">
                 <div class="wt-admin-right-page-header clearfix">
-                    <h2>Manage Jobs</h2>
+                    <h2>Quản lý tin đăng tuyển</h2>
                     <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a
                             href="dashboard.html">Dasboard</a><span>Danh sách tin đăng</span></div>
                 </div>
 
                 <!--Basic Information-->
                 <div class="panel panel-default">
-                    <div class="panel-heading wt-panel-heading p-a20">
+                    <div class="panel-heading-with-btn  wt-panel-heading p-a20">
                         <h4 class="panel-tittle m-a0"><i class="fa fa-suitcase"></i> Danh sách tin đăng</h4>
+                        <a data-bs-toggle="modal" href="#JobPostingModal" role="button" title="Add"
+                            class="site-text-primary">
+                            <span class="fa-2x feather-plus-circle"></span>
+                        </a>
                     </div>
                     <div class="panel-body wt-panel-body m-b30 ">
-                        <div class="twm-D_table table-responsive">
-                            <div class="widget-content">
-                                <div class="table-outer">
-                                    <table class="default-table manage-job-table">
+                        <div class="col-lg-12">
+                            <div class="user-profile-card">
+                                <div class="user-profile-card-header-right">
+                                    <div class="user-profile-search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search...">
+                                            <i class="feather-search"></i>
+                                        </div>
+                                    </div>
+                                    <div class="user-profile-sort">
+                                        <form action="#">
+                                            <div class="form-group">
+                                                <select class="wt-select-bar-2 selectpicker" data-live-search="true"
+                                                    data-bv-field="size">
+                                                    <option disabled selected value="">Trạng thái duyệt</option>
+                                                    <option>Đã duyệt</option>
+                                                    <option>Chờ duyệt</option>
+                                                    <option>Từ chối</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="user-profile-sort m-b30">
+                                        <button type="submit" class="theme-btn w-100">Tìm kiếm</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive profile-applied-job">
+                                    <table class="table text-nowrap">
                                         <thead>
                                             <tr>
-                                                <th>Title</th>
-                                                <th>Applications</th>
-                                                <th>Created & Expired</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                <th>Tên tin đăng</th>
+                                                <th>Ngày đăng</th>
+                                                <th>Thời hạn nộp</th>
+                                                <th>Lượt nộp</th>
+                                                <th>Lượt xem</th>
+                                                <th>Trạng thái</th>
+                                                <th>Hành động</th>
                                             </tr>
                                         </thead>
-
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <div class="twm-mid-content">
-                                                        <a href="#" class="twm-job-title">
-                                                            <h6>Senior Web Designer</h6>
-                                                            <p class="info">
-                                                                <i class="feather-map m-r5"></i> 1363-1385 Sunset Blvd
-                                                                Los Angeles, CA 90026, USA
-                                                            </p>
-                                                        </a>
+                                                    <div class="profile-job-info">
+                                                        <div class="profile-job-content">
+                                                            <h6><a href="#">Senior - Lập trình viên android</a></h6>
+                                                            <ul class="profile-job-list">
+                                                                <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                                <li><a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </td>
-                                                <td class="applied"><a href="#">3+ Applied</a></td>
-                                                <td>October 27, 2017 <br>April 25, 2011</td>
-                                                <td class="status">Active</td>
+                                                <td>12/11/2024</td>
+                                                <td>25/12/2024</td>
+                                                <td>10</td>
+                                                <td>35</td>
+                                                <td><span class="job-tag-danger">Từ chối</span></td>
                                                 <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Edit" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-edit"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
+
+                                                    <a data-bs-toggle="modal" href="#JobPostingEditModal"
+                                                        class="btn btn-outline-secondary btn-sm"><i
+                                                            class="feather-edit"></i></a>
+                                                    <a data-bs-toggle="modal" href="#DeleteJobModal"
+                                                        class="btn btn-outline-danger btn-sm"><i
+                                                            class="feather-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="profile-job-info">
+                                                        <div class="profile-job-content">
+                                                            <h6><a href="#">Senior - Lập trình viên android</a></h6>
+                                                            <ul class="profile-job-list">
+                                                                <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                                <li><a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
+                                                </td>
+                                                <td>12/11/2024</td>
+                                                <td>25/12/2024</td>
+                                                <td>10</td>
+                                                <td>35</td>
+                                                <td><span class="job-tag-pending">Chờ duyệt</span></td>
+                                                <td>
+
+                                                    <a data-bs-toggle="modal" href="#JobPostingEditModal"
+                                                        class="btn btn-outline-secondary btn-sm"><i
+                                                            class="feather-edit"></i></a>
+                                                    <a data-bs-toggle="modal" href="#DeleteJobModal"
+                                                        class="btn btn-outline-danger btn-sm"><i
+                                                            class="feather-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="profile-job-info">
+                                                        <div class="profile-job-content">
+                                                            <h6><a href="#">Senior - Lập trình viên android</a></h6>
+                                                            <ul class="profile-job-list">
+                                                                <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                                <li><a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>12/11/2024</td>
+                                                <td>25/12/2024</td>
+                                                <td>10</td>
+                                                <td>35</td>
+                                                <td><span class="job-tag-new">Đã duyệt</span></td>
+                                                <td>
+
+                                                    <a data-bs-toggle="modal" href="#JobPostingEditModal"
+                                                        class="btn btn-outline-secondary btn-sm"><i
+                                                            class="feather-edit"></i></a>
+                                                    <a data-bs-toggle="modal" href="#DeleteJobModal"
+                                                        class="btn btn-outline-danger btn-sm"><i
+                                                            class="feather-trash"></i></a>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+
+                                <!-- pagination -->
+                                <div class="pagination-outer">
+                                    <div class="pagination-style1">
+                                        <ul class="clearfix">
+                                            <li class="prev"><a href="javascript:;"><span> <i
+                                                            class="fa fa-angle-left"></i>
+                                                    </span></a></li>
+                                            <li><a href="javascript:;">1</a></li>
+                                            <li class="active"><a href="javascript:;">2</a></li>
+                                            <li><a href="javascript:;">3</a></li>
+                                            <li><a class="javascript:;" href="javascript:;"><i
+                                                        class="fa fa-ellipsis-h"></i></a></li>
+                                            <li><a href="javascript:;">5</a></li>
+                                            <li class="next"><a href="javascript:;"><span> <i
+                                                            class="fa fa-angle-right"></i>
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Delete Profile Popup -->
-        <div class="modal fade twm-model-popup" id="JobEditModal" data-bs-backdrop="static" data-bs-keyboard="false"
-            tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="modal-title">Do you want to delete your profile?</h4>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="site-button outline-primary">Yes</button>
                     </div>
                 </div>
             </div>
@@ -439,7 +513,7 @@
         </div>
 
         <!-- Delete Job Popup -->
-        <div class="modal fade twm-model-popup" id="delete_job_modal" data-bs-backdrop="static" data-bs-keyboard="false"
+        <div class="modal fade twm-model-popup" id="DeleteJobModal" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -452,6 +526,660 @@
                     <div class="modal-footer">
                         <button type="button" class="site-button" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" class="site-button outline-primary">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Job Posting Popup -->
+        <div class="panel panel-default mb-3">
+            <div class="modal fade twm-saved-jobs-view" id="JobPostingModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h3 class="modal-title">Thông tin tuyển dụng</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobTitle" class="form-label">Tên công việc <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="job_title" type="text" id="jobTitle"
+                                                    placeholder="Devid Smith">
+                                                <i class="fs-input-icon fa fa-address-card"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group city-outer-bx has-feedback">
+                                            <label for="jobCategory" class="form-label">Ngành nghề <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" id="jobCategory" name="job_category" data-bv-field="size">
+                                                    <option disabled selected value="">Chọn ngành nghề</option>
+                                                    <option>Bán hàng kỹ thuật</option>
+                                                    <option>Bản lẻ/ Bán sỉ</option>
+                                                    <option>Báo chí truyền hình</option>
+                                                    <option>Bất động sản</option>
+                                                    <option>Nhân sự</option>
+                                                    <option>Bưu chính - Viễn thông</option>
+                                                    <option>IT phần mềm</option>
+                                                    <option>IT phần cứng</option>
+                                                    <option>Mạng máy tính</option>
+                                                    <option>Điện tử</option>
+                                                    <option>Du lịch</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-border-all"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobWorkingType">Hình thức làm việc <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_working_type" id="jobWorkingType"
+                                                    data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Hình thức</option>
+                                                    <option>Toàn thời gian</option>
+                                                    <option>Làm việc tự do</option>
+                                                    <option>Bán thời gian</option>
+                                                    <option>Làm việc từ xa</option>
+                                                    <option>Hợp đồng thời vụ</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-file-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobExperience">Kinh nghiệm <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_salary_min" id="jobExperience"
+                                                    data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Chọn kinh nghiệm</option>
+                                                    <option>Không yêu cầu kinh nghiệm</option>
+                                                    <option>1 năm</option>
+                                                    <option>2 năm</option>
+                                                    <option>3 năm</option>
+                                                    <option>4 năm</option>
+                                                    <option>5 năm</option>
+                                                    <option>Trên 5 năm</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-user-edit"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobLevel">Vị trí/ Cấp bậc <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_level" id="jobLevel" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Chọn vị trí - cấp bậc
+                                                    </option>
+                                                    <option>Thực tập sinh</option>
+                                                    <option>Nhân viên</option>
+                                                    <option>Trưởng phòng</option>
+                                                    <option>Quản lý</option>
+                                                    <option>Trưởng chi nhánh</option>
+                                                    <option>Phó giám đốc</option>
+                                                    <option>Giám đốc</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-user-edit"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="jobSalaryMin" class="form-label">Mức lương tối thiểu</label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="salary_min" id="jobSalaryMin"
+                                                    type="numb" placeholder="10000000">
+                                                <i class="fs-input-icon fa fa-dollar-sign"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="jobSalaryMax" class="form-label">Mức lương tối đa</label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="salary_max" id="jobSalaryMax"
+                                                    type="numb" placeholder="15000000">
+                                                <i class="fs-input-icon fa fa-dollar-sign"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobAcademicLevel">Yêu cầu bằng cấp <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_academic_leve" id="jobAcademicLevel"
+                                                    data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Chọn yêu cầu học vấn
+                                                    </option>
+                                                    <option>Đại học</option>
+                                                    <option>Trung cấp</option>
+                                                    <option>Cao đẳng</option>
+                                                    <option>Chứng chỉ nghề</option>
+
+                                                </select>
+                                                <i class="fs-input-icon fa fa-user-graduate"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobGender">Giới tính <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_gender" id="jobGender" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Chọn giới tính</option>
+                                                    <option>Nam</option>
+                                                    <option>Nữ</option>
+                                                    <option>Khác</option>
+                                                    <option>Không yêu cầu</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-venus-mars"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="city" class="form-label">Tỉnh/ Thành phố <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" id="city" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Tỉnh/ Thành phố
+                                                    </option>
+                                                    <option>Hồ Chí Minh</option>
+                                                    <option>Hà Nội</option>
+                                                    <option>Đà Nẵng</option>
+                                                    <option>Nha Trang</option>
+                                                    <option>Lâm Đồng</option>
+                                                    <option>Antigua and Barbuda</option>
+                                                    <option>Argentina</option>
+                                                    <option>Armenia</option>
+                                                    <option>Australia</option>
+                                                    <option>Austria</option>
+                                                    <option>Azerbaijan</option>
+                                                    <option>The Bahamas</option>
+                                                    <option>Bahrain</option>
+                                                    <option>Bangladesh</option>
+                                                    <option>Barbados</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-city"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="district" class="form-label">Quận/ Huyện <span
+                                                    class="required"></span>
+                                                *</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" id="district" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Quận</option>
+                                                    <option>Quận 12</option>
+                                                    <option>Quận 1</option>
+                                                    <option>Quận 2</option>
+                                                    <option>Quận 3</option>
+                                                    <option>Quận Phú Nhuận</option>
+                                                    <option>Quận Tân Bình</option>
+                                                    <option>Quận Bình Tân</option>
+                                                    <option>Quận 5</option>
+                                                    <option>Quận 8</option>
+                                                    <option>Quận 10</option>
+                                                    <option>Quận Bình Chánh</option>
+                                                    <option>Quận Tân Phú</option>
+                                                    <option>Quận Nhà Bè</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="ward" class="form-label">Phường/ Xã</label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" id="ward" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Phường/ Xã
+                                                    </option>
+                                                    <option>Đông Hưng Thuận</option>
+                                                    <option>Tân Hưng Thuận</option>
+                                                    <option>Tân Định</option>
+                                                    <option>Hiệp Thành</option>
+                                                    <option>Cầu Ông Lãnh</option>
+                                                    <option>Linh Xuân</option>
+                                                    <option>Trung Mỹ Tây</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobExpired">Hạn nộp <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control datepicker" data-provide="datepicker"
+                                                    id="jobExpired" name="job_expired_time" type="text"
+                                                    placeholder="mm/dd/yyyy">
+                                                <i class="fs-input-icon far fa-calendar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobAddress">Địa chỉ</label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="job_address" id="jobAddress"
+                                                    type="text"
+                                                    placeholder="1363-1385 Sunset Blvd Los Angeles, CA 90026, USA">
+                                                <i class="fs-input-icon fa fa-home"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobDesc" class="form-label">Mô tả công việc <span
+                                                    class="required">*</span></label>
+                                            <textarea id="richTextEditor" rows="15" class="form-control">
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobRequirement" class="form-label">Yêu cầu công việc <span
+                                                    class="required">*</span></label>
+                                            <textarea id="richTextEditor" rows="5" class="form-control">
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobBenefit" class="form-label">Quyền lợi <span
+                                                    class="required">*</span></label>
+                                            <textarea id="richTextEditor" rows="5" class="form-control">
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-check">
+                                            <label for="jobUrgent" class="form-label form-check-label">Tuyển gấp</label>
+                                            <input id="jobUrgent" type="checkbox" class="form-check-input">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="site-button m-r10">Lưu nháp</button>
+                                <button type="button" class="site-button">Đăng tin</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Job Posting Edit Popup -->
+        <div class="panel panel-default mb-3">
+            <div class="modal fade twm-saved-jobs-view" id="JobPostingEditModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h3 class="modal-title">Thông tin tuyển dụng</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobTitle" class="form-label">Tên công việc <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="job_title" type="text" id="jobTitle"
+                                                    placeholder="Devid Smith">
+                                                <i class="fs-input-icon fa fa-address-card"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group city-outer-bx has-feedback">
+                                            <label for="jobCategory" class="form-label">Ngành nghề <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" id="jobCategory" name="job_category" data-bv-field="size">
+                                                    <option disabled selected value="">Chọn ngành nghề</option>
+                                                    <option>Bán hàng kỹ thuật</option>
+                                                    <option>Bản lẻ/ Bán sỉ</option>
+                                                    <option>Báo chí truyền hình</option>
+                                                    <option>Bất động sản</option>
+                                                    <option>Nhân sự</option>
+                                                    <option>Bưu chính - Viễn thông</option>
+                                                    <option>IT phần mềm</option>
+                                                    <option>IT phần cứng</option>
+                                                    <option>Mạng máy tính</option>
+                                                    <option>Điện tử</option>
+                                                    <option>Du lịch</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-border-all"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobWorkingType">Hình thức làm việc <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_working_type" id="jobWorkingType"
+                                                    data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Hình thức</option>
+                                                    <option>Toàn thời gian</option>
+                                                    <option>Làm việc tự do</option>
+                                                    <option>Bán thời gian</option>
+                                                    <option>Làm việc từ xa</option>
+                                                    <option>Hợp đồng thời vụ</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-file-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobExperience">Kinh nghiệm <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_salary_min" id="jobExperience"
+                                                    data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Chọn kinh nghiệm</option>
+                                                    <option>Không yêu cầu kinh nghiệm</option>
+                                                    <option>1 năm</option>
+                                                    <option>2 năm</option>
+                                                    <option>3 năm</option>
+                                                    <option>4 năm</option>
+                                                    <option>5 năm</option>
+                                                    <option>Trên 5 năm</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-user-edit"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobLevel">Vị trí/ Cấp bậc <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_level" id="jobLevel" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Chọn vị trí - cấp bậc
+                                                    </option>
+                                                    <option>Thực tập sinh</option>
+                                                    <option>Nhân viên</option>
+                                                    <option>Trưởng phòng</option>
+                                                    <option>Quản lý</option>
+                                                    <option>Trưởng chi nhánh</option>
+                                                    <option>Phó giám đốc</option>
+                                                    <option>Giám đốc</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-user-edit"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="jobSalaryMin" class="form-label">Mức lương tối thiểu</label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="salary_min" id="jobSalaryMin"
+                                                    type="numb" placeholder="10000000">
+                                                <i class="fs-input-icon fa fa-dollar-sign"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="jobSalaryMax" class="form-label">Mức lương tối đa</label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="salary_max" id="jobSalaryMax"
+                                                    type="numb" placeholder="15000000">
+                                                <i class="fs-input-icon fa fa-dollar-sign"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobAcademicLevel">Yêu cầu bằng cấp <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_academic_leve" id="jobAcademicLevel"
+                                                    data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Chọn yêu cầu học vấn
+                                                    </option>
+                                                    <option>Đại học</option>
+                                                    <option>Trung cấp</option>
+                                                    <option>Cao đẳng</option>
+                                                    <option>Chứng chỉ nghề</option>
+
+                                                </select>
+                                                <i class="fs-input-icon fa fa-user-graduate"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobGender">Giới tính <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" name="job_gender" id="jobGender" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Chọn giới tính</option>
+                                                    <option>Nam</option>
+                                                    <option>Nữ</option>
+                                                    <option>Khác</option>
+                                                    <option>Không yêu cầu</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-venus-mars"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="city" class="form-label">Tỉnh/ Thành phố <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" id="city" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Tỉnh/ Thành phố
+                                                    </option>
+                                                    <option>Hồ Chí Minh</option>
+                                                    <option>Hà Nội</option>
+                                                    <option>Đà Nẵng</option>
+                                                    <option>Nha Trang</option>
+                                                    <option>Lâm Đồng</option>
+                                                    <option>Antigua and Barbuda</option>
+                                                    <option>Argentina</option>
+                                                    <option>Armenia</option>
+                                                    <option>Australia</option>
+                                                    <option>Austria</option>
+                                                    <option>Azerbaijan</option>
+                                                    <option>The Bahamas</option>
+                                                    <option>Bahrain</option>
+                                                    <option>Bangladesh</option>
+                                                    <option>Barbados</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-city"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="district" class="form-label">Quận/ Huyện <span
+                                                    class="required"></span>
+                                                *</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" id="district" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Quận</option>
+                                                    <option>Quận 12</option>
+                                                    <option>Quận 1</option>
+                                                    <option>Quận 2</option>
+                                                    <option>Quận 3</option>
+                                                    <option>Quận Phú Nhuận</option>
+                                                    <option>Quận Tân Bình</option>
+                                                    <option>Quận Bình Tân</option>
+                                                    <option>Quận 5</option>
+                                                    <option>Quận 8</option>
+                                                    <option>Quận 10</option>
+                                                    <option>Quận Bình Chánh</option>
+                                                    <option>Quận Tân Phú</option>
+                                                    <option>Quận Nhà Bè</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="ward" class="form-label">Phường/ Xã</label>
+                                            <div class="ls-inputicon-box">
+                                                <select class="wt-select-box selectpicker" data-live-search="true"
+                                                    title="" id="ward" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Phường/ Xã
+                                                    </option>
+                                                    <option>Đông Hưng Thuận</option>
+                                                    <option>Tân Hưng Thuận</option>
+                                                    <option>Tân Định</option>
+                                                    <option>Hiệp Thành</option>
+                                                    <option>Cầu Ông Lãnh</option>
+                                                    <option>Linh Xuân</option>
+                                                    <option>Trung Mỹ Tây</option>
+                                                </select>
+                                                <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobExpired">Hạn nộp <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control datepicker" data-provide="datepicker"
+                                                    id="jobExpired" name="job_expired_time" type="text"
+                                                    placeholder="mm/dd/yyyy">
+                                                <i class="fs-input-icon far fa-calendar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="jobAddress">Địa chỉ</label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="job_address" id="jobAddress"
+                                                    type="text"
+                                                    placeholder="1363-1385 Sunset Blvd Los Angeles, CA 90026, USA">
+                                                <i class="fs-input-icon fa fa-home"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobDesc" class="form-label">Mô tả công việc <span
+                                                    class="required">*</span></label>
+                                            <textarea id="richTextEditor" rows="15" class="form-control">
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobRequirement" class="form-label">Yêu cầu công việc <span
+                                                    class="required">*</span></label>
+                                            <textarea id="richTextEditor" rows="5" class="form-control">
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobBenefit" class="form-label">Quyền lợi <span
+                                                    class="required">*</span></label>
+                                            <textarea id="richTextEditor" rows="5" class="form-control">
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-check">
+                                            <label for="jobUrgent" class="form-label form-check-label">Tuyển gấp</label>
+                                            <input id="jobUrgent" type="checkbox" class="form-check-input">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="site-button m-r10">Cập nhật</button>
+                                <button type="button" class="site-button">Hủy</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -471,6 +1199,8 @@
     <script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
     <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
     <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script src="js/jquery.dataTables.min.js"></script><!-- Datatable -->
+    <script src="js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
     <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
     <script src="js/bootstrap-select.min.js"></script><!-- Form js -->
     <script src="js/dropzone.js"></script><!-- IMAGE UPLOAD  -->
@@ -480,6 +1210,7 @@
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="js/script.js"></script> <!-- Tiny edit -->
     <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
 </body>
 
