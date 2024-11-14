@@ -1441,9 +1441,6 @@ jQuery(window).on('scroll', function () {
 		
 	}
 
-
-
-
 	/*===============================
 		Text Type Animation Function	
 	=================================*/

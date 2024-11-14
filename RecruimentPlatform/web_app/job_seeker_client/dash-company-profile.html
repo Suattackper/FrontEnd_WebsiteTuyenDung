@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <!-- META -->
@@ -29,7 +28,6 @@
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css"><!-- Lc light box popup -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"><!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
-    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap5.min.css"><!-- DATA table STYLE SHEET  -->
     <link rel="stylesheet" type="text/css" href="css/select.bootstrap5.min.css">
     <!-- DASHBOARD select bootstrap  STYLE SHEET  -->
     <link rel="stylesheet" type="text/css" href="css/dropzone.css"><!-- DROPZONE STYLE SHEET -->
@@ -39,15 +37,11 @@
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
     <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
 
-    <!-- THEME COLOR CHANGE STYLE SHEET -->
-    <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
-    <!-- SIDE SWITCHER STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/switcher.css">
 
     <!-- TinyMCE Script in the <head> (but without initialization) -->
     <script src="https://cdn.tiny.cloud/1/8ivs35ru2mam8hq598jmbtjfyjip1nk2c6oooirp315lcz5n/tinymce/7/tinymce.min.js"
         referrerpolicy="origin"></script>
-
 </head>
 
 <body>
@@ -68,8 +62,6 @@
             <!-- Header Start -->
             <div id="header-admin">
                 <div class="container">
-
-                    <!-- Left Side Content -->
                     <div class="header-left">
                         <div class="nav-btn-wrap">
                             <a class="nav-btn-admin" id="sidebarCollapse">
@@ -498,7 +490,7 @@
                                 <div class="tab-pane fade" id="ImgVideo">
                                     <div class="row">
                                         <div class="panel-heading wt-panel-heading p-a20">
-                                            <h4 class="panel-tittle m-a0">Logo and Cover image</h4>
+                                            <h4 class="panel-tittle m-a0">Hình đại diện và ảnh nền</h4>
                                         </div>
                                         <div class="panel-body wt-panel-body p-a20 p-b0 m-b30 ">
                                             <div class="row">
@@ -509,87 +501,53 @@
                                                                 <img src="images/jobs-company/pic1.jpg" alt="">
                                                                 <div class="upload-btn-wrapper">
                                                                     <div id="upload-image-grid"></div>
-                                                                    <button class="site-button button-sm">Upload
-                                                                        Photo</button>
-                                                                    <input type="file" name="myfile" id="file-uploader"
-                                                                        accept=".jpg, .jpeg, .png">
+                                                                    <button class="site-button button-sm">Thay
+                                                                        logo</button>
+                                                                    <input type="file" name="companyLogoImg"
+                                                                        id="file-uploader" accept=".jpg, .jpeg, .png">
                                                                 </div>
                                                             </div>
-                                                            <p><b>Company Logo :- </b> Max file size is 1MB, Minimum
-                                                                dimension: 136 x 136 And Suitable files are .jpg & .png
-                                                            </p>
                                                         </div>
-
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-12 col-md-12">
-                                                    <div class="dashboard-cover-pic">
-                                                        <form action="https://thewebmax.org/jobzilla/upload.php"
-                                                            class="dropzone"></form>
-                                                        <p><b>Background Banner Image :- </b> Max file size is 1MB,
-                                                            Minimum dimension: 770 x 310 And Suitable files are .jpg &
-                                                            .png</p>
+                                                    <div class="banner-container">
+                                                        <img src="https://via.placeholder.com/900x200"
+                                                            alt="Banner Image" id="banner-preview">
+                                                        <label class="banner-btn" for="banner-upload">Thay ảnh
+                                                            bìa</label>
+                                                        <input type="file" class="form-control d-none"
+                                                            id="banner-upload" accept="image/*"
+                                                            onchange="previewBanner()">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="panel-heading wt-panel-heading p-a20">
-                                            <h4 class="panel-tittle m-a0">Photo Gallery</h4>
+                                            <h4 class="panel-tittle m-a0">Thư viện ảnh</h4>
                                         </div>
                                         <div class="panel-body wt-panel-body p-a20 m-b30 ">
                                             <div class="row">
                                                 <div class="col-lg-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <form action="https://thewebmax.org/jobzilla/upload.php"
-                                                            class="dropzone"></form>
+                                                    <div
+                                                        class="upload-container d-flex flex-wrap align-items-start mt-3">
+                                                        <div id="file-preview" class="d-flex flex-wrap"></div>
+                                                        <label for="file-upload" class="upload-box m-2">
+                                                            <i class="bi bi-plus-circle"></i>
+                                                            <span> Tải lên</span>
+                                                        </label>
+                                                        <input id="file-upload" type="file" class="d-none"
+                                                            onchange="previewFile()" multiple>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="form-group">
-                                                <label>Youtube</label>
-                                                <div class="ls-inputicon-box input_fields_youtube">
-                                                    <input class="form-control wt-form-control" name="mytext[]"
-                                                        type="text" placeholder="https://www.youtube.com/">
-                                                    <i class="fs-input-icon fab fa-youtube"></i>
-                                                </div>
-                                                <div class="text-right m-tb10">
-                                                    <button class="add_field_youtube">Add More Fields <i
-                                                            class="fa fa-plus"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="form-group">
-                                                <label>Vimeo</label>
-                                                <div class="ls-inputicon-box input_fields_vimeo">
-                                                    <input class="form-control wt-form-control" name="mytext[]"
-                                                        type="text" placeholder="https://vimeo.com/">
-                                                    <i class="fs-input-icon fab fa-vimeo-v"></i>
-                                                </div>
-                                                <div class="text-right m-tb10">
-                                                    <button class="add_field_vimeo">Add More Fields <i
-                                                            class="fa fa-plus"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="custome-video-upload form-group">
-                                                <label>Custom Video</label>
-                                                <form action="https://thewebmax.org/jobzilla/upload.php"
-                                                    class="dropzone"></form>
-                                            </div>
-                                        </div>
                                         <div class="col-lg-12 col-md-12">
                                             <div class="text-left">
-                                                <button type="submit" class="site-button">Lưu thay đổi</button>
+                                                <button type="submit" class="site-button">Cập nhật</button>
                                             </div>
                                         </div>
                                     </div>

@@ -94,20 +94,23 @@ function downloadJSON(data) {
   a.click();
   document.body.removeChild(a);
 }
-// ========================== Export Js End ==============================
 
-// Table Header Checkbox checked all js Start
-$("#selectAll").on("change", function () {
-  $(".form-check .form-check-input").prop("checked", $(this).prop("checked"));
-});
+function previewFile() {
+  const previewContainer = document.getElementById("file-preview");
+  const files = document.getElementById("file-upload").files;
 
-// Data Tables
-new DataTable("#studentTable", {
-  searching: false,
-  lengthChange: false,
-  info: false, // Bottom Left Text => Showing 1 to 10 of 12 entries
-  paging: false, // Pagination False
-  columnDefs: [
-    { orderable: false, targets: [0, 6] }, // Disables sorting on the 7th column (index 6)
-  ],
-});
+  for (const file of files) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const previewBox = document.createElement("div");
+      previewBox.classList.add("preview-box");
+
+      const img = document.createElement("img");
+      img.src = e.target.result;
+      previewBox.appendChild(img);
+
+      previewContainer.appendChild(previewBox);
+    };
+    reader.readAsDataURL(file);
+  }
+}
