@@ -114,3 +114,16 @@ function previewFile() {
     reader.readAsDataURL(file);
   }
 }
+
+function previewBanner() {
+  const file = document.getElementById('banner-upload').files[0];
+  const reader = new FileReader();
+
+  reader.onloadend = function () {
+      document.getElementById('banner-preview').src = reader.result;
+  };
+
+  if (file) {
+      reader.readAsDataURL(file);
+  }
+}

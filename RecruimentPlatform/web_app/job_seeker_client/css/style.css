@@ -14458,6 +14458,13 @@ strong {
   object-fit: cover;
 }
 
+.banner-container img {
+  width: 930px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .banner-container .banner-btn {
   background-color: #1967d2;
   color: #fff;
