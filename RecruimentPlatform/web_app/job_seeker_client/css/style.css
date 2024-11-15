@@ -7426,7 +7426,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 .pagination .page-link {
   border: none;
-  background: #1967d2;;
+  background: #1967d2;
+  ;
   color: #fff;
   margin: 0 10px;
   border-radius: 10px !important;
@@ -7443,7 +7444,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   color: #fff;
 }
 
-.pagination-showing{
+.pagination-showing {
   text-align: center;
   margin-top: 20px;
 }
@@ -7727,6 +7728,20 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   transform: translateY(-50%) translateX(-50%) scale(1);
 }
 
+.theme-btn2 {
+  background: rgba(25, 103, 210, .1);
+  color: #1967d2;
+  box-shadow: none;
+}
+
+.theme-btn2::before {
+  background: #1967d2;
+}
+
+.theme-btn2:hover {
+  color: #fff;
+}
+
 /*==================*/
 
 .table-outer {
@@ -7942,6 +7957,132 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   top: 16px;
 }
 
+/*=== UPLOAD PROFILE ===*/
+.profile-upload {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed rgba(0, 0, 0, .1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cv-preview {
+  display: none;
+  max-width: 300px;
+  /* Điều chỉnh chiều rộng tối đa của khung */
+  padding: 10px;
+  /* Giảm padding để khung nhỏ gọn hơn */
+  text-align: left;
+  position: rea#f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  /* Giảm font-size để chữ trong khung nhỏ hơn */
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-header h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cv-header button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: #373535;
+}
+
+.cv-header button i {
+  color: #ffb642;
+}
+
+.cv-thumbnail {
+  width: 100%;
+  max-width: 300px;
+  /* Giới hạn chiều rộng của ảnh thu nhỏ */
+  max-height: 250px;
+  /* Giới hạn chiều cao của ảnh thu nhỏ */
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #eee;
+}
+
+.cv-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.file-info {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #333;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.file-info:hover{
+  text-decoration: underline;
+}
+
+.file-info i {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #333;
+}
+
+.cv-footer .actions button {
+  background-color: #fff;
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #333;
+}
+
+.cv-footer .actions button:hover {
+  color: #007bff;
+}
+
+@media (max-width: 576px) {
+  .cv-header h5 {
+    font-size: 0.9rem;
+  }
+
+  .cv-header button {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+
+  .file-info {
+    font-size: 0.9rem;
+  }
+}
 
 /*===== Education list detail ====*/
 .experience-section {
@@ -13797,6 +13938,7 @@ strong {
   top: 0px;
   right: 0px;
   background-color: #f9fcff;
+  overflow: hidden;
 }
 
 @media (max-width: 1360px) {
@@ -14438,7 +14580,8 @@ strong {
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  white-space: nowrap; /* Ngăn ngắt dòng */
+  white-space: nowrap;
+  /* Ngăn ngắt dòng */
   gap: 5px;
 }
 
@@ -14458,11 +14601,17 @@ strong {
   object-fit: cover;
 }
 
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .banner-container img {
-  width: 930px;
-  height: 300px;
   border-radius: 8px;
   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .banner-container .banner-btn {
@@ -14475,6 +14624,7 @@ strong {
   font-weight: 600;
   font-size: 14px;
   margin-top: 10px;
+  display: inline-block;
 }
 
 .banner-container .banner-btn:hover {

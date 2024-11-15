@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- META -->
     <meta charset="utf-8" />
@@ -17,36 +18,29 @@
     <title>Grabwork - Quản lý hồ sơ</title>
 
     <!-- MOBILE SPECIFIC -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <!-- BOOTSTRAP STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    <!-- FONTAWESOME STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/feather.css" />
-    <!-- FEATHER ICON SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-    <!-- OWL CAROUSEL STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
-    <!-- MAGNIFIC POPUP STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css" />
-    <!-- Lc light box popup -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css" />
-    <!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
-    <link rel="stylesheet" type="text/css" href="css/select.bootstrap5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/feather.css"><!-- FEATHER ICON SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css"><!-- Lc light box popup -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"><!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap5.min.css"><!-- DATA table STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/select.bootstrap5.min.css">
     <!-- DASHBOARD select bootstrap  STYLE SHEET  -->
-    <link rel="stylesheet" type="text/css" href="css/dropzone.css" />
-    <!-- DROPZONE STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/scrollbar.css" />
-    <!-- CUSTOM SCROLL BAR STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
-    <!-- DATEPICKER STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
-    <!-- Flaticon -->
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
-    <!-- Swiper Slider -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/switcher.css" />
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css"><!-- DROPZONE STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/scrollbar.css"><!-- CUSTOM SCROLL BAR STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"><!-- DATEPICKER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css"> <!-- Flaticon -->
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
+
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
+    <!-- SIDE SWITCHER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/switcher.css">
 
     <!-- TinyMCE Script in the <head> (but without initialization) -->
     <script src="https://cdn.tiny.cloud/1/8ivs35ru2mam8hq598jmbtjfyjip1nk2c6oooirp315lcz5n/tinymce/7/tinymce.min.js"
@@ -388,7 +382,7 @@
                                                 <div class="ls-inputicon-box">
                                                     <input class="form-control" name="candidate_name" type="text"
                                                         placeholder="Huynh Nhu" id="candidateName" />
-                                                    <i class="fs-input-icon fa fa-user"></i>
+                                                    <i class="fs-input-icon fa feather-user"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -417,7 +411,7 @@
                                                         <option>Nữ</option>
                                                         <option>Khác</option>
                                                     </select>
-                                                    <i class="fs-input-icon fa fa-genderless"></i>
+                                                    <i class="fs-input-icon fa feather-users"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -430,7 +424,7 @@
                                                     <input class="form-control datepicker" name="candidate_dob"
                                                         type="text" data-provide="datepicker" placeholder="dd/mm/yyyy"
                                                         id="candidateDob" />
-                                                    <i class="fs-input-icon fa fa-calendar"></i>
+                                                    <i class="fs-input-icon fa feather-calendar"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -443,7 +437,7 @@
                                                     <input class="form-control datepicker" name="candidate_phone"
                                                         type="text" placeholder="(84) 1234567892"
                                                         id="candidatePhoneNumber" />
-                                                    <i class="fs-input-icon fa fa-phone-alt"></i>
+                                                    <i class="fs-input-icon fa feather-phone"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -473,7 +467,7 @@
                                                         <option>Bangladesh</option>
                                                         <option>Barbados</option>
                                                     </select>
-                                                    <i class="fs-input-icon fa fa-city"></i>
+                                                    <i class="fs-input-icon fa feather-home"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -500,7 +494,7 @@
                                                         <option>Quận Tân Phú</option>
                                                         <option>Quận Nhà Bè</option>
                                                     </select>
-                                                    <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                                    <i class="fs-input-icon fa feather-map-pin"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -511,7 +505,7 @@
                                                 <div class="ls-inputicon-box">
                                                     <input class="form-control" name="address" id="address" type="text"
                                                         placeholder="11/23 khu phố 16 đường Nguyễn Văn Quá" />
-                                                    <i class="fs-input-icon fa fa-building"></i>
+                                                    <i class="fs-input-icon fa feather-home"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -524,18 +518,49 @@
                                     </div>
                                 </div>
 
-                                <!-- Social Media -->
                                 <div class="tab-pane fade" id="MyResume">
                                     <div class="row">
-                                        <div class="panel-heading wt-panel-heading p-a20">
+                                        <div class="panel-heading wt-panel-heading">
                                             <h4 class="panel-tittle m-a0">
-                                                <i class="fa fa-file-invoice"></i> Quản lý CV
+                                                <i class="fa fa-briefcase"></i> Quản lý CV
                                             </h4>
                                         </div>
-                                        <div class="panel-body wt-panel-body p-a20 m-b30">
-                                            <form id="resume-upload" class="dropzone">
-                                            </form>
-                                            <p>Tải CV với kích cỡ file là 3MB</p>
+
+                                        <div class="panel-body wt-panel-body m-b30">
+                                            <div class="container-cv">
+                                                <div class="cv-preview m-t15" id="cvPreview">
+                                                    <div class="cv-header">
+                                                        <button><i class="feather-star"></i> Đặt làm CV chính</button>
+                                                    </div>
+                                                    <canvas id="pdfThumbnail" class="cv-thumbnail"
+                                                        style="display: none;"></canvas>
+                                                    <div id="wordIcon" class="cv-thumbnail"
+                                                        style="display: none; align-items: center; justify-content: center;">
+                                                        <i class="fas fa-file-word"
+                                                            style="font-size: 100px; color: #007bff;"></i>
+                                                    </div>
+                                                    <div class="cv-footer">
+                                                        <div class="file-info mb-2" onclick="openFilePreview()">
+                                                            <span id="fileName">Thực_tập__net.pdf</span>
+                                                        </div>
+                                                        <small id="fileUpdateTime" style="color: #666;">Cập nhật lần
+                                                            cuối 15-11-2024 13:28 PM</small>
+                                                        <div class="actions mt-2">
+                                                            <button onclick="alert('Tải xuống CV')"><i
+                                                                    class="feather-download job-tag-urgent"></i></button>
+                                                            <button onclick="alert('Chỉnh sửa')"><i
+                                                                    class="feather-edit job-tag-pending"></i></button>
+                                                            <button onclick="alert('Xóa')"><i
+                                                                    class="feather-trash job-tag-danger"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="theme-btn theme-btn2 mt-3"
+                                                onclick="document.getElementById('fileInput').click()">Tải CV
+                                                lên</button>
+                                            <input type="file" id="fileInput" accept=".pdf,.doc,.docx"
+                                                style="display: none;" onchange="handleFileUpload(event)">
                                         </div>
                                     </div>
                                 </div>
@@ -1224,49 +1249,31 @@
     </div>
 
     <!-- JAVASCRIPT  FILES ========================================= -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- JQUERY.MIN JS -->
-    <script src="js/popper.min.js"></script>
-    <!-- POPPER.MIN JS -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP.MIN JS -->
-    <script src="js/magnific-popup.min.js"></script>
-    <!-- MAGNIFIC-POPUP JS -->
-    <script src="js/waypoints.min.js"></script>
-    <!-- WAYPOINTS JS -->
-    <script src="js/counterup.min.js"></script>
-    <!-- COUNTERUP JS -->
-    <script src="js/waypoints-sticky.min.js"></script>
-    <!-- STICKY HEADER -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <!-- MASONRY  -->
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <!-- MASONRY  -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- OWL  SLIDER  -->
-    <script src="js/theia-sticky-sidebar.js"></script>
-    <!-- STICKY SIDEBAR  -->
-    <script src="js/lc_lightbox.lite.js"></script>
-    <!-- IMAGE POPUP -->
-    <script src="js/bootstrap-select.min.js"></script>
-    <!-- Form js -->
-    <script src="js/dropzone.js"></script>
-    <!-- IMAGE UPLOAD  -->
-    <script src="js/jquery.scrollbar.js"></script>
-    <!-- scroller -->
-    <script src="js/bootstrap-datepicker.js"></script>
-    <!-- scroller -->
-    <script src="js/chart.js"></script>
-    <!-- Chart -->
-    <script src="js/bootstrap-slider.min.js"></script>
-    <!-- Price range slider -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="js/custom.js"></script>
-    <!-- CUSTOM FUCTIONS  -->
+    <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script><!-- STICKY HEADER -->
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
+    <script src="js/bootstrap-select.min.js"></script><!-- Form js -->
+    <script src="js/dropzone.js"></script><!-- IMAGE UPLOAD  -->
+    <script src="js/jquery.scrollbar.js"></script><!-- scroller -->
+    <script src="js/bootstrap-datepicker.js"></script><!-- scroller -->
+    <script src="js/jquery.dataTables.min.js"></script><!-- Datatable -->
+    <script src="js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
+    <script src="js/chart.js"></script><!-- Chart -->
+    <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
+    <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/switcher.js"></script>
-    <!-- SHORTCODE FUCTIONS  -->
+    <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
 </body>
 
 </html>

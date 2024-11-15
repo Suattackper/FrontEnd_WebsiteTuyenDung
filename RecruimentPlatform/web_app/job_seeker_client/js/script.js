@@ -71,30 +71,6 @@ tinymce.init({
 //   }
 // });
 
-function downloadCSV(data) {
-  const csv = data.map((row) => Object.values(row).join(",")).join("\n");
-  const blob = new Blob([csv], { type: "text/csv" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "students.csv";
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
-
-function downloadJSON(data) {
-  const json = JSON.stringify(data, null, 2);
-  const blob = new Blob([json], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "students.json";
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
-
 function previewFile() {
   const previewContainer = document.getElementById("file-preview");
   const files = document.getElementById("file-upload").files;
@@ -116,14 +92,97 @@ function previewFile() {
 }
 
 function previewBanner() {
-  const file = document.getElementById('banner-upload').files[0];
+  const file = document.getElementById("banner-upload").files[0];
   const reader = new FileReader();
 
   reader.onloadend = function () {
-      document.getElementById('banner-preview').src = reader.result;
+    document.getElementById("banner-preview").src = reader.result;
   };
 
   if (file) {
-      reader.readAsDataURL(file);
+    reader.readAsDataURL(file);
+  }
+}
+
+// Resume Upload
+let fileUrl = ""; // To store the temporary URL for the uploaded file
+
+async function handleFileUpload(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  // Check file size (max 5 MB)
+  if (file.size > 5 * 1024 * 1024) {
+    alert("File không được vượt quá 5MB.");
+    return;
+  }
+
+  // Update file name and update time
+  document.getElementById("fileName").textContent = file.name;
+  document.getElementById(
+    "fileUpdateTime"
+  ).textContent = `Cập nhật lần cuối ${new Date().toLocaleString()}`;
+
+  // Create a temporary URL for the file
+  if (fileUrl) URL.revokeObjectURL(fileUrl); // Revoke previous URL if any
+  fileUrl = URL.createObjectURL(file);
+
+  // Display CV preview container
+  const cvPreview = document.getElementById("cvPreview");
+  const pdfThumbnail = document.getElementById("pdfThumbnail");
+  const wordIcon = document.getElementById("wordIcon");
+  cvPreview.style.display = "block";
+
+  // Check if the file is a PDF or Word document
+  const fileExtension = file.name.split(".").pop().toLowerCase();
+  if (fileExtension === "pdf") {
+    // Show PDF thumbnail
+    pdfThumbnail.style.display = "block";
+    wordIcon.style.display = "none";
+
+    // Generate PDF preview
+    const pdf = await pdfjsLib.getDocument(fileUrl).promise;
+    const page = await pdf.getPage(1);
+    const scale = 1.5;
+    const viewport = page.getViewport({ scale });
+    const canvas = document.getElementById("pdfThumbnail");
+    const context = canvas.getContext("2d");
+
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
+    const renderContext = {
+      canvasContext: context,
+      viewport: viewport,
+    };
+    await page.render(renderContext).promise;
+  } else {
+    // Show Word icon for Word files
+    pdfThumbnail.style.display = "none";
+    wordIcon.style.display = "flex";
+  }
+}
+
+function openFilePreview() {
+  if (!fileUrl) {
+    alert("No file available for preview.");
+    return;
+  }
+
+  const fileExtension = document
+    .getElementById("fileName")
+    .textContent.split(".")
+    .pop()
+    .toLowerCase();
+
+  if (fileExtension === "pdf") {
+    // Open PDF in a new tab
+    window.open(fileUrl, "_blank");
+  } else {
+    // Trigger download for Word files as browsers cannot open them directly
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = document.getElementById("fileName").textContent;
+    link.click();
   }
 }
