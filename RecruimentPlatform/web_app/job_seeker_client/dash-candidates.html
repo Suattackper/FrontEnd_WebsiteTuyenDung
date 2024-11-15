@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <!-- META -->
@@ -37,19 +36,11 @@
     <link rel="stylesheet" type="text/css" href="css/flaticon.css"> <!-- Flaticon -->
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
     <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
-
-    <!-- THEME COLOR CHANGE STYLE SHEET -->
-    <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
-    <!-- SIDE SWITCHER STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/switcher.css">
-
-
-
+    <script src="https://cdn.tiny.cloud/1/vlo148eycnsp1nucnzqsfxbdb0lwzc6zw91mzu151pqirqza/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
 </head>
 
 <body>
-
-    <!-- LOADING AREA START ===== -->
     <div class="loading-area">
         <div class="loading-box"></div>
         <div class="loading-pic">
@@ -317,9 +308,9 @@
         <div id="content">
             <div class="content-admin-main">
                 <div class="wt-admin-right-page-header clearfix">
-                    <h2>Candidates</h2>
+                    <h2>Hồ sơ ứng tuyển</h2>
                     <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a
-                            href="dashboard.html">Dasboard</a><span>Ứng viên</span>
+                            href="dashboard.html">Dasboard</a><span>Danh sách ứng tuyển</span>
                     </div>
                 </div>
 
@@ -327,729 +318,141 @@
                     <div class="col-lg-12 col-md-12 mb-4">
                         <div class="panel panel-default site-bg-white m-t30">
                             <div class="panel-heading wt-panel-heading p-a20">
-                                <h4 class="panel-tittle m-a0"><i class="far fa-list-alt"></i>Danh sách ứng viên</h4>
+                                <h4 class="panel-tittle m-a0"><i class="far fa-list-alt"></i>Danh sách ứng viên ứng
+                                    tuyển</h4>
                             </div>
-                            <div class="panel-body wt-panel-body">
-                                <div class="twm-D_table p-a20 table-responsive">
-                                    <table id="candidate_data_table" class="table">
-                                        <thead>
-                                            <tr>
-                                                <th><input type="checkbox" onclick="checkAll(this)"></th>
-                                                <th>Name</th>
-                                                <th>Applied for</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!--1-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic1.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Wanda Montgomery </h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
+                            <div class="panel-body wt-panel-body m-b30 ">
+                                <div class="col-lg-12">
+                                    <div class="user-profile-card">
+                                        <div class="user-profile-card-header-right">
+                                            <div class="user-profile-search">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Search...">
+                                                    <i class="feather-search"></i>
+                                                </div>
+                                            </div>
+                                            <div class="user-profile-sort">
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <select class="wt-select-bar-large selectpicker"
+                                                            data-live-search="true" data-bv-field="size">
+                                                            <option disabled selected value="">Công việc
+                                                            </option>
+                                                            <option>Lập trình Android</option>
+                                                            <option>Senior Automation Test</option>
+                                                        </select>
                                                     </div>
-                                                </td>
-                                                <td>UI Designer</td>
-                                                <td>15/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-green badge-success">Approved</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
+                                                </form>
+                                            </div>
+                                            <div class="user-profile-sort">
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <select class="wt-select-bar-large selectpicker"
+                                                            data-live-search="true" data-bv-field="size">
+                                                            <option disabled selected value="">Cấp bậc
+                                                                <option>Thực tập sinh</option>
+                                                                <option>Nhân viên</option>
+                                                                <option>Trưởng phòng</option>
+                                                                <option>Quản lý</option>
+                                                                <option>Trưởng chi nhánh</option>
+                                                                <option>Phó giám đốc</option>
+                                                                <option>Giám đốc</option>
+                                                        </select>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <!--2-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic2.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Peter Hawkins</h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
+                                                </form>
+                                            </div>
+                                            <div class="user-profile-sort">
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <select class="wt-select-bar-large selectpicker"
+                                                            data-live-search="true" data-bv-field="size">
+                                                            <option disabled selected value="">Trạng thái tuyển dụng
+                                                            </option>
+                                                            <option>Chờ xác nhận</option>
+                                                            <option>Đậu phỏng vấn</option>
+                                                            <option>Đã liên hệ</option>
+                                                            <option>Trúng tuyển</option>
+                                                            <option>Không trúng tuyển</option>
+                                                        </select>
                                                     </div>
-                                                </td>
-                                                <td>Medical Professed</td>
-                                                <td>16/06/2023 at 11:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="badge-pending">Pending</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                                </form>
+                                            </div>
+                                            <div class="user-profile-sort m-b30">
+                                                <button type="submit" class="theme-btn w-100">Tìm kiếm</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive profile-applied-job">
+                                            <table class="table text-nowrap">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tên ứng viên</th>
+                                                        <th>Công việc ứng tuyển</th>
+                                                        <th>Vị trí</th>
+                                                        <th>Thời gian ứng tuyển</th>
+                                                        <th>Trạng thái tuyển dụng</th>
+                                                        <th>Hành động</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="candidate-name">
+                                                            Huỳnh Như
+                                                        </td>
+                                                        <td>Lập trình viên android</td>
+                                                        <td>Thực tập sinh</td>
+                                                        <td>15/10/2024</td>
+                                                        <td>
+                                                            <select class="wt-select-bar" data-live-search="true"
+                                                                data-bv-field="size">
+                                                                <option disabled selected value="">Trạng thái</option>
+                                                                <option>Chờ xác nhận</option>
+                                                                <option>Đậu phỏng vấn</option>
+                                                                <option>Đã liên hệ</option>
+                                                                <option>Trúng tuyển</option>
+                                                                <option>Không trúng tuyển</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <a href="candidate-detail.html"
+                                                                class="btn btn-outline-secondary btn-sm"><i
+                                                                    class="feather-eye"></i></a>
+                                                            <a data-bs-toggle="modal" href="#SendMailModal"
+                                                                class="btn btn-outline-secondary btn-sm"><i
+                                                                    class="feather-mail"></i></a>
+                                                            <a data-bs-toggle="modal" href="#DeleteResumeModal"
+                                                                class="btn btn-outline-danger btn-sm"><i
+                                                                    class="feather-trash"></i></a>
+                                                        </td>
+                                                    </tr>
 
-                                            <!--3-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic3.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Ralph Johnson</h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>Bank Manager</td>
-                                                <td>17/06/2023 at 01:15 pm</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-red badge-danger">Rejected</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--4-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic4.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Randall Henderson</h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>IT Contractor</td>
-                                                <td>18/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="badge-pending">Pending</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--5-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic5.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Randall Warren</h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>Digital & Creative</td>
-                                                <td>22/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-green badge-success">Approved</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--6-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic6.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Wanda Montgomery </h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>UI Designer</td>
-                                                <td>15/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-green badge-success">Approved</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!--7-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic7.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Wanda Montgomery </h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>UI Designer</td>
-                                                <td>15/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-green badge-success">Approved</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--8-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic8.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Wanda Montgomery </h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>UI Designer</td>
-                                                <td>15/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-green badge-success">Approved</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--9-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic1.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Wanda Montgomery </h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>UI Designer</td>
-                                                <td>15/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-green badge-success">Approved</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--10-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic2.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Peter Hawkins</h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>Medical Professed</td>
-                                                <td>16/06/2023 at 11:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="badge-pending">Pending</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--11-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic3.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Ralph Johnson</h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>Bank Manager</td>
-                                                <td>17/06/2023 at 01:15 pm</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-red badge-danger">Rejected</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--12-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic4.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Randall Henderson</h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>IT Contractor</td>
-                                                <td>18/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="badge-pending">Pending</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--13-->
-                                            <tr>
-                                                <td><input type="checkbox"></td>
-                                                <td>
-                                                    <div class="twm-DT-candidates-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/candidates/pic5.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Randall Warren</h4>
-                                                                <p class="twm-candidate-address">
-                                                                    <i class="feather-map-pin"></i>New York
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>Digital & Creative</td>
-                                                <td>22/06/2023 at 10:35 am</td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-green badge-success">Approved</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                                        <!-- pagination -->
+                                        <div class="pagination-outer">
+                                            <div class="pagination-style1">
+                                                <ul class="clearfix">
+                                                    <li class="prev"><a href="javascript:;"><span> <i
+                                                                    class="fa fa-angle-left"></i>
+                                                            </span></a></li>
+                                                    <li><a href="javascript:;">1</a></li>
+                                                    <li class="active"><a href="javascript:;">2</a></li>
+                                                    <li><a href="javascript:;">3</a></li>
+                                                    <li><a class="javascript:;" href="javascript:;"><i
+                                                                class="fa fa-ellipsis-h"></i></a></li>
+                                                    <li><a href="javascript:;">5</a></li>
+                                                    <li class="next"><a href="javascript:;"><span> <i
+                                                                    class="fa fa-angle-right"></i>
+                                                            </span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1073,7 +476,6 @@
             </div>
         </div>
 
-
         <!--Logout Profile Popup-->
         <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
@@ -1093,6 +495,90 @@
             </div>
         </div>
 
+        <!-- Send Mail Popup -->
+        <div class="panel panel-default mb-3">
+            <div class="modal fade twm-saved-jobs-view" id="SendMailModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <h3 class="modal-title">Gửi mail</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="candidateName" class="form-label">Tên người nhận <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="candidate_name" type="text"
+                                                    id="candidateName" placeholder="Huỳnh Như">
+                                                <i class="fs-input-icon fa feather-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="candidateEmail" class="form-label">Email người nhận <span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="candidate_email" type="email"
+                                                    id="candidateEmail" placeholder="awe23@gmail.com">
+                                                <i class="fs-input-icon fa feather-mail"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="emailHeader" class="form-label">Tiêu đề<span
+                                                    class="required">*</span></label>
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="email_header" type="text"
+                                                    id="emailHeader" placeholder="Thư mời phỏng vấn">
+                                                <i class="fs-input-icon fa feather-link"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="jobRequirement" class="form-label">Nội dung email <span
+                                                    class="required">*</span></label>
+                                            <textarea id="richTextEditor" rows="4" class="form-control">
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="site-button"><i class="feather-send"></i> Gửi</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Delete Profile Popup-->
+        <div class="modal fade twm-model-popup" id="DeleteResumeModal" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Bạn có muốn xóa hồ sơ này chứ</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="site-button">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -1119,6 +605,7 @@
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="js/script.js"></script> <!-- Tiny edit -->
     <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
 
 </body>
