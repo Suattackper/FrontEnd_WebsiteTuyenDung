@@ -62,10 +62,10 @@ All JavaScript fuctions Start
 	}
 
 // > Video responsive function by = custom.js ========================= //	
-	function video_responsive(){	
-		jQuery('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-		jQuery('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');	
-	}  
+	// function video_responsive(){	
+	// 	jQuery('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+	// 	jQuery('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');	
+	// }  
 
 // > LIGHTBOX Gallery Popup function	by = lc_lightbox.lite.js =========================== //      
  	function lightbox_popup(){
@@ -1268,7 +1268,7 @@ All JavaScript fuctions Start
 		// > Top Search bar Show Hide function by = custom.js  		
 		site_search(),	
 		// > Video responsive function by = custom.js 
-		video_responsive(),
+		// video_responsive(),
 		 // > LIGHTBOX Gallery Popup function	by = lc_lightbox.lite.js =========================== //      
 		lightbox_popup(),
 		// > magnificPopup for video function	by = magnific-popup.js

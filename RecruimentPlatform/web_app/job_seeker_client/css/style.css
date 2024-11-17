@@ -2132,7 +2132,7 @@ ol li {
 .site-button {
   outline: none;
   color: #fff;
-  padding: 15px 20px;
+  padding: 12px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -2140,7 +2140,7 @@ ol li {
   display: inline-table;
   background-color: #1967d2;
   border: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   transition: 0.5s all ease;
 }
@@ -2156,7 +2156,7 @@ ol li {
 @media (max-width: 480px) {
   .site-button {
     padding: 8px 8px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -2256,7 +2256,7 @@ ol li {
 
 .site-button:hover {
   text-shadow: -400px 0 0 #fff, 0 0 0 #fff;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .mfp-video.video-play-btn {
@@ -7922,7 +7922,6 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   font-weight: 600;
 }
 
-
 .user-profile-card {
   background: #fff;
   padding: 15px;
@@ -8290,6 +8289,17 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
   .line {
     display: none;
+  }
+
+  .user-profile-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .user-profile-card-header-right {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 }
 
@@ -11762,7 +11772,7 @@ select.form-control {
 
 .twm-candi-self-info .twm-candi-self-top .twm-job-title {
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .twm-candi-self-info .twm-candi-self-top .twm-candidate-address i {
@@ -11873,8 +11883,8 @@ select.form-control {
 .twm-timing-list-wrap {
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 50px;
-  margin-bottom: 30px;
+  padding: 30px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 575px) {
@@ -11884,7 +11894,7 @@ select.form-control {
 }
 
 .twm-timing-list {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 30px;
 }
 
