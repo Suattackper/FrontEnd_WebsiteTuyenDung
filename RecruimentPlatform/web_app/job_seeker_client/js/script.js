@@ -185,4 +185,18 @@ function openFilePreview() {
     link.download = document.getElementById("fileName").textContent;
     link.click();
   }
-}
+};
+
+// JavaScript cho toggle
+// const toggleSwitch = document.getElementById('toggleSwitch');
+// const toggleLabel = document.getElementById('toggleLabel');
+
+// toggleSwitch.addEventListener('change', function () {
+//   if (this.checked) {
+//     toggleLabel.textContent = 'Cho phép NTD tìm kiếm hồ sơ';
+//     toggleLabel.style.color = '#28a745'; // Màu xanh lá cây khi bật
+//   } else {
+//     toggleLabel.textContent = 'Chưa cho phép NTD tìm kiếm hồ sơ';
+//     toggleLabel.style.color = '#555'; // Màu xám khi tắt
+//   }
+// });

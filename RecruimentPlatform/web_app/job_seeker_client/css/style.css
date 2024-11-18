@@ -7416,6 +7416,40 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   color: #3C65F5;
 }
 
+.tag-score {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tag-score.tag-fair {
+  background-color: rgba(249, 103, 104, .2);
+  color: #F96768;
+}
+
+.tag-score.tag-low {
+  background-color: rgba(255, 223, 128, 0.6);
+  color: #ffb642;
+}
+
+.tag-score.tag-potential {
+  background-color: rgba(135, 217, 230, 0.6);
+  color: #248999;
+}
+
+.tag-score.tag-good {
+  background-color: rgba(163, 227, 178, 0.6);
+  color: #1f853799;
+}
+
+.tag-score.tag-excellent {
+  background-color: rgba(71, 160, 255, 0.6);
+  color: #1967d2;
+}
+
+
 /*=== PAGINATION ===*/
 .pagination {
   display: flex;
@@ -8295,11 +8329,6 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-  }
-
-  .user-profile-card-header-right {
-    flex-direction: column-reverse;
-    align-items: flex-start;
   }
 }
 
@@ -11781,7 +11810,6 @@ select.form-control {
 
 .twm-candi-self-info .twm-candi-self-bottom {
   display: flex;
-  justify-content: space-between;
   align-items: start;
 }
 
@@ -18078,7 +18106,7 @@ strong {
 }
 
 .wt-select-bar:focus {
-  border: none;
+  outline: 1px solid #ced4da;
 }
 
 .wt-select-bar-2:last-child {
@@ -18126,13 +18154,13 @@ strong {
 }
 
 .wt-select-bar-large .btn-light {
-  font-size: 16px;
-  color: #a0a0a0;
+  font-size: 14px;
+  color: #212529;
   height: 50px;
-  line-height: 60px;
+  line-height: 50px;
   background-color: #f0f6fe !important;
   border: none;
-  padding: 0px 20px;
+  padding: 0px 15px;
   border-radius: 10px;
 }
 

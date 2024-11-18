@@ -15,7 +15,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/job_seeker_logo.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>jobzilla Template | dashboard</title>
+    <title>Grabwork - Danh sách hồ sơ đã lưu</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,11 +37,6 @@
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
     <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
 
-    <!-- THEME COLOR CHANGE STYLE SHEET -->
-    <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
-    <!-- SIDE SWITCHER STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/switcher.css">
-
 </head>
 
 <body>
@@ -55,15 +50,11 @@
             </div>
         </div>
     </div>
-    <!-- LOADING AREA  END ====== -->
 
     <div class="page-wraper">
         <header id="header-admin-wrap" class="header-admin-fixed">
-            <!-- Header Start -->
             <div id="header-admin">
                 <div class="container">
-
-                    <!-- Left Side Content -->
                     <div class="header-left">
                         <div class="nav-btn-wrap">
                             <a class="nav-btn-admin" id="sidebarCollapse">
@@ -71,14 +62,10 @@
                             </a>
                         </div>
                     </div>
-                    <!-- Left Side Content End -->
 
-                    <!-- Right Side Content -->
                     <div class="header-right">
                         <ul class="header-widget-wrap">
-                            <!--Message-->
                             <li class="header-widget dashboard-message-dropdown">
-
                                 <div class="dropdown">
                                     <a href="javascript:;" class="dropdown-toggle jobzilla-admin-messange"
                                         id="ID-MSG_dropdown" data-bs-toggle="dropdown">
@@ -328,8 +315,8 @@
         <div id="content">
             <div class="content-admin-main">
                 <div class="wt-admin-right-page-header clearfix">
-                    <h2>Bookmark</h2>
-                    <div class="breadcrumbs"><a href="#">Home</a><a href="#">Dasboard</a><span>Bookmarked Jobs</span>
+                    <h2>Hồ sơ đã lưu</h2>
+                    <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a href="dashboard.html">Dasboard</a><span>Hồ sơ đã lưu</span>
                     </div>
                 </div>
 
@@ -337,447 +324,175 @@
                     <div class="col-lg-12 col-md-12 mb-4">
                         <div class="panel panel-default site-bg-white m-t30">
                             <div class="panel-heading wt-panel-heading p-a20">
-                                <h4 class="panel-tittle m-a0"><i class="far fa-bookmark"></i>Bookmarked Jobs</h4>
+                                <h4 class="panel-tittle m-a0"><i class="far fa-bookmark"></i>Danh sách hồ sơ đã lưu</h4>
                             </div>
-                            <div class="panel-body wt-panel-body">
-                                <div class="twm-D_table p-a20 table-responsive">
-                                    <table id="jobs_bookmark_table" class="table table-bordered twm-bookmark-list-wrap">
-                                        <thead>
-                                            <tr>
-                                                <th>Job Title</th>
-                                                <th>Job Types</th>
-                                                <th>Post Timing</th>
-                                                <th>Applied Date</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!--1-->
-                                            <tr>
-                                                <td>
-                                                    <div class="twm-bookmark-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/jobs-company/pic1.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Senior Web Designer</h4>
-                                                            </a>
-                                                            <p class="twm-bookmark-address">
-                                                                <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los
-                                                                Angeles, CA 90026, USA
-                                                            </p>
-                                                            <a href="#"
-                                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-
-                                                        </div>
-
+                            <div class="panel-body wt-panel-body m-b30 ">
+                                <div class="col-lg-12">
+                                    <div class="user-profile-card">
+                                        <div class="user-profile-card-header-right">
+                                            <div class="user-profile-search">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Search...">
+                                                    <i class="feather-search"></i>
+                                                </div>
+                                            </div>
+                                            <div class="user-profile-sort">
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <select class="wt-select-bar-large selectpicker"
+                                                            data-live-search="true" data-bv-field="size">
+                                                            <option disabled selected value="">Chọn ngành nghề</option>
+                                                            <option>Bán hàng kỹ thuật</option>
+                                                            <option>Bản lẻ/ Bán sỉ</option>
+                                                            <option>Báo chí truyền hình</option>
+                                                            <option>Bất động sản</option>
+                                                            <option>Nhân sự</option>
+                                                            <option>Bưu chính - Viễn thông</option>
+                                                            <option>IT phần mềm</option>
+                                                            <option>IT phần cứng</option>
+                                                            <option>Mạng máy tính</option>
+                                                            <option>Điện tử</option>
+                                                            <option>Du lịch</option>
+                                                        </select>
                                                     </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span class="twm-bg-green">New</span>
+                                                </form>
+                                            </div>
+                                            <div class="user-profile-sort">
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <select class="wt-select-bar-large selectpicker"
+                                                            data-live-search="true" data-bv-field="size">
+                                                            <option disabled selected value="">Kinh nghiệm
+                                                            </option>
+                                                            <option>Không yêu cầu kinh nghiệm</option>
+                                                            <option>1 năm</option>
+                                                            <option>2 năm</option>
+                                                            <option>3 năm</option>
+                                                            <option>4 năm</option>
+                                                            <option>5 năm</option>
+                                                            <option>Trên 5 năm</option>
+                                                        </select>
                                                     </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-job-post-duration">20 days ago</div>
-                                                </td>
-                                                <td>08/06/2023</td>
-                                                <td><span class="text-clr-green2">Active</span></td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
+                                                </form>
+                                            </div>
+                                            <div class="user-profile-sort">
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <select class="wt-select-bar-large selectpicker"
+                                                            data-live-search="true" data-bv-field="size">
+                                                            <option disabled selected value="">Địa điểm
+                                                                <option>Hồ Chí Minh</option>
+                                                                <option>Hà Nội</option>
+                                                                <option>Đà Nẵng</option>
+                                                                <option>Nha Trang</option>
+                                                                <option>Lâm Đồng</option>
+                                                                <option>Antigua and Barbuda</option>
+                                                                <option>Argentina</option>
+                                                                <option>Armenia</option>
+                                                                <option>Australia</option>
+                                                                <option>Austria</option>
+                                                                <option>Azerbaijan</option>
+                                                                <option>The Bahamas</option>
+                                                                <option>Bahrain</option>
+                                                                <option>Bangladesh</option>
+                                                                <option>Barbados</option>
+                                                        </select>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <!--2-->
-                                            <tr>
-                                                <td>
-                                                    <div class="twm-bookmark-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/jobs-company/pic2.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Sr. Rolling Stock Technician</h4>
-                                                            </a>
-                                                            <p class="twm-bookmark-address">
-                                                                <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los
-                                                                Angeles, CA 90026, USA
-                                                            </p>
-                                                            <a href="#"
-                                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-brown">Intership</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-job-post-duration">20 days ago</div>
-                                                </td>
-                                                <td>08/06/2023</td>
-                                                <td><span class="text-clr-green2">Active</span></td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                                </form>
+                                            </div>
+                                            
+                                            <div class="user-profile-sort m-b30">
+                                                <button type="submit" class="theme-btn w-100">Tìm kiếm</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive profile-applied-job">
+                                            <table class="table text-nowrap">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tên ứng viên</th>
+                                                        <th>Chức danh</th>
+                                                        <th>Kinh nghiệm</th>
+                                                        <th>Tỉnh/ Thành phố</th>
+                                                        <th>Thời gian lưu</th>
+                                                        <th>Hành động</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="candidate-name">
+                                                            Huỳnh Như
+                                                        </td>
+                                                        <td>Lập trình viên Frontend</td>
+                                                        <td>1 năm</td>
+                                                        <td>Hồ Chí Minh</td>
+                                                        <td>15:30 20/10/2024</td>
+                                                        <td>
+                                                            <a href="candidate-detail.html"
+                                                                class="btn btn-outline-secondary btn-sm"><i
+                                                                    class="feather-eye"></i></a>
+                                                            <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                                    class="feather-heart"></i> Hủy lưu</a>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="candidate-name">
+                                                            Huỳnh Như
+                                                        </td>
+                                                        <td>Sinh viên</td>
+                                                        <td>Không có kinh nghiệm</td>
+                                                        <td>Hồ Chí Minh</td>
+                                                        <td>15:30 20/10/2024</td>
+                                                        <td>
+                                                            <a href="candidate-detail.html"
+                                                                class="btn btn-outline-secondary btn-sm"><i
+                                                                    class="feather-eye"></i></a>
+                                                            <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                                    class="feather-heart"></i> Hủy lưu</a>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="candidate-name">
+                                                            Huỳnh Như
+                                                        </td>
+                                                        <td>Lập trình viên Frontend</td>
+                                                        <td>1 năm</td>
+                                                        <td>Hồ Chí Minh</td>
+                                                        <td>15:30 20/10/2024</td>
+                                                        <td>
+                                                            <a href="candidate-detail.html"
+                                                                class="btn btn-outline-secondary btn-sm"><i
+                                                                    class="feather-eye"></i></a>
+                                                            <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                                    class="feather-heart"></i> Hủy lưu</a>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
-                                            <!--3-->
-                                            <tr>
-                                                <td>
-                                                    <div class="twm-bookmark-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/jobs-company/pic3.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>IT Department Manager</h4>
-                                                            </a>
-                                                            <p class="twm-bookmark-address">
-                                                                <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los
-                                                                Angeles, CA 90026, USA
-                                                            </p>
-                                                            <a href="#"
-                                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-purple">Fulltime</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-job-post-duration">20 days ago</div>
-                                                </td>
-                                                <td>08/06/2023</td>
-                                                <td><span class="text-clr-green2">Active</span></td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--4-->
-                                            <tr>
-                                                <td>
-                                                    <div class="twm-bookmark-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/jobs-company/pic4.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Art Production Specialist</h4>
-                                                            </a>
-                                                            <p class="twm-bookmark-address">
-                                                                <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los
-                                                                Angeles, CA 90026, USA
-                                                            </p>
-                                                            <a href="#"
-                                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-sky">Freelancer</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-job-post-duration">20 days ago</div>
-                                                </td>
-                                                <td>08/06/2023</td>
-                                                <td><span class="text-clr-green2">Active</span></td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--5-->
-                                            <tr>
-                                                <td>
-                                                    <div class="twm-bookmark-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/jobs-company/pic5.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Recreation & Fitness Worker</h4>
-                                                            </a>
-                                                            <p class="twm-bookmark-address">
-                                                                <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los
-                                                                Angeles, CA 90026, USA
-                                                            </p>
-                                                            <a href="#"
-                                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span
-                                                            class="twm-bg-golden">Temporary</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-job-post-duration">20 days ago</div>
-                                                </td>
-                                                <td>08/06/2023</td>
-                                                <td><span class="text-clr-green2">Active</span></td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!--6-->
-                                            <tr>
-                                                <td>
-                                                    <div class="twm-bookmark-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/jobs-company/pic1.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Senior Web Designer</h4>
-                                                            </a>
-                                                            <p class="twm-bookmark-address">
-                                                                <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los
-                                                                Angeles, CA 90026, USA
-                                                            </p>
-                                                            <a href="#"
-                                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span class="twm-bg-green">New</span>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-job-post-duration">20 days ago</div>
-                                                </td>
-                                                <td>08/06/2023</td>
-                                                <td><span class="text-clr-green2">Active</span></td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!--7-->
-                                            <tr>
-                                                <td>
-                                                    <div class="twm-bookmark-list">
-                                                        <div class="twm-media">
-                                                            <div class="twm-media-pic">
-                                                                <img src="images/jobs-company/pic2.jpg" alt="#">
-                                                            </div>
-                                                        </div>
-                                                        <div class="twm-mid-content">
-                                                            <a href="#" class="twm-job-title">
-                                                                <h4>Sr. Rolling Stock Technician</h4>
-                                                            </a>
-                                                            <p class="twm-bookmark-address">
-                                                                <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los
-                                                                Angeles, CA 90026, USA
-                                                            </p>
-                                                            <a href="#"
-                                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-jobs-category"><span class="twm-bg-green">New</span>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="twm-job-post-duration">20 days ago</div>
-                                                </td>
-                                                <td>08/06/2023</td>
-                                                <td><span class="text-clr-green2">Active</span></td>
-                                                <td>
-                                                    <div class="twm-table-controls">
-                                                        <ul class="twm-DT-controls-icon list-unstyled">
-                                                            <li>
-                                                                <button title="View profile" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="fa fa-eye"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Send message" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-envelope-open"></span>
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button title="Delete" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top">
-                                                                    <span class="far fa-trash-alt"></span>
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Job Title</th>
-                                                <th>Job Types</th>
-                                                <th>Post Timing</th>
-                                                <th>Applied Date</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
+                                        <!-- pagination -->
+                                        <div class="pagination-outer">
+                                            <div class="pagination-style1">
+                                                <ul class="clearfix">
+                                                    <li class="prev"><a href="javascript:;"><span> <i
+                                                                    class="fa fa-angle-left"></i>
+                                                            </span></a></li>
+                                                    <li><a href="javascript:;">1</a></li>
+                                                    <li class="active"><a href="javascript:;">2</a></li>
+                                                    <li><a href="javascript:;">3</a></li>
+                                                    <li><a class="javascript:;" href="javascript:;"><i
+                                                                class="fa fa-ellipsis-h"></i></a></li>
+                                                    <li><a href="javascript:;">5</a></li>
+                                                    <li class="next"><a href="javascript:;"><span> <i
+                                                                    class="fa fa-angle-right"></i>
+                                                            </span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
