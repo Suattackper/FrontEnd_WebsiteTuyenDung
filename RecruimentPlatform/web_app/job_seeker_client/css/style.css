@@ -7099,8 +7099,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   list-style: none;
   position: relative;
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .description-list-2 li:last-child {
@@ -7996,6 +7995,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 /*=== UPLOAD PROFILE ===*/
+.file-requirements {
+  font-size: 0.65rem;
+  color: #6c757d;
+}
+
 .profile-upload {
   width: 100%;
   height: 200px;
@@ -8076,11 +8080,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .file-info {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   display: flex;
   align-items: center;
-  color: #333;
+  color: #514f4f;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -11016,10 +11020,10 @@ select.form-control {
 }
 
 .twm-bnr-search-bar label {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 500;
   line-height: 16px;
   color: #999999;
-  text-transform: uppercase;
   display: block;
   padding-top: 0px;
   margin-top: 7px;
@@ -11356,25 +11360,25 @@ select.form-control {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #a0a0a0;
+  color: #999;
   font-size: 14px;
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #a0a0a0;
+  color: #999;
   font-size: 14px;
 }
 
 .form-control:-ms-input-placeholder {
   /* IE 10+ */
-  color: #a0a0a0;
+  color: #999;
   font-size: 14px;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #a0a0a0;
+  color: #999;
   font-size: 14px;
 }
 
@@ -13385,6 +13389,12 @@ select.form-control {
   color: #373737;
 }
 
+.twm-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #373737;
+}
+
 .twm-s-info ul li .twm-s-info-inner .twm-s-info-discription {
   font-size: 14px;
   color: #17171d;
@@ -13435,24 +13445,25 @@ select.form-control {
 
 .twm-s-info2 .twm-job-hilites2 li .twm-s-info-inner {
   position: relative;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .twm-s-info2 .twm-job-hilites2 li .twm-s-info-inner i {
   position: absolute;
   left: 0px;
   top: 15px;
-  font-size: 18px;
+  font-size: 16px;
   color: #1967d2;
 }
 
 .twm-s-info2 .twm-job-hilites2 li .twm-s-info-inner .twm-title {
   font-size: 14px;
+  font-weight: 600;
   color: #666666;
 }
 
 .twm-s-info2 .twm-job-hilites2 li .twm-s-info-inner .twm-s-info-discription {
-  font-size: 16px;
+  font-size: 15px;
   color: #17171d;
 }
 

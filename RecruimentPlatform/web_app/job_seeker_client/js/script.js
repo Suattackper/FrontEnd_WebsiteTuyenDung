@@ -185,18 +185,61 @@ function openFilePreview() {
     link.download = document.getElementById("fileName").textContent;
     link.click();
   }
-};
+}
 
-// JavaScript cho toggle
-// const toggleSwitch = document.getElementById('toggleSwitch');
-// const toggleLabel = document.getElementById('toggleLabel');
+const existingCV = document.getElementById("existingCV");
+const uploadCV = document.getElementById("uploadCV");
+const uploadButton = document.getElementById("uploadButton");
+const fileInput = document.getElementById("fileInput");
+const fileInfo = document.getElementById("fileInfo");
 
-// toggleSwitch.addEventListener('change', function () {
-//   if (this.checked) {
-//     toggleLabel.textContent = 'Cho phép NTD tìm kiếm hồ sơ';
-//     toggleLabel.style.color = '#28a745'; // Màu xanh lá cây khi bật
-//   } else {
-//     toggleLabel.textContent = 'Chưa cho phép NTD tìm kiếm hồ sơ';
-//     toggleLabel.style.color = '#555'; // Màu xám khi tắt
-//   }
-// });
+// Bật/tắt nút "Chọn File" dựa trên radio được chọn
+existingCV.addEventListener("change", () => {
+  if (existingCV.checked) {
+    uploadButton.disabled = true;
+    fileInput.value = "";
+    fileInfo.textContent = "";
+  }
+});
+
+uploadCV.addEventListener("change", () => {
+  if (uploadCV.checked) {
+    uploadButton.disabled = false;
+  }
+});
+
+// Khi nhấn nút "Chọn File", mở trình quản lý file
+uploadButton.addEventListener("click", () => {
+  fileInput.click();
+});
+
+// Kiểm tra file khi người dùng tải lên
+fileInput.addEventListener("change", () => {
+  const file = fileInput.files[0];
+  if (file) {
+    // Kiểm tra định dạng file
+    const validExtensions = [
+      "application/pdf",
+      "application/msword",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    ];
+    if (!validExtensions.includes(file.type)) {
+      alert("Chỉ chấp nhận file .pdf, .doc, .docx!");
+      fileInput.value = "";
+      fileInfo.textContent = "";
+      return;
+    }
+
+    // Kiểm tra dung lượng file
+    if (file.size > 5 * 1024 * 1024) {
+      // 5MB
+      alert("Dung lượng file không được vượt quá 5MB!");
+      fileInput.value = "";
+      fileInfo.textContent = "";
+      return;
+    }
+
+    // Hiển thị thông tin file đã chọn
+    fileInfo.textContent = `Đã chọn: ${file.name}`;
+  }
+});
