@@ -247,8 +247,9 @@
         </header>
 
         <nav id="sidebar-admin-wraper">
-            <div class="page-logo">
+            <div class="page-logo d-flex align-items-center">
                 <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
+                <h3 class="m-l10">Grabword</h3>
             </div>
 
             <div class="admin-nav scrollbar-macosx">
@@ -557,12 +558,12 @@
                                                         </div>
                                                         <small id="fileUpdateTime" style="color: #666;">Cập nhật lần
                                                             cuối 15-11-2024 13:28 PM</small>
-                                                        <div class="actions mt-2">
-                                                            <button onclick="alert('Tải xuống CV')"><i
+                                                        <div class="actions mt">
+                                                            <button><i
                                                                     class="feather-download job-tag-urgent"></i></button>
                                                             <button onclick="alert('Chỉnh sửa')"><i
                                                                     class="feather-edit job-tag-pending"></i></button>
-                                                            <button onclick="alert('Xóa')"><i
+                                                            <button data-bs-toggle="modal" data-bs-target="#delete-cv"><i
                                                                     class="feather-trash job-tag-danger"></i></button>
                                                         </div>
                                                     </div>
@@ -1230,11 +1231,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h4 class="modal-title">Do you want to Logout your profile?</h4>
+                        <h4 class="modal-title">Bạn có muốn đăng xuất</h4>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="site-button outline-primary">Yes</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3">Có</button>
                     </div>
                 </div>
             </div>
@@ -1249,11 +1250,30 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h4 class="modal-title">Do you want to Delete education detail?</h4>
+                        <h4 class="modal-title">Bạn có chắc muốn xóa thông tin học vấn</h4>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="site-button outline-primary">Yes</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3">Có</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Confirmation Modal -->
+        <div class="modal fade twm-model-popup" id="delete-cv" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Bạn có chắc chắn muốn xóa CV này không?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3" onclick="deleteCV()">Có</button>
                     </div>
                 </div>
             </div>

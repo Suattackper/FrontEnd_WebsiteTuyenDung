@@ -1346,9 +1346,9 @@ All JavaScript fuctions Start
 		// CustomScrollbar function by = jquery.scrollbar.js	
 		scroll_bar_custome(),
 		// Jobs Bookmark table function by = dataTables.bootstrap5.js
-		jobs_bookmark_table(),
+		// jobs_bookmark_table(),
 		// candidate_data_table function by = dataTables.bootstrap5.js
-		candidate_data_table(),
+		// candidate_data_table(),
 		// datepicker function by = dbootstrap-datepicker.js
 		datepicker_function(),
 		// profile-chart function by = chart.js

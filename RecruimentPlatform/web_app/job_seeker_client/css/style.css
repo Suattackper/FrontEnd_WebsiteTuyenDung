@@ -339,6 +339,7 @@ ol {
 
 ul li {
   padding: 0px;
+  list-style-type: none;
 }
 
 ol li {
@@ -7951,6 +7952,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 
 /*============= profile job list ==================*/
+.logo-company {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .candidate-name {
   font-weight: 600;
 }
@@ -17998,7 +18004,7 @@ strong {
 }
 
 .twm-saved-jobs-view .modal-body {
-  padding: 30px 50px;
+  padding: 20px 40px;
 }
 
 @media (max-width: 575px) {
@@ -18013,7 +18019,6 @@ strong {
   text-align: center;
   display: block;
   padding: 20px;
-  margin-top: 30px;
 }
 
 .twm-saved-jobs-view .modal-footer .site-button {

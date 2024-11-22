@@ -105,42 +105,44 @@ function previewBanner() {
 }
 
 // Resume Upload
+// Biến toàn cục để lưu trạng thái URL file đã chọn
 let fileUrl = ""; // To store the temporary URL for the uploaded file
 
+// Xử lý sự kiện tải file lên
 async function handleFileUpload(event) {
   const file = event.target.files[0];
   if (!file) return;
 
-  // Check file size (max 5 MB)
+  // Kiểm tra kích thước file (tối đa 5 MB)
   if (file.size > 5 * 1024 * 1024) {
     alert("File không được vượt quá 5MB.");
     return;
   }
 
-  // Update file name and update time
+  // Cập nhật thông tin file
   document.getElementById("fileName").textContent = file.name;
   document.getElementById(
     "fileUpdateTime"
   ).textContent = `Cập nhật lần cuối ${new Date().toLocaleString()}`;
 
-  // Create a temporary URL for the file
-  if (fileUrl) URL.revokeObjectURL(fileUrl); // Revoke previous URL if any
+  // Tạo URL tạm thời cho file
+  if (fileUrl) URL.revokeObjectURL(fileUrl); // Hủy URL trước đó nếu có
   fileUrl = URL.createObjectURL(file);
 
-  // Display CV preview container
+  // Hiển thị vùng xem trước CV
   const cvPreview = document.getElementById("cvPreview");
   const pdfThumbnail = document.getElementById("pdfThumbnail");
   const wordIcon = document.getElementById("wordIcon");
   cvPreview.style.display = "block";
 
-  // Check if the file is a PDF or Word document
+  // Kiểm tra loại file (PDF hoặc Word)
   const fileExtension = file.name.split(".").pop().toLowerCase();
   if (fileExtension === "pdf") {
-    // Show PDF thumbnail
+    // Hiển thị thumbnail PDF
     pdfThumbnail.style.display = "block";
     wordIcon.style.display = "none";
 
-    // Generate PDF preview
+    // Xử lý hiển thị nội dung PDF (nếu cần)
     const pdf = await pdfjsLib.getDocument(fileUrl).promise;
     const page = await pdf.getPage(1);
     const scale = 1.5;
@@ -157,15 +159,16 @@ async function handleFileUpload(event) {
     };
     await page.render(renderContext).promise;
   } else {
-    // Show Word icon for Word files
+    // Hiển thị icon Word cho file Word
     pdfThumbnail.style.display = "none";
     wordIcon.style.display = "flex";
   }
 }
 
+// Mở file xem trước
 function openFilePreview() {
   if (!fileUrl) {
-    alert("No file available for preview.");
+    alert("Không có file nào để xem trước.");
     return;
   }
 
@@ -176,10 +179,10 @@ function openFilePreview() {
     .toLowerCase();
 
   if (fileExtension === "pdf") {
-    // Open PDF in a new tab
+    // Mở file PDF trong tab mới
     window.open(fileUrl, "_blank");
   } else {
-    // Trigger download for Word files as browsers cannot open them directly
+    // Kích hoạt tải xuống cho file Word
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = document.getElementById("fileName").textContent;
@@ -187,6 +190,34 @@ function openFilePreview() {
   }
 }
 
+// Hàm xử lý xóa CV
+function deleteCV() {
+  const cvPreview = document.getElementById("cvPreview");
+  const fileName = document.getElementById("fileName");
+
+  // Ẩn vùng xem trước và reset thông tin
+  cvPreview.style.display = "none";
+  fileName.textContent = "Không có CV nào được tải lên.";
+  document.getElementById("fileUpdateTime").textContent = "";
+
+  // Xóa URL tạm thời
+  if (fileUrl) URL.revokeObjectURL(fileUrl);
+  fileUrl = "";
+
+  // Reset lại input file
+  const fileInput = document.getElementById("fileInput");
+  fileInput.value = ""; // Reset input file
+
+  // Ẩn modal xác nhận
+  const deleteModal = document.getElementById("delete-cv");
+  const modal = bootstrap.Modal.getInstance(deleteModal);
+  modal.hide();
+}
+
+/*=============================================*/
+
+
+// Cho chuc nang apply cv
 const existingCV = document.getElementById("existingCV");
 const uploadCV = document.getElementById("uploadCV");
 const uploadButton = document.getElementById("uploadButton");
@@ -207,6 +238,7 @@ uploadCV.addEventListener("change", () => {
     uploadButton.disabled = false;
   }
 });
+
 
 // Khi nhấn nút "Chọn File", mở trình quản lý file
 uploadButton.addEventListener("click", () => {
@@ -243,3 +275,5 @@ fileInput.addEventListener("change", () => {
     fileInfo.textContent = `Đã chọn: ${file.name}`;
   }
 });
+
+/*=============================================*/
