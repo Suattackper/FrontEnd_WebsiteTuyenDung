@@ -216,7 +216,6 @@ function deleteCV() {
 
 /*=============================================*/
 
-
 // Cho chuc nang apply cv
 const existingCV = document.getElementById("existingCV");
 const uploadCV = document.getElementById("uploadCV");
@@ -238,7 +237,6 @@ uploadCV.addEventListener("change", () => {
     uploadButton.disabled = false;
   }
 });
-
 
 // Khi nhấn nút "Chọn File", mở trình quản lý file
 uploadButton.addEventListener("click", () => {

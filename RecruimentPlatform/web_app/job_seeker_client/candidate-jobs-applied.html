@@ -237,7 +237,7 @@
         <nav id="sidebar-admin-wraper">
             <div class="page-logo d-flex align-items-center">
                 <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
-                <h3 class="m-l10">Grabword</h3>
+                <h3 class="m-l10">Grabwork</h3>
             </div>
 
             <div class="admin-nav scrollbar-macosx">
@@ -299,41 +299,93 @@
                         <h4 class="panel-tittle m-a0"><i class="fa fa-briefcase"></i> Danh sách việc làm đã ứng tuyển
                         </h4>
                     </div>
-
-                    <div class="col-xl-12 col-lg-12 col-md-12 m-b30">
-                        <div class="twm-right-section-panel candidate-save-job site-bg-gray">
-                            <!--Filter Short By-->
-                            <div class="product-filter-wrap d-flex justify-content-between align-items-center">
-                                <form class="woocommerce-ordering twm-filter-select" method="get">
-                                    <span class="woocommerce-result-count">Lọc thông tin</span>
-                                    <select class="wt-select-bar-2 selectpicker" data-live-search="true"
-                                        data-bv-field="size">
-                                        <option>Chờ xác nhận</option>
-                                        <option>Đã trúng tuyển</option>
-                                        <option>Không trúng tuyển</option>
-                                        <option>Đang xem xét</option>
-                                    </select>
-                                </form>
-                            </div>
-
-                            <div class="panel-body wt-panel-body m-b30 ">
-                                
-                            </div>
-
-                            <div class="pagination-outer">
-                                <div class="pagination-style1">
-                                    <ul class="clearfix">
-                                        <li class="prev"><a href="javascript:;"><span> <i class="fa fa-angle-left"></i>
-                                                </span></a></li>
-                                        <li><a href="javascript:;">1</a></li>
-                                        <li class="active"><a href="javascript:;">2</a></li>
-                                        <li><a href="javascript:;">3</a></li>
-                                        <li><a class="javascript:;" href="javascript:;"><i
-                                                    class="fa fa-ellipsis-h"></i></a></li>
-                                        <li><a href="javascript:;">5</a></li>
-                                        <li class="next"><a href="javascript:;"><span> <i class="fa fa-angle-right"></i>
-                                                </span></a></li>
-                                    </ul>
+                    <div class="panel-body wt-panel-body m-b30 ">
+                        <div class="col-lg-12">
+                            <div class="user-profile-card">
+                                <div class="user-profile-card-header-right">
+                                    <div class="user-profile-search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search...">
+                                            <i class="feather-search"></i>
+                                        </div>
+                                    </div>
+                                    <div class="user-profile-sort">
+                                        <form action="#">
+                                            <div class="form-group">
+                                                <select class="wt-select-bar-2 selectpicker" data-live-search="true"
+                                                    data-bv-field="size">
+                                                    <option disabled selected value="">Trạng thái duyệt</option>
+                                                    <option>Chờ xem xét</option>
+                                                    <option>Trúng tuyển</option>
+                                                    <option>Không trúng tuyển</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="user-profile-sort m-b30">
+                                        <button type="submit" class="theme-btn w-100">Tìm kiếm</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive profile-applied-job">
+                                    <table class="table text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Thông tin công việc</th>
+                                                <th>Ngày ứng tuyển</th>
+                                                <th>Hồ sơ đính kèm</th>
+                                                <th>Trạng thái</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="profile-job-info">
+                                                        <img src="images/jobs-company/03.jpg" alt="">
+                                                        <div class="profile-job-content">
+                                                            <div class="job-title">
+                                                                <h6><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h6>
+                                                                <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                                    Axon Active</a>
+                                                            </div>
+                                                            <ul class="profile-job-list">
+                                                                <li><i class="far fa-money-bill-alt"></i> 40 - 50 triệu</li>
+                                                                <li><i class="feather-map-pin"></i>  Hồ Chí Minh
+                                                                </li>
+                                                                <li><i class="feather-calendar"></i>  20/11/2024
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>30/09/2024</td>
+                                                <td><a href="files/pdf-sample.pdf" title="Download" target="blank" data-bs-toggle="tooltip" data-bs-placement="top" class="btn btn-outline-danger btn-sm"><i
+                                                    class="feather-download"></i> Hồ sơ</a>
+                                                </td>
+                                                <td><span class="job-tag-pending">Chờ xem xét</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                                   
+                                </div>
+                                <div class="pagination-outer">
+                                    <div class="pagination-style1">
+                                        <ul class="clearfix">
+                                            <li class="prev"><a href="javascript:;"><span> <i
+                                                            class="fa fa-angle-left"></i>
+                                                    </span></a></li>
+                                            <li><a href="javascript:;">1</a></li>
+                                            <li class="active"><a href="javascript:;">2</a></li>
+                                            <li><a href="javascript:;">3</a></li>
+                                            <li><a class="javascript:;" href="javascript:;"><i
+                                                        class="fa fa-ellipsis-h"></i></a></li>
+                                            <li><a href="javascript:;">5</a></li>
+                                            <li class="next"><a href="javascript:;"><span> <i
+                                                            class="fa fa-angle-right"></i>
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

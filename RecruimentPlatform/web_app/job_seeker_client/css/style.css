@@ -7968,6 +7968,45 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   margin-bottom: 25px;
 }
 
+.user-profile-card .table>:not(caption)>*>* {
+  vertical-align: middle;
+  padding: 1rem 0.5rem;
+}
+
+.profile-job-info {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.profile-job-content {
+  padding: 0;
+  flex: 1;
+  white-space: nowrap;
+  /* Không cho nội dung xuống dòng */
+  overflow: visible;
+}
+
+.profile-job-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.profile-job-list {
+  margin-top: 5px;
+}
+
+.profile-job-list li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.profile-job-list li h6 a:hover {
+  color: #3C65F5;
+}
+
 .user-profile-card-header {
   display: flex;
   align-items: center;
@@ -7998,6 +8037,144 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: absolute;
   left: 12px;
   top: 16px;
+}
+
+/*=== NOTIFICATION ===*/
+.notification-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+  border-radius: 8px; /* Bo góc */
+  margin-bottom: 15px; /* Tạo khoảng cách giữa các thông báo */
+  background-color: #fff;
+}
+
+.notification-item:last-child {
+  margin-bottom: 0;
+}
+
+.notification-item img {
+  width: 60px; /* Kích thước hình ảnh mặc định */
+  height: 60px;
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+  border-radius: 50%; /* Bo tròn hình ảnh */
+  display: block;
+}
+
+.notification-item .content {
+  flex-grow: 1;
+}
+
+.notification-item h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.notification-item p {
+  font-size: 14px;
+  margin: 0;
+  color: #6c757d;
+}
+
+.delete-btn {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .notification-item {
+    flex-direction: column; /* Thay đổi bố cục thành cột */
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .notification-item img {
+    width: 50px; /* Kích thước nhỏ hơn */
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .notification-item h6 {
+    font-size: 14px; /* Font chữ nhỏ hơn */
+  }
+
+  .notification-item p {
+    font-size: 13px;
+  }
+
+  .delete-btn {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .notification-item img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .notification-item h6 {
+    font-size: 15px;
+  }
+
+  .notification-item p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .notification-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .notification-item h6 {
+    font-size: 16px;
+  }
+
+  .notification-item p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .notification-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .notification-item h6 {
+    font-size: 18px;
+  }
+
+  .notification-item p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .notification-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .notification-item h6 {
+    font-size: 20px;
+  }
+
+  .notification-item p {
+    font-size: 16px;
+  }
 }
 
 /*=== UPLOAD PROFILE ===*/
