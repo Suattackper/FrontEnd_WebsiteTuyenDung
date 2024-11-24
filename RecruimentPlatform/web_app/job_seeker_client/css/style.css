@@ -7384,7 +7384,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   border-radius: 50px;
   padding: 2px 12px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   background: rgba(9, 173, 149, .2);
   color: #09AD95;
 }
@@ -7393,7 +7393,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   border-radius: 50px;
   padding: 2px 12px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   background: #fff7d3;
   color: #ffb642;
 }
@@ -7403,7 +7403,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   padding: 2px 12px;
   font-size: 14px;
   color: #F96768;
-  font-weight: 500;
+  font-weight: 600;
   background: rgba(249, 103, 104, .2);
 }
 
@@ -7411,9 +7411,27 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   border-radius: 50px;
   padding: 2px 12px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   background: rgba(113, 103, 255, .2);
   color: #3C65F5;
+}
+
+.candidate-account-tag {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #e1e9ef;
+  color: #0c91ef;
+}
+
+.recruiter-account-tag {
+  border-radius: 50px;
+  padding: 2px 12px;
+  font-size: 14px;
+  color: #F96768;
+  font-weight: 600;
+  background: rgba(249, 103, 104, .2);
 }
 
 .tag-score {
@@ -7744,7 +7762,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   content: "";
   height: 300px;
   width: 300px;
-  background: #05264E;
+  /* background: #05264E; */
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -7752,10 +7770,12 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   transform: translateY(-50%) translateX(-50%) scale(0);
   transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   z-index: -1;
+  cursor: pointer;
 }
 
 .theme-btn:hover {
   color: #fff;
+  opacity: 0.9;
 }
 
 .theme-btn:hover::before {
@@ -7971,6 +7991,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .user-profile-card .table>:not(caption)>*>* {
   vertical-align: middle;
   padding: 1rem 0.5rem;
+  text-align: justify;
 }
 
 .profile-job-info {
