@@ -313,7 +313,7 @@
                 <div class="wt-admin-right-page-header clearfix">
                     <h3>Danh sách thông tin các doanh nghiệp</h3>
                     <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a
-                            href="dashboard.html">Dashboard</a><span>Danh
+                            href="admin-dashboard.html">Dashboard</a><span>Danh
                             sách doanh nghiệp</span></div>
                 </div>
 
@@ -323,91 +323,89 @@
                         <h4 class="panel-tittle m-a0"><i class="fa fa-suitcase"></i> Danh sách doanh nghiệp</h4>
                     </div>
                     <div class="panel-body wt-panel-body m-b30 ">
-                        <div class="col-lg-12">
-                            <div class="user-profile-card">
-                                <div class="user-profile-card-header-right">
-                                    <div class="user-profile-search">
+                        <div class="user-profile-card">
+                            <div class="user-profile-card-header-right">
+                                <div class="user-profile-search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search...">
+                                        <i class="feather-search"></i>
+                                    </div>
+                                </div>
+                                <div class="user-profile-sort">
+                                    <form action="#">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Search...">
-                                            <i class="feather-search"></i>
+                                            <select class="wt-select-bar-large selectpicker"
+                                                data-live-search="true" data-bv-field="size">
+                                                <option disabled selected value="">Trạng thái kiểm duyệt
+                                                </option>
+                                                <option>Chưa kiểm duyệt</option>
+                                                <option>Chờ kiểm duyệt</option>
+                                                <option>Đã kiểm duyệt</option>               
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="user-profile-sort">
-                                        <form action="#">
-                                            <div class="form-group">
-                                                <select class="wt-select-bar-large selectpicker"
-                                                    data-live-search="true" data-bv-field="size">
-                                                    <option disabled selected value="">Trạng thái kiểm duyệt
-                                                    </option>
-                                                    <option>Chưa kiểm duyệt</option>
-                                                    <option>Chờ kiểm duyệt</option>
-                                                    <option>Đã kiểm duyệt</option>               
-                                                </select>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="user-profile-sort m-b30">
-                                        <button type="submit" class="theme-btn w-100">Tìm kiếm</button>
-                                    </div>
+                                    </form>
                                 </div>
-                                <div class="table-responsive profile-applied-job">
-                                    <table class="table text-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th>STT</th>
-                                                <th>Tên doanh nghiệp</th>
-                                                <th>Email</th>
-                                                <th>Số điện thoại</th>
-                                                <th>Logo</th>
-                                                <th>Ngày đăng ký</th>
-                                                <th>Trạng thái</th>              
-                                                <th>Kiểm duyệt</th>              
-                                                <th>Hành động</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td class="candidate-name">
-                                                    <a data-bs-toggle="modal" href="#CompanyDetailModal">Axon Active</a>
-                                                </td>
-                                                <td>info@axonactive.com</td>
-                                                <td>0358255617</td>
-                                                <td>
-                                                    <img class="logo-company" src="images/jobs-company/axon-active-logo.jpg" alt="">
-                                                </td>
-                                                <td>21/10/2024</td>
-                                                <td><span class="job-tag-new">Đã kích hoạt</span></td>
-                                                <td><span class="job-tag-danger">Chưa kiểm duyệt</span></td>
-                                                <td>
-                                                    <a data-bs-toggle="modal" href="#CompanyDetailModal"
-                                                        class="btn btn-outline-secondary btn-sm"><i
-                                                            class="feather-eye"></i></a>
-                                                </td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                    </table>
+                                <div class="user-profile-sort m-b30">
+                                    <button type="submit" class="theme-btn w-100">Tìm kiếm</button>
                                 </div>
+                            </div>
+                            <div class="table-responsive profile-applied-job">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Tên doanh nghiệp</th>
+                                            <th>Email</th>
+                                            <th>Số điện thoại</th>
+                                            <th>Logo</th>
+                                            <th>Ngày đăng ký</th>
+                                            <th>Trạng thái</th>              
+                                            <th>Kiểm duyệt</th>              
+                                            <th>Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="candidate-name">
+                                                <a data-bs-toggle="modal" href="#CompanyDetailModal">Axon Active</a>
+                                            </td>
+                                            <td>info@axonactive.com</td>
+                                            <td>0358255617</td>
+                                            <td>
+                                                <img class="logo-company" src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                            </td>
+                                            <td>21/10/2024</td>
+                                            <td><span class="job-tag-new">Đã kích hoạt</span></td>
+                                            <td><span class="job-tag-danger">Chưa kiểm duyệt</span></td>
+                                            <td>
+                                                <a data-bs-toggle="modal" href="#CompanyDetailModal"
+                                                    class="btn btn-outline-secondary btn-sm"><i
+                                                        class="feather-eye"></i></a>
+                                            </td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
 
-                                <!-- pagination -->
-                                <div class="pagination-outer">
-                                    <div class="pagination-style1">
-                                        <ul class="clearfix">
-                                            <li class="prev"><a href="javascript:;"><span> <i
-                                                            class="fa fa-angle-left"></i>
-                                                    </span></a></li>
-                                            <li><a href="javascript:;">1</a></li>
-                                            <li class="active"><a href="javascript:;">2</a></li>
-                                            <li><a href="javascript:;">3</a></li>
-                                            <li><a class="javascript:;" href="javascript:;"><i
-                                                        class="fa fa-ellipsis-h"></i></a></li>
-                                            <li><a href="javascript:;">5</a></li>
-                                            <li class="next"><a href="javascript:;"><span> <i
-                                                            class="fa fa-angle-right"></i>
-                                                    </span></a></li>
-                                        </ul>
-                                    </div>
+                            <!-- pagination -->
+                            <div class="pagination-outer">
+                                <div class="pagination-style1">
+                                    <ul class="clearfix">
+                                        <li class="prev"><a href="javascript:;"><span> <i
+                                                        class="fa fa-angle-left"></i>
+                                                </span></a></li>
+                                        <li><a href="javascript:;">1</a></li>
+                                        <li class="active"><a href="javascript:;">2</a></li>
+                                        <li><a href="javascript:;">3</a></li>
+                                        <li><a class="javascript:;" href="javascript:;"><i
+                                                    class="fa fa-ellipsis-h"></i></a></li>
+                                        <li><a href="javascript:;">5</a></li>
+                                        <li class="next"><a href="javascript:;"><span> <i
+                                                        class="fa fa-angle-right"></i>
+                                                </span></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

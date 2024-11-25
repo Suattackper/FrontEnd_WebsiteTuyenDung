@@ -39,9 +39,6 @@
 
     <script src="https://cdn.tiny.cloud/1/vlo148eycnsp1nucnzqsfxbdb0lwzc6zw91mzu151pqirqza/tinymce/7/tinymce.min.js"
     referrerpolicy="origin"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/switcher.css">
-
 </head>
 
 <body>
@@ -69,9 +66,7 @@
                             </a>
                         </div>
                     </div>
-                    <!-- Left Side Content End -->
-
-                    <!-- Right Side Content -->
+                    
                     <div class="header-right">
                         <ul class="header-widget-wrap">
                             <!--Message-->
@@ -140,7 +135,7 @@
                                                 </li>
                                             </ul>
                                             <div class="message-view-all">
-                                                <a href="javascript:;">View All</a>
+                                                <a href="dash-messages.html">Xem tất cả</a>
                                             </div>
                                         </div>
                                     </div>
@@ -200,12 +195,15 @@
                                             </ul>
 
                                             <div class="noti-view-all">
-                                                <a href="javascript:;">View All</a>
+                                                <a href="dash-resume-alert.html">Xem tất cả</a>
                                             </div>
 
                                         </div>
                                     </div>
                                 </div>
+
+
+
                             </li>
 
                             <!--Account-->
@@ -242,6 +240,7 @@
                                                 </ul>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </li>
@@ -321,7 +320,6 @@
             </div>
         </nav>
 
-        <!-- Page Content Holder -->
         <div id="content">
             <div class="content-admin-main">
                 <div class="wt-admin-right-page-header clearfix">
@@ -330,7 +328,6 @@
                             href="dashboard.html">Dasboard</a><span>Danh sách tin đăng</span></div>
                 </div>
 
-                <!--Basic Information-->
                 <div class="panel panel-default">
                     <div class="panel-heading-with-btn  wt-panel-heading p-a20">
                         <h4 class="panel-tittle m-a0"><i class="fa fa-suitcase"></i> Danh sách tin đăng</h4>
@@ -403,7 +400,7 @@
                                                 <td>
 
                                                     <a data-bs-toggle="modal" href="#JobPostingEditModal"
-                                                        class="btn btn-outline-secondary btn-sm"><i
+                                                        class="btn btn-outline-info btn-sm"><i
                                                             class="feather-edit"></i></a>
                                                     <a data-bs-toggle="modal" href="#DeleteJobModal"
                                                         class="btn btn-outline-danger btn-sm"><i
@@ -432,7 +429,7 @@
                                                 <td>
 
                                                     <a data-bs-toggle="modal" href="#JobPostingEditModal"
-                                                        class="btn btn-outline-secondary btn-sm"><i
+                                                        class="btn btn-outline-info btn-sm"><i
                                                             class="feather-edit"></i></a>
                                                     <a data-bs-toggle="modal" href="#DeleteJobModal"
                                                         class="btn btn-outline-danger btn-sm"><i
@@ -461,7 +458,7 @@
                                                 <td>
 
                                                     <a data-bs-toggle="modal" href="#JobPostingEditModal"
-                                                        class="btn btn-outline-secondary btn-sm"><i
+                                                        class="btn btn-outline-info btn-sm"><i
                                                             class="feather-edit"></i></a>
                                                     <a data-bs-toggle="modal" href="#DeleteJobModal"
                                                         class="btn btn-outline-danger btn-sm"><i
@@ -498,7 +495,6 @@
             </div>
         </div>
 
-        <!-- Logout Popup-->
         <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -517,7 +513,6 @@
             </div>
         </div>
 
-        <!-- Delete Job Popup -->
         <div class="modal fade twm-model-popup" id="DeleteJobModal" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -536,7 +531,6 @@
             </div>
         </div>
 
-        <!-- Job Posting Popup -->
         <div class="panel panel-default mb-3">
             <div class="modal fade twm-saved-jobs-view" id="JobPostingModal" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
@@ -1185,7 +1179,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- JAVASCRIPT  FILES ========================================= -->
     <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->

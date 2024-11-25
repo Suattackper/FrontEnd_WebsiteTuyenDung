@@ -275,3 +275,27 @@ fileInput.addEventListener("change", () => {
 });
 
 /*=============================================*/
+function previewFileJobCategory() {
+  const previewContainer = document.getElementById('img-job-category-preview');
+  const file = document.getElementById('img-upload-job-category').files[0]; // Lấy file đầu tiên
+
+  // Xóa nội dung hiện tại trong vùng xem trước
+  previewContainer.innerHTML = '';
+
+  if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+          const previewBox = document.createElement('div');
+          previewBox.classList.add('preview-box');
+          
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          img.alt = 'Uploaded Image';
+          img.style.maxWidth = '100%'; // Đảm bảo ảnh không vượt quá kích thước container
+          previewBox.appendChild(img);
+          
+          previewContainer.appendChild(previewBox);
+      };
+      reader.readAsDataURL(file);
+  }
+}

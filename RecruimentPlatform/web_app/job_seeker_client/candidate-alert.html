@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- META -->
     <meta charset="utf-8">
@@ -127,7 +128,7 @@
                                                 </li>
                                             </ul>
                                             <div class="message-view-all">
-                                                <a href="javascript:;">View All</a>
+                                                <a href="candidate-chat.html">Xem tất cả</a>
                                             </div>
                                         </div>
                                     </div>
@@ -183,7 +184,7 @@
                                             </ul>
 
                                             <div class="noti-view-all">
-                                                <a href="javascript:;">View All</a>
+                                                <a href="candidate-alert.html">Xem tất cả</a>
                                             </div>
                                         </div>
                                     </div>
@@ -284,26 +285,52 @@
             </div>
         </nav>
 
-      
-        <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="modal-title">Bạn có muốn đăng xuất</h4>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
-                        <button type="button" class="theme-btn theme-btn2 mt-3">Có</button>
+        <div id="content">
+            <div class="content-admin-main">
+
+                <div class="twm-pro-view-chart-wrap">
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="panel panel-default site-bg-white m-t30">
+                            <h3>Grabwork thông báo</h3>
+                            <div class="notification-controls">
+                                <a href="#" id="markAllRead">Đánh dấu tất cả đã đọc</a>
+                                <a href="#" id="deleteAll">Xóa tất cả</a>
+                            </div>
+                            <div class="mt-4" id="notificationList">
+
+                                <div class="d-flex align-items-center notification-item">
+                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="Company Logo">
+                                    <div class="content">
+                                        <h6>Axon Active</h6>
+                                        <p class="text-muted">Hồ sơ ứng tuyển của bạn vào vị trí "Sales Assistant" được
+                                            cập nhật trạng thái sang "Đã phỏng vấn"</p>
+                                    </div>
+                                    <i class="feather-x delete-btn"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Bạn có muốn đăng xuất không?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
+                    <button type="button" class="theme-btn theme-btn2 mt-3">Có</button>
+                </div>
+            </div>
+        </div>
     </div>
-
+    </div>
 
     <!-- JAVASCRIPT  FILES ========================================= -->
     <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
@@ -327,9 +354,8 @@
     <script src="js/chart.js"></script><!-- Chart -->
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
-    <script src="js/script.js"></script>
+    <script src="js/notification.js"></script>
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-    <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
 
 </body>
 

@@ -8062,14 +8062,15 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 /*=== NOTIFICATION ===*/
 .notification-item {
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 15px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 15px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
-  border-radius: 8px; /* Bo góc */
-  margin-bottom: 15px; /* Tạo khoảng cách giữa các thông báo */
   background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .notification-item:last-child {
@@ -8077,11 +8078,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .notification-item img {
-  width: 60px; /* Kích thước hình ảnh mặc định */
+  width: 60px;
   height: 60px;
-  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
-  border-radius: 50%; /* Bo tròn hình ảnh */
-  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 .notification-item .content {
@@ -8089,18 +8090,17 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .notification-item h6 {
-  font-size: 16px;
-  font-weight: 600;
   margin-bottom: 5px;
 }
 
 .notification-item p {
-  font-size: 14px;
   margin: 0;
-  color: #6c757d;
 }
 
 .delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   color: red;
   font-size: 20px;
   cursor: pointer;
@@ -8108,25 +8108,38 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 .delete-btn:hover {
   color: darkred;
+}
+
+.notification-controls {
+  text-align: right;
+}
+
+.notification-controls a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #dc3545;
+}
+
+.notification-controls a:hover {
   text-decoration: underline;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 576px) {
   .notification-item {
-    flex-direction: column; /* Thay đổi bố cục thành cột */
+    flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
+    padding: 15px;
   }
 
   .notification-item img {
-    width: 50px; /* Kích thước nhỏ hơn */
+    width: 50px;
     height: 50px;
     margin-bottom: 10px;
   }
 
   .notification-item h6 {
-    font-size: 14px; /* Font chữ nhỏ hơn */
+    font-size: 14px;
   }
 
   .notification-item p {
@@ -8134,67 +8147,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   }
 
   .delete-btn {
-    align-self: flex-end;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .notification-item img {
-    width: 55px;
-    height: 55px;
-  }
-
-  .notification-item h6 {
-    font-size: 15px;
-  }
-
-  .notification-item p {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .notification-item img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .notification-item h6 {
-    font-size: 16px;
-  }
-
-  .notification-item p {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 992px) {
-  .notification-item img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .notification-item h6 {
-    font-size: 18px;
-  }
-
-  .notification-item p {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .notification-item img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .notification-item h6 {
-    font-size: 20px;
-  }
-
-  .notification-item p {
-    font-size: 16px;
+    top: 5px;
+    right: 5px;
   }
 }
 
@@ -14858,6 +14812,23 @@ strong {
   height: 100%;
   object-fit: cover;
 }
+
+#img-job-category-preview .preview-box {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  position: relative;
+}
+
+#img-job-category-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .banner-container {
   display: flex;

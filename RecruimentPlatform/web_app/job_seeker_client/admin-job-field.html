@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- PAGE TITLE HERE -->
+    <title>Admin - Danh sách các lĩnh vực kinh doanh</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/feather.css"><!-- FEATHER ICON SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css"><!-- Lc light box popup -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"><!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/select.bootstrap5.min.css">
+    <!-- DASHBOARD select bootstrap  STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css"><!-- DROPZONE STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/scrollbar.css"><!-- CUSTOM SCROLL BAR STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"><!-- DATEPICKER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css"> <!-- Flaticon -->
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
+
+</head>
+
+<body>
+
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="wrapper">
+                <div class="cssload-loader"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wraper">
+        <header id="header-admin-wrap" class="header-admin-fixed">
+            <div id="header-admin">
+                <div class="container">
+                    <div class="header-left">
+                        <div class="nav-btn-wrap">
+                            <a class="nav-btn-admin" id="sidebarCollapse">
+                                <span class="fa fa-angle-left"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <ul class="header-widget-wrap">
+                            <li class="header-widget dashboard-message-dropdown">
+                                <div class="dropdown">
+                                    <a href="javascript:;" class="dropdown-toggle jobzilla-admin-messange"
+                                        id="ID-MSG_dropdown" data-bs-toggle="dropdown">
+                                        <i class="far fa-envelope"></i>
+                                        <span class="notification-animate">4</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="ID-MSG_dropdown">
+                                        <div class="message-list dashboard-widget-scroll">
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span class="msg-avtar">
+                                                        <img src="images/user-avtar/pic1.jpg" alt="">
+                                                    </span>
+
+                                                    <div class="msg-texting">
+                                                        <strong>Alexa Johnson</strong>
+                                                        <small class="msg-time">
+                                                            <span class="far fa-clock p-r-5"></span>12 mins ago
+                                                        </small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="msg-avtar">
+                                                        <img src="images/user-avtar/pic2.jpg" alt="">
+                                                    </span>
+
+                                                    <div class="msg-texting">
+                                                        <strong>Johan Smith</strong>
+                                                        <small class="msg-time">
+                                                            <span class="far fa-clock p-r-5"></span>2 hours ago
+                                                        </small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="msg-avtar">
+                                                        <img src="images/user-avtar/pic3.jpg" alt="">
+                                                    </span>
+
+                                                    <div class="msg-texting">
+                                                        <strong>Bobby Brown</strong>
+                                                        <small class="msg-time">
+                                                            <span class="far fa-clock p-r-5"></span>3 hours ago
+                                                        </small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="msg-avtar">
+                                                        <img src="images/user-avtar/pic4.jpg" alt="">
+                                                    </span>
+
+                                                    <div class="msg-texting">
+                                                        <strong>David Deo</strong>
+                                                        <small class="msg-time">
+                                                            <span class="far fa-clock p-r-5"></span>4 hours ago
+                                                        </small>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="message-view-all">
+                                                <a href="javascript:;">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <!--Notification-->
+                            <li class="header-widget dashboard-noti-dropdown">
+                                <div class="dropdown">
+                                    <a href="javascript:;" class="dropdown-toggle jobzilla-admin-notification"
+                                        id="ID-NOTI_dropdown" data-bs-toggle="dropdown">
+                                        <i class="far fa-bell"></i>
+                                        <span class="notification-animate">8</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="ID-NOTI_dropdown">
+                                        <div class="dashboard-widgets-header">You have 7 notifications</div>
+                                        <div class="noti-list dashboard-widget-scroll">
+                                            <ul>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">Devid applied for <b>Webdesigner.</b>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">Nikol sent you a message. </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">lucy bookmarked your <b>SEO
+                                                                Expert</b> Job! </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">Your job for <b>teacher</b> has been
+                                                            approved! </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="noti-icon"><i class="far fa-bell"></i></span>
+                                                        <span class="noti-texting">Thor applied for <b>Team Leader</b>.
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="noti-view-all">
+                                                <a href="admin-message.html">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="header-widget">
+                                <div class="dashboard-user-section">
+                                    <div class="listing-user">
+                                        <div class="dropdown">
+                                            <a href="javascript:;" class="dropdown-toggle" id="ID-ACCOUNT_dropdown"
+                                                data-bs-toggle="dropdown">
+                                                <div class="user-name text-black">
+                                                    <span>
+                                                        <img src="images/user-avtar/pic4.jpg" alt="">
+                                                    </span>Hello Admin
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="ID-ACCOUNT_dropdown">
+                                                <ul>
+                                                    <li>
+                                                        <a href="admin-dashboard.html"><i
+                                                                class="feather-home"></i>Dashboard</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="admin-notification.html"><i class="feather-mail"></i>
+                                                            Thông báo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="admin-account.html"><i class="feather-user"></i>
+                                                            Thông tin hồ sơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index.html"><i class="feather-log-out"></i>
+                                                            Logout</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav id="sidebar-admin-wraper">
+            <div class="page-logo d-flex align-items-center">
+                <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
+                <h3 class="m-l10">Grabword</h3>
+            </div>
+
+            <div class="admin-nav scrollbar-macosx">
+                <ul>
+                    <li>
+                        <a href="dashboard.html"><i class="feather-home"></i><span
+                                class="admin-nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-notification.html"><i class="feather-bell"></i><span class="admin-nav-text">Thông
+                                báo
+                                <sup class="twm-msg-noti">5</sup></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-company-managed.html"><i class="feather-file-text"></i><span
+                                class="admin-nav-text">Quản lý doanh
+                                nghiệp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-job-posting.html"><i class="feather-briefcase"></i><span
+                                class="admin-nav-text">Quản lý các
+                                bài đăng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-job-category.html"><i class="feather-briefcase"></i><span
+                                class="admin-nav-text">Quản lý ngành nghề</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="admin-job-field.html"><i class="feather-briefcase"></i><span
+                                class="admin-nav-text">Quản lý lĩnh vực hoạt động</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-blog.html"><i class="feather-book-open"></i><span class="admin-nav-text">Quản lý
+                                bài blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-account-managed.html"><i class="feather-users"></i><span
+                                class="admin-nav-text">Quản lý tài khoản</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-account.html"><i class="feather-user-check"></i><span class="admin-nav-text">Tài
+                                khoản</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#logout-dash-profile"><i
+                                class="feather-log-out"></i><span class="admin-nav-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content">
+            <div class="content-admin-main">
+                <div class="wt-admin-right-page-header clearfix">
+                    <h3>Admin - Danh sách các lĩnh vực linh doanh</h3>
+                    <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a
+                            href="admin-dashboard.html">Dashboard</a><span>Danh
+                            sách các lĩnh vực linh doanh</span></div>
+                </div>
+
+                <div class="twm-pro-view-chart-wrap">
+                    <div class="panel panel-default site-bg-white m-t30">
+                        <div class="panel-heading-with-btn  wt-panel-heading p-a20">
+                            <h4 class="panel-tittle m-a0"><i class="far fa-list-alt"></i> Danh sách các lĩnh vực kinh doanh
+                            </h4>
+                            <a data-bs-toggle="modal" href="#JobCategoryModal" role="button" title="Add"
+                                class="site-text-primary">
+                                <span class="fa-2x feather-plus-circle"></span>
+                            </a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-12 col-md-8 mt-3">
+                                <div class="ls-inputicon-box">
+                                    <input class="form-control" name="search" type="text" placeholder="Tìm kiếm" />
+                                    <i class="fs-input-icon feather-search"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-3 col-md-6 mt-3">
+                                <button type="submit" class="theme-btn w-100">Tìm kiếm</button>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive profile-applied-job mt-3">
+                            <table class="table text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên lĩnh vực kinh doanh</th>
+                                        <th>Hành động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            Công nghệ và Kỹ thuật
+                                        </td>                                      
+                                        <td>
+                                            <a data-bs-toggle="modal" href="#JobFieldModal"
+                                                class="btn btn-outline-secondary btn-sm"><i class="feather-eye"></i></a>
+                                            <a data-bs-toggle="modal" href="#JobFieldModal"
+                                                class="btn btn-outline-info btn-sm"><i
+                                                    class="feather-edit"></i></a>
+                                                    <a data-bs-toggle="modal" href="#DeleteJobFieldModal"
+                                                    class="btn btn-outline-danger btn-sm"><i
+                                                        class="feather-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            Y tế và Chăm sóc sức khỏe
+                                        </td>
+                                        <td>
+                                            <a data-bs-toggle="modal" href="#JobFieldModal"
+                                                class="btn btn-outline-secondary btn-sm"><i class="feather-eye"></i></a>
+                                            <a data-bs-toggle="modal" href="#JobFieldModal"
+                                                class="btn btn-outline-info btn-sm"><i
+                                                    class="feather-edit"></i></a>
+                                            <a data-bs-toggle="modal" href="#DeleteJobFieldModal"
+                                                class="btn btn-outline-danger btn-sm"><i
+                                                    class="feather-trash"></i></a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-outer">
+                            <div class="pagination-style1">
+                                <ul class="clearfix">
+                                    <li class="prev"><a href="javascript:;"><span> <i class="fa fa-angle-left"></i>
+                                            </span></a></li>
+                                    <li><a href="javascript:;">1</a></li>
+                                    <li class="active"><a href="javascript:;">2</a></li>
+                                    <li><a href="javascript:;">3</a></li>
+                                    <li><a class="javascript:;" href="javascript:;"><i class="fa fa-ellipsis-h"></i></a>
+                                    </li>
+                                    <li><a href="javascript:;">5</a></li>
+                                    <li class="next"><a href="javascript:;"><span> <i class="fa fa-angle-right"></i>
+                                            </span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Bạn có muốn đăng xuất không?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3">Có</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade twm-model-popup" id="DeleteJobFieldModal" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Bạn có muốn xóa lĩnh vực này không?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3">Có</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="JobFieldModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h3 class="modal-title">Thông tin lĩnh vực kinh doanh</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="panel panel-default">
+                                    <div class="panel-body wt-panel-body m-b20 ">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="jobCategory" class="form-label">Tên lĩnh vực <span
+                                                                class="required">*</span></label>
+                                                        <div class="ls-inputicon-box">
+                                                            <input class="form-control" name="job_category" type="text"
+                                                                id="jobCategory" />
+                                                            <i class="fs-input-icon far fa-building"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="site-button m-r10">Thêm
+                                mới</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script><!-- STICKY HEADER -->
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
+    <script src="js/bootstrap-select.min.js"></script><!-- Form js -->
+    <script src="js/dropzone.js"></script><!-- IMAGE UPLOAD  -->
+    <script src="js/jquery.scrollbar.js"></script><!-- scroller -->
+    <script src="js/bootstrap-datepicker.js"></script><!-- scroller -->
+    <script src="js/chart.js"></script><!-- Chart -->
+    <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
+    <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="js/script.js"></script>
+    <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
+
+</body>
+
+</html>

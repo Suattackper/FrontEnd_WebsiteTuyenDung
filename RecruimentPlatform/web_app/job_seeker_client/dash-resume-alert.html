@@ -139,7 +139,7 @@
                                                 </li>
                                             </ul>
                                             <div class="message-view-all">
-                                                <a href="javascript:;">View All</a>
+                                                <a href="dash-messages.html">Xem tất cả</a>
                                             </div>
                                         </div>
                                     </div>
@@ -199,7 +199,7 @@
                                             </ul>
 
                                             <div class="noti-view-all">
-                                                <a href="javascript:;">View All</a>
+                                                <a href="dash-resume-alert.html">Xem tất cả</a>
                                             </div>
 
                                         </div>
@@ -254,8 +254,8 @@
             </div>
         </header>
         <nav id="sidebar-admin-wraper">
-              <div class="page-logo d-flex align-items-center"">
-                     <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
+            <div class="page-logo d-flex align-items-center"">
+                     <a href=" index.html"><img src="images/job_seeker_logo.png" alt=""></a>
                 <h3 class="m-l10">Grabword</h3>
             </div>
 
@@ -325,143 +325,33 @@
 
         <div id="content">
             <div class="content-admin-main">
-                <div class="wt-admin-right-page-header clearfix">
-                    <h2>Resume Alerts!</h2>
-                    <div class="breadcrumbs"><a href="#">Home</a><a href="#">Dasboard</a><span>Resume Alerts</span>
-                    </div>
-                </div>
 
-                <div class="panel panel-default site-bg-white m-t30">
-                    <div class="panel-heading wt-panel-heading p-a20">
-                        <h4 class="panel-tittle m-a0"><i class="far fa-bell"></i>Alerts</h4>
-                    </div>
-                    <div class="panel-body wt-panel-body">
+                <div class="twm-pro-view-chart-wrap">
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="panel panel-default site-bg-white m-t30">
+                            <h3>Grabwork thông báo</h3>
+                            <div class="notification-controls">
+                                <a href="#" id="markAllRead">Đánh dấu tất cả đã đọc</a>
+                                <a href="#" id="deleteAll">Xóa tất cả</a>
+                            </div>
+                            <div class="mt-4" id="notificationList">
 
-                        <div class="p-a20 table-responsive">
-                            <table class="table twm-table table-striped table-borderless">
-                                <thead>
-                                    <tr>
-                                        <th>Number Jobs</th>
-                                        <th>Title</th>
-                                        <th>Jobs Description</th>
-                                        <th>Times</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <!--1-->
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Web Developer</td>
-                                        <td>A strategic approach to website design and development.</td>
-                                        <td>Weekly</td>
-                                        <td>
-                                            <button type="button" title="View" data-bs-toggle="tooltip"
-                                                data-bs-placement="top">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button title="delete" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-trash-alt"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <!--2-->
-                                    <tr>
-                                        <td>3</td>
-                                        <td>SEO Experts</td>
-                                        <td>Providing the best SEO practices.</td>
-                                        <td>Hourly</td>
-                                        <td>
-                                            <button title="View" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button title="delete" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-trash-alt"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <!--3-->
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Web Developer</td>
-                                        <td>As promised, we’re the most professional website designing company.</td>
-                                        <td>Weekly</td>
-                                        <td>
-                                            <button title="View" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button title="delete" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-trash-alt"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <!--4-->
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Web Designer</td>
-                                        <td>Custom web design solutions websites with personality.</td>
-                                        <td>Weekly</td>
-                                        <td>
-                                            <button title="View" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button title="delete" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-trash-alt"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <!--5-->
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Web Developer</td>
-                                        <td>A strategic approach to website design and development.</td>
-                                        <td>Weekly</td>
-                                        <td>
-                                            <button title="View" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button title="delete" data-bs-toggle="tooltip" data-bs-placement="top">
-                                                <i class="fa fa-trash-alt"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                                <div class="d-flex align-items-center notification-item">
+                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="Company Logo">
+                                    <div class="content">
+                                        <h6>Axon Active</h6>
+                                        <p class="text-muted">Hồ sơ ứng tuyển của bạn vào vị trí "Sales Assistant" được
+                                            cập nhật trạng thái sang "Đã phỏng vấn"</p>
+                                    </div>
+                                    <i class="feather-x delete-btn"></i>
+                                </div>
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-
-        <!--Delete Profile Popup-->
-        <div class="modal fade twm-model-popup" id="delete-dash-profile" data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="modal-title">Do you want to delete your profile?</h4>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="site-button outline-primary">Yes</button>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <!--Logout Profile Popup-->
         <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -470,11 +360,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h4 class="modal-title">Do you want to Logout your profile?</h4>
+                        <h4 class="modal-title">Bạn có muốn đăng xuất không?</h4>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="site-button outline-primary">Yes</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="theme-btn theme-btn2 mt-3">Có</button>
                     </div>
                 </div>
             </div>
@@ -506,8 +396,7 @@
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-    <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
-
+    <script src="js/notification.js"></script>
 
 </body>
 
