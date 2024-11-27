@@ -36,16 +36,9 @@
     <link rel="stylesheet" type="text/css" href="css/flaticon.css"> <!-- Flaticon -->
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
     <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
-
-    <!-- THEME COLOR CHANGE STYLE SHEET -->
-    <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
-    <!-- SIDE SWITCHER STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/switcher.css">
-
 </head>
 
 <body>
-    <!-- LOADING AREA START ===== -->
     <div class="loading-area">
         <div class="loading-box"></div>
         <div class="loading-pic">
@@ -56,7 +49,6 @@
     </div>
 
     <div class="page-wraper">
-        <!-- HEADER START -->
         <header class="site-header header-style-3 mobile-sider-drawer-menu">
             <div class="sticky-header main-bar-wraper navbar-expand-lg">
                 <div class="main-bar">
@@ -77,7 +69,6 @@
                             <span class="icon-bar icon-bar-three"></span>
                         </button>
 
-                        <!-- MAIN Vav -->
                         <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
                             <ul class=" nav navbar-nav">
                                 <li class="has-mega-menu">
@@ -96,16 +87,9 @@
                                     <a href="blog-list.html">Blog</a>
                                 </li>
                             </ul>
-
                         </div>
 
-                        <!-- Header Right Section-->
                         <div class="extra-nav header-2-nav">
-                            <div class="extra-cell">
-                                <div class="header-search">
-                                    <a href="#search" class="header-search-icon"><i class="feather-search"></i></a>
-                                </div>
-                            </div>
                             <div class="extra-cell">
                                 <div class="header-nav-btn-section">
                                     <div class="twm-nav-btn-left">
@@ -123,28 +107,11 @@
 
                         </div>
                     </div>
-                </div>
-
-                <!-- SITE Search -->
-                <div id="search">
-                    <span class="close"></span>
-                    <form role="search" id="searchform" action="https://thewebmax.org/search" method="get"
-                        class="radius-xl">
-                        <input class="form-control" value="" name="q" type="search" placeholder="Type to search" />
-                        <span class="input-group-append">
-                            <button type="button" class="search-btn">
-                                <i class="fa fa-paper-plane"></i>
-                            </button>
-                        </span>
-                    </form>
-                </div>
+                </div>              
             </div>
         </header>
 
-        <!-- CONTENT START -->
         <div class="page-content">
-
-            <!--Banner Start-->
             <div class="twm-home3-banner-section site-bg-white bg-cover"
                 style="background-image:url(images/home-3/banner1.jpg)">
                 <div class="twm-home3-inner-section">
@@ -153,111 +120,41 @@
                         <div class="twm-bnr-title-light">For talent Developers</div>
                         <div class="twm-bnr-discription">Type your keyword, then click search to find your perfect job.
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="twm-bnr-search-bar">
-                            <form>
+            <div class="search-area">
+                <div class="container">
+                    <div class="search-form">
+                        <div class="search-form-wrapper">
+                            <form action="#">
                                 <div class="row">
-                                    <!--Title-->
-                                    <div class="form-group col-xl-3 col-lg-6 col-md-6">
-                                        <label>What</label>
-                                        <select class="wt-search-bar-select selectpicker" data-live-search="true"
-                                            title="" id="j-Job_Title" data-bv-field="size">
-                                            <option disabled selected value="">Select Category</option>
-                                            <option selected>Job Title</option>
-                                            <option>Web Designer</option>
-                                            <option>Developer</option>
-                                            <option>Acountant</option>
-                                        </select>
-                                    </div>
-
-                                    <!--All Category-->
-                                    <div class="form-group col-xl-4 col-lg-6 col-md-6">
-                                        <label>Type</label>
-                                        <select class="wt-search-bar-select selectpicker" data-live-search="true"
-                                            title="" id="j-All_Category" data-bv-field="size">
-                                            <option disabled selected value="">Select Category</option>
-                                            <option selected>All Category</option>
-                                            <option>Web Designer</option>
-                                            <option>Developer</option>
-                                            <option>Acountant</option>
-                                        </select>
-                                    </div>
-
-                                    <!--Location-->
-                                    <div class="form-group col-xl-3 col-lg-6 col-md-6">
-                                        <label>Location</label>
-                                        <div class="twm-inputicon-box">
-                                            <input name="username" type="text" required class="form-control"
-                                                placeholder="Location">
-                                            <i class="twm-input-icon fas fa-map-marker-alt"></i>
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            <label>Tìm kiếm</label>
+                                            <div class="form-group-icon">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Vị trí tuyển dụng, tên công ty">
+                                                <i class="feather-search"></i>
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <!--Find job btn-->
-                                    <div class="form-group col-xl-2 col-lg-6 col-md-6">
-                                        <button type="button" class="site-button">Find Job</button>
+                                  
+                                    <div class="col-md-2 align-self-end">
+                                        <div class="form-group">
+                                            <button type="submit" class="theme-btn w-100"><span
+                                                    class="fe-search"></span>Tìm kiếm</button>
+                                        </div>
                                     </div>
-
                                 </div>
-                            </form>
-                        </div>
-
-                        <div class="twm-bnr-popular-search">
-                            <span class="twm-title">Popular Searches:</span>
-                            <a href="job-list.html">Developer</a> ,
-                            <a href="job-list.html">Designer</a> ,
-                            <a href="job-list.html">Architect</a> ,
-                            <a href="job-list.html">Engineer</a> ...
-                        </div>
-                    </div>
-                    <div class="twm-bnr-bottom-section">
-                        <div class="twm-browse-jobs">7,000+ Browse Jobs</div>
-                        <div class="twm-bnr-blocks-wrap">
-                            <!--icon-block-1-->
-                            <div class="twm-bnr-blocks twm-bnr-blocks-position-1">
-                                <div class="twm-content">
-                                    <div class="tw-count-number text-clr-pink">
-                                        <span class="counter">12</span>K+
-                                    </div>
-                                    <p class="icon-content-info">Companies Jobs</p>
-                                </div>
-                            </div>
-
-                            <!--icon-block-2-->
-                            <div class="twm-bnr-blocks twm-bnr-blocks-position-2">
-                                <div class="twm-content">
-                                    <div class="tw-count-number text-clr-yellow">
-                                        <span class="counter">98</span> +
-                                    </div>
-                                    <p class="icon-content-info">Job For Countries </p>
-                                </div>
-                            </div>
-
-                            <!--icon-block-3-->
-                            <div class="twm-bnr-blocks-3 twm-bnr-blocks-position-3">
-                                <div class="twm-pics">
-                                    <span><img src="images/main-slider/slider1/user/u-1.jpg" alt=""></span>
-                                    <span><img src="images/main-slider/slider1/user/u-2.jpg" alt=""></span>
-                                    <span><img src="images/main-slider/slider1/user/u-3.jpg" alt=""></span>
-                                    <span><img src="images/main-slider/slider1/user/u-4.jpg" alt=""></span>
-                                    <span><img src="images/main-slider/slider1/user/u-5.jpg" alt=""></span>
-                                    <span><img src="images/main-slider/slider1/user/u-6.jpg" alt=""></span>
-                                </div>
-                                <div class="twm-content">
-                                    <div class="tw-count-number text-clr-green">
-                                        <span class="counter">3</span>K+
-                                    </div>
-                                    <p class="icon-content-info">Jobs Done</p>
-                                </div>
-                            </div>
+                            </form>                               
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="section-full p-t120 p-b90 site-bg-white twm-job-categories-hpage-6-area">
-                <!-- TITLE START-->
                 <div class="section-head center wt-small-separator-outer">
                     <div class="wt-small-separator site-text-primary">
                         <div>Ngành nghề</div>
@@ -449,8 +346,6 @@
                 </div>
             </div>
 
-
-            <!-- TOP COMPANIES START -->
             <div class="section-full p-t120 p-b90 site-bg-white twm-companies-wrap">
                 <!-- TITLE START-->
                 <div class="section-head center wt-small-separator-outer">
@@ -592,9 +487,7 @@
                 </div>
 
             </div>
-            <!-- TOP COMPANIES END -->
 
-            <!-- HOW IT WORK SECTION START -->
             <div class="section-full p-t120 p-b90 site-bg-gray twm-how-it-work-area">
                 <div class="container">
                     <!-- TITLE START-->
@@ -653,7 +546,6 @@
 
             </div>
 
-            <!-- FEATURED SECTION START -->
             <div class="section-full p-t120 p-b90 site-bg-white twm-featured-city-area">
                 <div class="container">
                     <!-- TITLE START-->
@@ -712,7 +604,6 @@
 
             </div>
 
-            <!-- Recruiters START -->
             <div class="section-full p-t120 p-b90 site-bg-white">
                 <div class="container">
                     <!-- TITLE START-->
@@ -1131,225 +1022,294 @@
 
                 </div>
             </div>
+
             <div class="section-full p-t120 p-b90 site-bg-light-purple twm-bg-ring-wrap">
                 <div class="twm-bg-ring-right"></div>
                 <div class="twm-bg-ring-left"></div>
                 <div class="container">
-                    <!-- TITLE START-->
                     <div class="section-head center wt-small-separator-outer">
                         <div class="wt-small-separator site-text-primary">
                             <div>Công việc nổi bật</div>
                         </div>
                         <h2 class="wt-title fw-bold">TOP CÔNG VIỆC</h2>
                     </div>
-                    <!-- TITLE END-->
-
 
                     <div class="section-content">
                         <div class="twm-jobs-list-wrap">
                             <ul>
                                 <li>
-                                    <div class="twm-jobs-list-style1 mb-5">
-                                        <div class="twm-media">
-                                            <img src="images/jobs-company/pic1.jpg" alt="#">
-                                        </div>
-                                        <div class="twm-mid-content">
-                                            <a href="job-detail.html" class="twm-job-title">
-                                                <h4>Senior Web Designer , Developer <span
-                                                        class="twm-job-post-duration">/ 1 days ago</span></h4>
-                                            </a>
-                                            <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
-                                            </p>
-                                            <a href="https://themeforest.net/user/thewebmax/portfolio"
-                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                        </div>
-                                        <div class="twm-right-content">
-                                            <div class="twm-jobs-category green"><span class="twm-bg-green">New</span>
+                                    <div class="col-lg-12">
+                                        <div class="job-item">
+                                            <a href="#" class="job-bookmark"><i class="feather-bookmark"></i></a>
+                                            <div class="job-top">
+                                                <div class="job-img">
+                                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                                </div>
+                                                <div class="job-title">
+                                                    <h5><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h5>
+                                                    <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                        Axon Active</a>
+                                                </div>
                                             </div>
-                                            <div class="twm-jobs-amount">$2500 <span>/ Month</span></div>
-                                            <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Browse
-                                                Job</a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="twm-jobs-list-style1 mb-5">
-                                        <div class="twm-media">
-                                            <img src="images/jobs-company/pic2.jpg" alt="#">
-                                        </div>
-                                        <div class="twm-mid-content">
-                                            <a href="job-detail.html" class="twm-job-title">
-                                                <h4>Need Senior Rolling Stock Technician<span
-                                                        class="twm-job-post-duration">/ 15 days ago</span></h4>
-                                            </a>
-                                            <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
-                                            </p>
-                                            <a href="https://themeforest.net/user/thewebmax/portfolio"
-                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                        </div>
-                                        <div class="twm-right-content">
-                                            <div class="twm-jobs-category green"><span
-                                                    class="twm-bg-brown">Intership</span></div>
-                                            <div class="twm-jobs-amount">$2000<span>/ Month</span></div>
-                                            <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Browse
-                                                Job</a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="twm-jobs-list-style1 mb-5">
-                                        <div class="twm-media">
-                                            <img src="images/jobs-company/pic3.jpg" alt="#">
-                                        </div>
-                                        <div class="twm-mid-content">
-                                            <a href="job-detail.html" class="twm-job-title">
-                                                <h4 class="twm-job-title">IT Department Manager & Blogger-Entrepenour
-                                                    <span class="twm-job-post-duration">/ 6 Month ago</span>
-                                                </h4>
-                                            </a>
-                                            <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
-                                            </p>
-                                            <a href="https://themeforest.net/user/thewebmax/portfolio"
-                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                        </div>
-                                        <div class="twm-right-content">
-                                            <div class="twm-jobs-category green"><span
-                                                    class="twm-bg-purple">Fulltime</span></div>
-                                            <div class="twm-jobs-amount">$1500 <span>/ Month</span></div>
-                                            <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Browse
-                                                Job</a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="twm-jobs-list-style1 mb-5">
-                                        <div class="twm-media">
-                                            <img src="images/jobs-company/pic4.jpg" alt="#">
-                                        </div>
-                                        <div class="twm-mid-content">
-                                            <a href="job-detail.html" class="twm-job-title">
-                                                <h4 class="twm-job-title">Art Production Specialist <span
-                                                        class="twm-job-post-duration">/ 2 days ago</span></h4>
-                                            </a>
-                                            <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
-                                            </p>
-                                            <a href="https://themeforest.net/user/thewebmax/portfolio"
-                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                        </div>
-                                        <div class="twm-right-content">
-                                            <div class="twm-jobs-category green"><span
-                                                    class="twm-bg-sky">Freelancer</span></div>
-                                            <div class="twm-jobs-amount">$1200<span>/ Month</span></div>
-                                            <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Browse
-                                                Job</a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="twm-jobs-list-style1 mb-5">
-                                        <div class="twm-media">
-                                            <img src="images/jobs-company/pic5.jpg" alt="#">
-                                        </div>
-                                        <div class="twm-mid-content">
-                                            <a href="job-detail.html" class="twm-job-title">
-                                                <h4 class="twm-job-title">Recreation & Fitness Worker <span
-                                                        class="twm-job-post-duration">/ 1 days ago</span></h4>
-                                            </a>
-                                            <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
-                                            </p>
-                                            <a href="https://themeforest.net/user/thewebmax/portfolio"
-                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                        </div>
-                                        <div class="twm-right-content">
-                                            <div class="twm-jobs-category green"><span
-                                                    class="twm-bg-golden">Temporary</span></div>
-                                            <div class="twm-jobs-amount">$1700 <span>/ Month</span></div>
-                                            <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Browse
-                                                Job</a>
+                                            <div class="job-content">
+                                                <ul class="job-info-list">
+                                                    <li><i class="feather-clock"></i> Hạn chót <span class="deadine">20/11/2024</span></li>
+                                                    <li><i class="feather-check-circle"></i> Full Time</li>
+                                                    <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                </ul>
+                                            </div>
+                                            <div class="job-tag">
+                                                <a href="#" class="job-tag-new">Mới</a>
+                                                <a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                            </div>
+                                            <div class="job-bottom">
+                                                <div class="job-salary">
+                                                    <span class="job-salary-amount">20 - 30 triệu</span>
+                                                </div>
+                                                <a href="job-detail.html" class="theme-btn">Ứng tuyển ngay</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="twm-jobs-list-style1 mb-5">
-                                        <div class="twm-media">
-                                            <img src="images/jobs-company/pic5.jpg" alt="#">
-                                        </div>
-                                        <div class="twm-mid-content">
-                                            <a href="job-detail.html" class="twm-job-title">
-                                                <h4 class="twm-job-title">Recreation & Fitness Worker <span
-                                                        class="twm-job-post-duration">/ 1 days ago</span></h4>
-                                            </a>
-                                            <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
-                                            </p>
-                                            <a href="https://themeforest.net/user/thewebmax/portfolio"
-                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                        </div>
-                                        <div class="twm-right-content">
-                                            <div class="twm-jobs-category green"><span
-                                                    class="twm-bg-golden">Temporary</span></div>
-                                            <div class="twm-jobs-amount">$1700 <span>/ Month</span></div>
-                                            <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Browse
-                                                Job</a>
+                                    <div class="col-lg-12">
+                                        <div class="job-item">
+                                            <a href="#" class="job-bookmark"><i class="feather-bookmark"></i></a>
+                                            <div class="job-top">
+                                                <div class="job-img">
+                                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                                </div>
+                                                <div class="job-title">
+                                                    <h5><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h5>
+                                                    <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                        Axon Active</a>
+                                                </div>
+                                            </div>
+                                            <div class="job-content">
+                                                <ul class="job-info-list">
+                                                    <li><i class="feather-clock"></i> Hạn chót <span class="deadine">20/11/2024</span></li>
+                                                    <li><i class="feather-check-circle"></i> Full Time</li>
+                                                    <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                </ul>
+                                            </div>
+                                            <div class="job-tag">
+                                                <a href="#" class="job-tag-new">Mới</a>
+                                                <a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                            </div>
+                                            <div class="job-bottom">
+                                                <div class="job-salary">
+                                                    <span class="job-salary-amount">20 - 30 triệu</span>
+                                                </div>
+                                                <a href="job-detail.html" class="theme-btn">Ứng tuyển ngay</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="twm-jobs-list-style1 mb-5">
-                                        <div class="twm-media">
-                                            <img src="images/jobs-company/pic5.jpg" alt="#">
-                                        </div>
-                                        <div class="twm-mid-content">
-                                            <a href="job-detail.html" class="twm-job-title">
-                                                <h4 class="twm-job-title">Recreation & Fitness Worker <span
-                                                        class="twm-job-post-duration">/ 1 days ago</span></h4>
-                                            </a>
-                                            <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
-                                            </p>
-                                            <a href="https://themeforest.net/user/thewebmax/portfolio"
-                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                        </div>
-                                        <div class="twm-right-content">
-                                            <div class="twm-jobs-category green"><span
-                                                    class="twm-bg-golden">Temporary</span></div>
-                                            <div class="twm-jobs-amount">$1700 <span>/ Month</span></div>
-                                            <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Browse
-                                                Job</a>
+                                    <div class="col-lg-12">
+                                        <div class="job-item">
+                                            <a href="#" class="job-bookmark"><i class="feather-bookmark"></i></a>
+                                            <div class="job-top">
+                                                <div class="job-img">
+                                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                                </div>
+                                                <div class="job-title">
+                                                    <h5><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h5>
+                                                    <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                        Axon Active</a>
+                                                </div>
+                                            </div>
+                                            <div class="job-content">
+                                                <ul class="job-info-list">
+                                                    <li><i class="feather-clock"></i> Hạn chót <span class="deadine">20/11/2024</span></li>
+                                                    <li><i class="feather-check-circle"></i> Full Time</li>
+                                                    <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                </ul>
+                                            </div>
+                                            <div class="job-tag">
+                                                <a href="#" class="job-tag-new">Mới</a>
+                                                <a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                            </div>
+                                            <div class="job-bottom">
+                                                <div class="job-salary">
+                                                    <span class="job-salary-amount">20 - 30 triệu</span>
+                                                </div>
+                                                <a href="job-detail.html" class="theme-btn">Ứng tuyển ngay</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
-
                                 <li>
-                                    <div class="twm-jobs-list-style1 mb-5">
-                                        <div class="twm-media">
-                                            <img src="images/jobs-company/pic5.jpg" alt="#">
+                                    <div class="col-lg-12">
+                                        <div class="job-item">
+                                            <a href="#" class="job-bookmark"><i class="feather-bookmark"></i></a>
+                                            <div class="job-top">
+                                                <div class="job-img">
+                                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                                </div>
+                                                <div class="job-title">
+                                                    <h5><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h5>
+                                                    <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                        Axon Active</a>
+                                                </div>
+                                            </div>
+                                            <div class="job-content">
+                                                <ul class="job-info-list">
+                                                    <li><i class="feather-clock"></i> Hạn chót <span class="deadine">20/11/2024</span></li>
+                                                    <li><i class="feather-check-circle"></i> Full Time</li>
+                                                    <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                </ul>
+                                            </div>
+                                            <div class="job-tag">
+                                                <a href="#" class="job-tag-new">Mới</a>
+                                                <a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                            </div>
+                                            <div class="job-bottom">
+                                                <div class="job-salary">
+                                                    <span class="job-salary-amount">20 - 30 triệu</span>
+                                                </div>
+                                                <a href="job-detail.html" class="theme-btn">Ứng tuyển ngay</a>
+                                            </div>
                                         </div>
-                                        <div class="twm-mid-content">
-                                            <a href="job-detail.html" class="twm-job-title">
-                                                <h4 class="twm-job-title">Recreation & Fitness Worker <span
-                                                        class="twm-job-post-duration">/ 1 days ago</span></h4>
-                                            </a>
-                                            <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
-                                            </p>
-                                            <a href="https://themeforest.net/user/thewebmax/portfolio"
-                                                class="twm-job-websites site-text-primary">https://thewebmax.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-lg-12">
+                                        <div class="job-item">
+                                            <a href="#" class="job-bookmark"><i class="feather-bookmark"></i></a>
+                                            <div class="job-top">
+                                                <div class="job-img">
+                                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                                </div>
+                                                <div class="job-title">
+                                                    <h5><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h5>
+                                                    <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                        Axon Active</a>
+                                                </div>
+                                            </div>
+                                            <div class="job-content">
+                                                <ul class="job-info-list">
+                                                    <li><i class="feather-clock"></i> Hạn chót <span class="deadine">20/11/2024</span></li>
+                                                    <li><i class="feather-check-circle"></i> Full Time</li>
+                                                    <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                </ul>
+                                            </div>
+                                            <div class="job-tag">
+                                                <a href="#" class="job-tag-new">Mới</a>
+                                                <a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                            </div>
+                                            <div class="job-bottom">
+                                                <div class="job-salary">
+                                                    <span class="job-salary-amount">20 - 30 triệu</span>
+                                                </div>
+                                                <a href="job-detail.html" class="theme-btn">Ứng tuyển ngay</a>
+                                            </div>
                                         </div>
-                                        <div class="twm-right-content">
-                                            <div class="twm-jobs-category green"><span
-                                                    class="twm-bg-golden">Temporary</span></div>
-                                            <div class="twm-jobs-amount">$1700 <span>/ Month</span></div>
-                                            <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Browse
-                                                Job</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-lg-12">
+                                        <div class="job-item">
+                                            <a href="#" class="job-bookmark"><i class="feather-bookmark"></i></a>
+                                            <div class="job-top">
+                                                <div class="job-img">
+                                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                                </div>
+                                                <div class="job-title">
+                                                    <h5><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h5>
+                                                    <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                        Axon Active</a>
+                                                </div>
+                                            </div>
+                                            <div class="job-content">
+                                                <ul class="job-info-list">
+                                                    <li><i class="feather-clock"></i> Hạn chót <span class="deadine">20/11/2024</span></li>
+                                                    <li><i class="feather-check-circle"></i> Full Time</li>
+                                                    <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                </ul>
+                                            </div>
+                                            <div class="job-tag">
+                                                <a href="#" class="job-tag-new">Mới</a>
+                                                <a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                            </div>
+                                            <div class="job-bottom">
+                                                <div class="job-salary">
+                                                    <span class="job-salary-amount">20 - 30 triệu</span>
+                                                </div>
+                                                <a href="job-detail.html" class="theme-btn">Ứng tuyển ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-lg-12">
+                                        <div class="job-item">
+                                            <a href="#" class="job-bookmark"><i class="feather-bookmark"></i></a>
+                                            <div class="job-top">
+                                                <div class="job-img">
+                                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                                </div>
+                                                <div class="job-title">
+                                                    <h5><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h5>
+                                                    <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                        Axon Active</a>
+                                                </div>
+                                            </div>
+                                            <div class="job-content">
+                                                <ul class="job-info-list">
+                                                    <li><i class="feather-clock"></i> Hạn chót <span class="deadine">20/11/2024</span></li>
+                                                    <li><i class="feather-check-circle"></i> Full Time</li>
+                                                    <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                </ul>
+                                            </div>
+                                            <div class="job-tag">
+                                                <a href="#" class="job-tag-new">Mới</a>
+                                                <a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                            </div>
+                                            <div class="job-bottom">
+                                                <div class="job-salary">
+                                                    <span class="job-salary-amount">20 - 30 triệu</span>
+                                                </div>
+                                                <a href="job-detail.html" class="theme-btn">Ứng tuyển ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-lg-12">
+                                        <div class="job-item">
+                                            <a href="#" class="job-bookmark"><i class="feather-bookmark"></i></a>
+                                            <div class="job-top">
+                                                <div class="job-img">
+                                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                                </div>
+                                                <div class="job-title">
+                                                    <h5><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h5>
+                                                    <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                        Axon Active</a>
+                                                </div>
+                                            </div>
+                                            <div class="job-content">
+                                                <ul class="job-info-list">
+                                                    <li><i class="feather-clock"></i> Hạn chót <span class="deadine">20/11/2024</span></li>
+                                                    <li><i class="feather-check-circle"></i> Full Time</li>
+                                                    <li><i class="feather-map-pin"></i> Hồ Chí Minh</li>
+                                                </ul>
+                                            </div>
+                                            <div class="job-tag">
+                                                <a href="#" class="job-tag-new">Mới</a>
+                                                <a href="#" class="job-tag-urgent">Tuyển gấp</a>
+                                            </div>
+                                            <div class="job-bottom">
+                                                <div class="job-salary">
+                                                    <span class="job-salary-amount">20 - 30 triệu</span>
+                                                </div>
+                                                <a href="job-detail.html" class="theme-btn">Ứng tuyển ngay</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                            <div class="text-center m-b30">
-                                <a href="job-list.html" class=" site-button">Browse All Jobs</a>
-                            </div>
                         </div>
                     </div>
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- META -->
     <meta charset="utf-8">
@@ -36,12 +35,10 @@
     <link rel="stylesheet" type="text/css" href="css/flaticon.css"> <!-- Flaticon -->
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
     <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
-
 </head>
 
 <body>
 
-    <!-- LOADING AREA START ===== -->
     <div class="loading-area">
         <div class="loading-box"></div>
         <div class="loading-pic">
@@ -50,7 +47,6 @@
             </div>
         </div>
     </div>
-    <!-- LOADING AREA  END ====== -->
 
     <div class="page-wraper">
         <header id="header-admin-wrap" class="header-admin-fixed">
@@ -195,7 +191,7 @@
                                             </ul>
 
                                             <div class="noti-view-all">
-                                                <a href="admin-message.html">View All</a>
+                                                <a href="admin-notification.html">Xem tất cả</a>
                                             </div>
                                         </div>
                                     </div>
@@ -312,7 +308,6 @@
         <!-- Page Content Holder -->
         <div id="content">
             <div class="content-admin-main">
-
                 <div class="wt-admin-right-page-header clearfix">
                     <h2>Xin chào, Admin Như</h2>
                     <div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>Dasboard</span></div>
@@ -400,41 +395,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 mb-4">
-                    <div class="panel panel-default site-bg-white m-t30">
+                <div class="col-lg-12">
+                    <div class="user-profile-card">
                         <div class="panel-heading wt-panel-heading p-a20">
-                            <h4 class="panel-tittle m-a0"><i class="fa fa-bell"></i> Các hoạt động gần đây</h4>
+                            <h4 class="panel-tittle m-a0"><i class="fa fa-bell"></i> Các thông báo</h4>
                         </div>
-                        <div class="panel-body wt-panel-body">
-                            <div class="dashboard-list-box list-box-with-icon">
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-envelope text-success list-box-icon"></i>Nikol Tesla has sent you <a href="#" class="text-success">private message!</a>
-                                        <a href="#" class="close-list-item color-lebel clr-red">
-                                            <i class="far fa-trash-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-suitcase text-primary list-box-icon"></i>Your job for  
-                                        <a href="#" class="text-primary">Web Designer</a>
-                                        has been approved!
-                                        <a href="#" class="close-list-item color-lebel clr-red">
-                                            <i class="far fa-trash-alt"></i>
-                                        </a>
-                                    </li>
-                                        
-                                    <li>
-                                        <i class="fa fa-bookmark text-warning list-box-icon"></i>
-                                        Someone bookmarked your
-                                        <a href="#" class="text-warning">SEO Expert</a> 
-                                        Job listing! 
-                                        <a href="#" class="close-list-item color-lebel clr-red">
-                                            <i class="far fa-trash-alt"></i>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>                                   
+                        <div class="user-notification mt-4">
+                            <div class="user-notification-item">
+                                     <div class="user-notification-icon"> 
+                                        <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                    </div>
+                                    <div class="user-notification-info">
+                                        <p>You Have New Application For <b>Web Designer</b>!</p>
+                                        <span>just now</span>
+                                    </div>
+                                    <i class="feather-trash delete-icon-btn"></i>
+                            </div>                          
                         </div>
                     </div>
                 </div>
@@ -517,7 +493,7 @@
                             <h4 class="panel-tittle m-a0"><i class="fa fa-briefcase"></i>Các bài đăng tuyển gần đây</h4>
                         </div>
 
-                         <div class="table-responsive profile-applied-job mt-3">
+                        <div class="table-responsive profile-applied-job mt-3">
                             <table class="table text-nowrap">
                                 <thead>
                                     <tr>
@@ -546,8 +522,7 @@
                                         </td>
                                         <td>
                                             <a data-bs-toggle="modal" href="#JobPostingDetailModal"
-                                                class="btn btn-outline-secondary btn-sm"><i
-                                                    class="feather-eye"></i></a>
+                                                class="btn btn-outline-secondary btn-sm"><i class="feather-eye"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -562,8 +537,7 @@
                                         <td><span class="job-tag-danger">Từ chối</span></td>
                                         <td>
                                             <a data-bs-toggle="modal" href="#JobPostingDetailModal"
-                                                class="btn btn-outline-secondary btn-sm"><i
-                                                    class="feather-eye"></i></a>
+                                                class="btn btn-outline-secondary btn-sm"><i class="feather-eye"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -578,8 +552,7 @@
                                         <td><span class="job-tag-new">Đã duyệt</span></td>
                                         <td>
                                             <a data-bs-toggle="modal" href="#JobPostingDetailModal"
-                                                class="btn btn-outline-secondary btn-sm"><i
-                                                    class="feather-eye"></i></a>
+                                                class="btn btn-outline-secondary btn-sm"><i class="feather-eye"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -614,13 +587,12 @@
                     <form>
                         <div class="modal-header">
                             <h3 class="modal-title">Thông tin tài khoản nhà tuyển dụng</h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
                         <div class="modal-body">
                             <div class="row">
-                                <div class="panel panel-default">                                  
+                                <div class="panel panel-default">
                                     <div class="panel-body wt-panel-body m-b20 ">
                                         <form>
                                             <div class="row">
@@ -629,7 +601,8 @@
                                                         <label for="recruiterName" class="form-label">Họ tên <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="recruiter_name" type="text" id="recruiterName"/>             
+                                                            <input class="form-control" name="recruiter_name"
+                                                                type="text" id="recruiterName" />
                                                             <i class="fs-input-icon fa fa-user"></i>
                                                         </div>
                                                     </div>
@@ -639,55 +612,60 @@
                                                         <label for="recruiterEmail" class="form-label">Email <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="recruiter_emai" type="email" id="recruiterEmail"/>             
+                                                            <input class="form-control" name="recruiter_emai"
+                                                                type="email" id="recruiterEmail" />
                                                             <i class="fs-input-icon fa fa-envelope"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12">
                                                     <div class="form-group">
-                                                        <label for="recruiterPhone" class="form-label">Số điện thoại cá nhân <span
-                                                                class="required">*</span></label>
+                                                        <label for="recruiterPhone" class="form-label">Số điện thoại cá
+                                                            nhân <span class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="recruiter_phone" type="text" id="recruiterPhone"/>             
+                                                            <input class="form-control" name="recruiter_phone"
+                                                                type="text" id="recruiterPhone" />
                                                             <i class="fs-input-icon fa fa-envelope"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12">
                                                     <div class="form-group">
                                                         <label for="gender" class="form-label">Giới tính <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="gender" type="number" id="gender"/>             
+                                                            <input class="form-control" name="gender" type="number"
+                                                                id="gender" />
                                                             <i class="fs-input-icon fa fa-genderless"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12">
                                                     <div class="form-group">
                                                         <label for="companyName" class="form-label">Tên công ty <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="recruiter_company_name" type="text" id="companyName"/>             
+                                                            <input class="form-control" name="recruiter_company_name"
+                                                                type="text" id="companyName" />
                                                             <i class="fs-input-icon fa fa-building"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12">
                                                     <div class="form-group">
                                                         <label for="registerDate" class="form-label">Ngày đăng ký <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="register_date" type="text" id="registerDate"/>             
+                                                            <input class="form-control" name="register_date" type="text"
+                                                                id="registerDate" />
                                                             <i class="fs-input-icon fa fa-calendar"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -701,13 +679,12 @@
                     <form>
                         <div class="modal-header">
                             <h3 class="modal-title">Thông tin tài khoản ứng viên</h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
                         <div class="modal-body">
                             <div class="row">
-                                <div class="panel panel-default">                                 
+                                <div class="panel panel-default">
                                     <div class="panel-body wt-panel-body m-b20 ">
                                         <form>
                                             <div class="row">
@@ -716,7 +693,8 @@
                                                         <label for="candidateName" class="form-label">Họ tên <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="candidate_name" type="text" id="candidateName"/>             
+                                                            <input class="form-control" name="candidate_name"
+                                                                type="text" id="candidateName" />
                                                             <i class="fs-input-icon fa fa-user"></i>
                                                         </div>
                                                     </div>
@@ -726,55 +704,60 @@
                                                         <label for="candidateEmail" class="form-label">Email <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="candidate_emai" type="email" id="candidateEmail"/>             
+                                                            <input class="form-control" name="candidate_emai"
+                                                                type="email" id="candidateEmail" />
                                                             <i class="fs-input-icon fa fa-envelope"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12">
                                                     <div class="form-group">
-                                                        <label for="candidatePhone" class="form-label">Số điện thoại <span
-                                                                class="required">*</span></label>
+                                                        <label for="candidatePhone" class="form-label">Số điện thoại
+                                                            <span class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="candidate_phone" type="text" id="candidatePhone"/>             
+                                                            <input class="form-control" name="candidate_phone"
+                                                                type="text" id="candidatePhone" />
                                                             <i class="fs-input-icon fa fa-envelope"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12">
                                                     <div class="form-group">
                                                         <label for="gender" class="form-label">Giới tính <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="gender" type="text" id="gender"/>             
+                                                            <input class="form-control" name="gender" type="text"
+                                                                id="gender" />
                                                             <i class="fs-input-icon fa fa-genderless"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12">
                                                     <div class="form-group">
                                                         <label for="companyName" class="form-label">Chức danh <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="recruiter_company_name" type="text" id="companyName"/>             
+                                                            <input class="form-control" name="recruiter_company_name"
+                                                                type="text" id="companyName" />
                                                             <i class="fs-input-icon fa fa-building"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                                 <div class="col-xl-6 col-lg-12 col-md-12">
                                                     <div class="form-group">
                                                         <label for="registerDate" class="form-label">Ngày đăng ký <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="register_date" type="text" id="registerDate"/>             
+                                                            <input class="form-control" name="register_date" type="text"
+                                                                id="registerDate" />
                                                             <i class="fs-input-icon fa fa-calendar"></i>
                                                         </div>
                                                     </div>
-                                                </div>                                         
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
-                                </div>                              
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -782,7 +765,6 @@
             </div>
         </div>
 
-        <!-- Job Posting Detail Popup -->
         <div class="modal fade twm-saved-jobs-view" id="JobPostingDetailModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -790,15 +772,15 @@
                         <div class="modal-header">
                             <h3 class="modal-title">Chi tiết bài đăng
                                 tuyển</h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
                         <div class="modal-body">
                             <div class="row">
                                 <div class="panel panel-default">
                                     <div class="panel-heading wt-panel-heading">
-                                        <h4 class="panel-tittle m-a0"><i class="far fa-list-alt"></i>Thông tin chi tiết</h4>
+                                        <h4 class="panel-tittle m-a0"><i class="far fa-list-alt"></i>Thông tin chi tiết
+                                        </h4>
                                     </div>
                                     <div class="panel-body wt-panel-body m-b20 ">
                                         <form>
@@ -808,22 +790,24 @@
                                                         <label for="jobTitle" class="form-label">Tên công việc <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="job_title" type="text" id="jobTitle"
-                                                                placeholder="Devid Smith">
+                                                            <input class="form-control" name="job_title" type="text"
+                                                                id="jobTitle" placeholder="Devid Smith">
                                                             <i class="fs-input-icon fa fa-address-card"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!--Job Category-->
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group city-outer-bx has-feedback">
                                                         <label for="jobCategory" class="form-label">Ngành nghề <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                id="jobCategory" name="job_category" data-bv-field="size">
-                                                                <option disabled selected value="">Chọn ngành nghề</option>
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="jobCategory"
+                                                                name="job_category" data-bv-field="size">
+                                                                <option disabled selected value="">Chọn ngành nghề
+                                                                </option>
                                                                 <option>Bán hàng kỹ thuật</option>
                                                                 <option>Bản lẻ/ Bán sỉ</option>
                                                                 <option>Báo chí truyền hình</option>
@@ -838,19 +822,21 @@
                                                             </select>
                                                             <i class="fs-input-icon fa fa-border-all"></i>
                                                         </div>
-                
+
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- Job Type -->
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
-                                                        <label class="form-label" for="jobWorkingType">Hình thức làm việc <span
-                                                                class="required">*</span></label>
+                                                        <label class="form-label" for="jobWorkingType">Hình thức làm
+                                                            việc <span class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                name="job_working_type" id="jobWorkingType" data-bv-field="size">
-                                                                <option class="bs-title-option" value="">Hình thức</option>
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" name="job_working_type"
+                                                                id="jobWorkingType" data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Hình thức
+                                                                </option>
                                                                 <option>Toàn thời gian</option>
                                                                 <option>Làm việc tự do</option>
                                                                 <option>Bán thời gian</option>
@@ -861,16 +847,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- Experience -->
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
                                                         <label class="form-label" for="jobExperience">Kinh nghiệm <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                name="job_salary_min" id="jobExperience" data-bv-field="size">
-                                                                <option class="bs-title-option" value="">Chọn kinh nghiệm</option>
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" name="job_salary_min"
+                                                                id="jobExperience" data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Chọn kinh
+                                                                    nghiệm</option>
                                                                 <option>Không yêu cầu kinh nghiệm</option>
                                                                 <option>1 năm</option>
                                                                 <option>2 năm</option>
@@ -883,16 +871,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- Level -->
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
                                                         <label class="form-label" for="jobLevel">Vị trí/ Cấp bậc <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                name="job_level" id="jobLevel" data-bv-field="size">
-                                                                <option class="bs-title-option" value="">Chọn vị trí - cấp bậc</option>
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" name="job_level"
+                                                                id="jobLevel" data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Chọn vị trí -
+                                                                    cấp bậc</option>
                                                                 <option>Thực tập sinh</option>
                                                                 <option>Nhân viên</option>
                                                                 <option>Trưởng phòng</option>
@@ -905,59 +895,66 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- Salary Min -->
                                                 <div class="col-xl-4 col-lg-12 col-md-12">
                                                     <div class="form-group">
-                                                        <label for="jobSalaryMin" class="form-label">Mức lương tối thiểu</label>
+                                                        <label for="jobSalaryMin" class="form-label">Mức lương tối
+                                                            thiểu</label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="salary_min" id="jobSalaryMin" type="numb"
-                                                                placeholder="10000000">
+                                                            <input class="form-control" name="salary_min"
+                                                                id="jobSalaryMin" type="numb" placeholder="10000000">
                                                             <i class="fs-input-icon fa fa-dollar-sign"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- Salary Max -->
                                                 <div class="col-xl-4 col-lg-12 col-md-12">
                                                     <div class="form-group">
-                                                        <label for="jobSalaryMax" class="form-label">Mức lương tối đa</label>
+                                                        <label for="jobSalaryMax" class="form-label">Mức lương tối
+                                                            đa</label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="salary_max" id="jobSalaryMax" type="numb"
-                                                                placeholder="15000000">
+                                                            <input class="form-control" name="salary_max"
+                                                                id="jobSalaryMax" type="numb" placeholder="15000000">
                                                             <i class="fs-input-icon fa fa-dollar-sign"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
-                                                        <label class="form-label" for="jobAcademicLevel">Yêu cầu bằng cấp <span
-                                                                class="required">*</span></label>
+                                                        <label class="form-label" for="jobAcademicLevel">Yêu cầu bằng
+                                                            cấp <span class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                name="job_academic_leve" id="jobAcademicLevel" data-bv-field="size">
-                                                                <option class="bs-title-option" value="">Chọn yêu cầu học vấn</option>
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title=""
+                                                                name="job_academic_leve" id="jobAcademicLevel"
+                                                                data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Chọn yêu cầu
+                                                                    học vấn</option>
                                                                 <option>Đại học</option>
                                                                 <option>Trung cấp</option>
                                                                 <option>Cao đẳng</option>
                                                                 <option>Chứng chỉ nghề</option>
-                
+
                                                             </select>
                                                             <i class="fs-input-icon fa fa-user-graduate"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!--Gender-->
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
                                                         <label class="form-label" for="jobGender">Giới tính <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                name="job_gender" id="jobGender" data-bv-field="size">
-                                                                <option class="bs-title-option" value="">Chọn giới tính</option>
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" name="job_gender"
+                                                                id="jobGender" data-bv-field="size">
+                                                                <option class="bs-title-option" value="">Chọn giới tính
+                                                                </option>
                                                                 <option>Nam</option>
                                                                 <option>Nữ</option>
                                                                 <option>Khác</option>
@@ -967,15 +964,16 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!--City-->
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
                                                         <label for="city" class="form-label">Tỉnh/ Thành phố <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                id="city" data-bv-field="size">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="city"
+                                                                data-bv-field="size">
                                                                 <option class="bs-title-option" value="">Tỉnh/ Thành phố
                                                                 </option>
                                                                 <option>Hồ Chí Minh</option>
@@ -998,7 +996,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- District -->
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
@@ -1006,8 +1004,9 @@
                                                                 class="required"></span>
                                                             *</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                id="district" data-bv-field="size">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="district"
+                                                                data-bv-field="size">
                                                                 <option class="bs-title-option" value="">Quận</option>
                                                                 <option>Quận 12</option>
                                                                 <option>Quận 1</option>
@@ -1027,14 +1026,15 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- Ward -->
                                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
                                                         <label for="ward" class="form-label">Phường/ Xã</label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                id="ward" data-bv-field="size">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="ward"
+                                                                data-bv-field="size">
                                                                 <option class="bs-title-option" value="">Phường/ Xã
                                                                 </option>
                                                                 <option>Đông Hưng Thuận</option>
@@ -1049,73 +1049,76 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                
-                                                 <!--End Date-->
-                                                 <div class="col-xl-4 col-lg-6 col-md-12">
+
+                                                <!--End Date-->
+                                                <div class="col-xl-4 col-lg-6 col-md-12">
                                                     <div class="form-group">
                                                         <label class="form-label" for="jobExpired">Hạn nộp <span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control datepicker" data-provide="datepicker"
-                                                                id="jobExpired" name="job_expired_time" type="text"
+                                                            <input class="form-control datepicker"
+                                                                data-provide="datepicker" id="jobExpired"
+                                                                name="job_expired_time" type="text"
                                                                 placeholder="mm/dd/yyyy">
                                                             <i class="fs-input-icon far fa-calendar"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                
+
                                                 <!--Complete Address-->
                                                 <div class="col-xl-12 col-lg-6 col-md-12">
                                                     <div class="form-group">
                                                         <label class="form-label" for="jobAddress">Địa chỉ</label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="job_address" id="jobAddress" type="text"
+                                                            <input class="form-control" name="job_address"
+                                                                id="jobAddress" type="text"
                                                                 placeholder="1363-1385 Sunset Blvd Los Angeles, CA 90026, USA">
                                                             <i class="fs-input-icon fa fa-home"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                                               
+
                                                 <!-- Description -->
                                                 <div class="col-xl-12 col-lg-12 col-md-12">
                                                     <div class="form-group">
                                                         <label for="jobDesc" class="form-label">Mô tả công việc <span
                                                                 class="required">*</span></label>
                                                         <textarea id="richTextEditor" rows="15" class="form-control">
-                
+
                                                         </textarea>
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- Requirement -->
                                                 <div class="col-xl-12 col-lg-12 col-md-12">
                                                     <div class="form-group">
-                                                        <label for="jobRequirement" class="form-label">Yêu cầu công việc <span
-                                                                class="required">*</span></label>
+                                                        <label for="jobRequirement" class="form-label">Yêu cầu công việc
+                                                            <span class="required">*</span></label>
                                                         <textarea id="richTextEditor" rows="5" class="form-control">
-                
+
                                                         </textarea>
                                                     </div>
                                                 </div>
-                
+
                                                 <!-- Benefit -->
                                                 <div class="col-xl-12 col-lg-12 col-md-12">
                                                     <div class="form-group">
                                                         <label for="jobBenefit" class="form-label">Quyền lợi <span
                                                                 class="required">*</span></label>
                                                         <textarea id="richTextEditor" rows="5" class="form-control">
-                
+
                                                         </textarea>
                                                     </div>
                                                 </div>
-                                            
+
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
                                     <div class="panel-heading wt-panel-heading p-a20">
-                                        <h4 class="panel-tittle m-a0"><i class="far fa-building"></i>Thông tin công ty</h4>
+                                        <h4 class="panel-tittle m-a0"><i class="far fa-building"></i>Thông tin công ty
+                                        </h4>
                                     </div>
                                     <div class="panel-body wt-panel-body m-b20 ">
                                         <form>
@@ -1125,8 +1128,8 @@
                                                         <label for="userEmail" class="form-label">Người dùng<span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="user_email" type="email" id="userEmail"
-                                                                placeholder="dfhks23@gmail.com">
+                                                            <input class="form-control" name="user_email" type="email"
+                                                                id="userEmail" placeholder="dfhks23@gmail.com">
                                                             <i class="fs-input-icon fa fa-envelope"></i>
                                                         </div>
                                                     </div>
@@ -1136,8 +1139,8 @@
                                                         <label for="companyName" class="form-label">Công ty<span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="company_name" type="email" id="companyName"
-                                                                placeholder="Axon Active">
+                                                            <input class="form-control" name="company_name" type="email"
+                                                                id="companyName" placeholder="Axon Active">
                                                             <i class="fs-input-icon fa fa-building"></i>
                                                         </div>
                                                     </div>
@@ -1147,13 +1150,14 @@
                                                         <label for="companyEmail" class="form-label">Email công ty<span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="company_email" type="email" id="companyEmail"
+                                                            <input class="form-control" name="company_email"
+                                                                type="email" id="companyEmail"
                                                                 placeholder="active12@utc.com">
                                                             <i class="fs-input-icon fa fa-envelope"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                                               
+
                                             </div>
                                         </form>
                                     </div>
@@ -1170,8 +1174,8 @@
                                                         <label for="viewNumber" class="form-label">Lượt xem<span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="view_number" type="number" id="viewNumber"
-                                                                placeholder="20">
+                                                            <input class="form-control" name="view_number" type="number"
+                                                                id="viewNumber" placeholder="20">
                                                             <i class="fs-input-icon fa fa-eye"></i>
                                                         </div>
                                                     </div>
@@ -1181,13 +1185,13 @@
                                                         <label for="applyNumber" class="form-label">Lượt ứng tuyển<span
                                                                 class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <input class="form-control" name="apply_number" type="email" id="applyNumber"
-                                                                placeholder="Axon Active">
+                                                            <input class="form-control" name="apply_number" type="email"
+                                                                id="applyNumber" placeholder="Axon Active">
                                                             <i class="fs-input-icon fa fa-paper-plane"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                                               
+
                                             </div>
                                         </form>
                                     </div>
@@ -1201,11 +1205,12 @@
                                             <div class="row">
                                                 <div class="col-xl-3 col-lg-12 pt-3 col-md-12">
                                                     <div class="form-group city-outer-bx has-feedback">
-                                                        <label for="jobPostingStatus" class="form-label">Trạng thái <span
-                                                                class="required">*</span></label>
+                                                        <label for="jobPostingStatus" class="form-label">Trạng thái
+                                                            <span class="required">*</span></label>
                                                         <div class="ls-inputicon-box">
-                                                            <select class="wt-select-box selectpicker" data-live-search="true" title=""
-                                                                id="jobPostingStatus" name="job_posting_status" data-bv-field="size">
+                                                            <select class="wt-select-box selectpicker"
+                                                                data-live-search="true" title="" id="jobPostingStatus"
+                                                                name="job_posting_status" data-bv-field="size">
                                                                 <option class="bs-title-option" value="">
                                                                     Trạng thái
                                                                 </option>
@@ -1225,7 +1230,7 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="site-button m-r10">Lưu và Cập nhật</button>      
+                            <button type="button" class="site-button m-r10">Lưu và Cập nhật</button>
                         </div>
                     </form>
                 </div>
@@ -1233,7 +1238,8 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT  FILES ========================================= -->
+    <div id="toast-notification"></div>
+
     <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
     <script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
     <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
@@ -1257,7 +1263,6 @@
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
     <script src="js/notification.js"></script>
-    <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
 
 </body>
 

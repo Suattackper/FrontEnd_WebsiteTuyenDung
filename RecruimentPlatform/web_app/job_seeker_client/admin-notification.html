@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- META -->
@@ -37,10 +38,6 @@
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
     <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
 
-    <!-- THEME COLOR CHANGE STYLE SHEET -->
-    <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
-    <!-- SIDE SWITCHER STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/switcher.css">
 </head>
 
 <body>
@@ -72,7 +69,7 @@
 
                     <div class="header-right">
                         <ul class="header-widget-wrap">
-                        
+
                             <li class="header-widget dashboard-message-dropdown">
 
                                 <div class="dropdown">
@@ -243,16 +240,16 @@
             </div>
         </header>
 
-         <nav id="sidebar-admin-wraper">
+        <nav id="sidebar-admin-wraper">
             <div class="page-logo d-flex align-items-center">
                 <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
-                <h3 class="m-l10">Grabword</h3>
+                <h3 class="m-l10">Grabwork</h3>
             </div>
 
             <div class="admin-nav scrollbar-macosx">
                 <ul>
                     <li>
-                        <a href="dashboard.html"><i class="feather-home"></i><span
+                        <a href="admin-dashboard.html"><i class="feather-home"></i><span
                                 class="admin-nav-text">Dashboard</span>
                         </a>
                     </li>
@@ -285,15 +282,15 @@
                         </a>
                     </li>
                     <li>
-                        <a href="admin-blog.html"><i class="feather-book-open"></i><span
-                                class="admin-nav-text">Quản lý bài blog</span>
+                        <a href="admin-blog.html"><i class="feather-book-open"></i><span class="admin-nav-text">Quản lý
+                                bài blog</span>
                         </a>
                     </li>
                     <li>
                         <a href="admin-account-managed.html"><i class="feather-users"></i><span
                                 class="admin-nav-text">Quản lý tài khoản</span>
                         </a>
-                    </li>                   
+                    </li>
                     <li>
                         <a href="admin-account.html"><i class="feather-user-check"></i><span class="admin-nav-text">Tài
                                 khoản</span>
@@ -315,21 +312,18 @@
                     <div class="col-lg-12 col-md-12 mb-4">
                         <div class="panel panel-default site-bg-white m-t30">
                             <h3>Grabwork thông báo</h3>
-                            <div class="notification-controls">
-                                <a href="#" id="markAllRead">Đánh dấu tất cả đã đọc</a>
-                                <a href="#" id="deleteAll">Xóa tất cả</a>
-                            </div>
-                            <div class="mt-4" id="notificationList">
-
-                                <div class="d-flex align-items-center notification-item">
-                                    <img src="images/jobs-company/axon-active-logo.jpg" alt="Company Logo">
-                                    <div class="content">
-                                        <h6>Axon Active</h6>
-                                        <p class="text-muted">Hồ sơ ứng tuyển của bạn vào vị trí "Sales Assistant" được
-                                            cập nhật trạng thái sang "Đã phỏng vấn"</p>
-                                    </div>
-                                    <i class="feather-x delete-btn"></i>
-                                </div>
+                           
+                            <div class="user-notification mt-4">
+                                <div class="user-notification-item">
+                                         <div class="user-notification-icon"> 
+                                            <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                        </div>
+                                        <div class="user-notification-info">
+                                            <p>You Have New Application For <b>Web Designer</b>!</p>
+                                            <span>just now</span>
+                                        </div>
+                                        <i class="feather-trash delete-icon-btn"></i>
+                                </div>                          
                             </div>
                         </div>
                     </div>
@@ -357,6 +351,7 @@
 
     </div>
 
+    <div id="toast-notification"></div>
 
     <!-- JAVASCRIPT  FILES ========================================= -->
     <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
@@ -377,12 +372,10 @@
     <script src="js/bootstrap-datepicker.js"></script><!-- scroller -->
     <script src="js/jquery.dataTables.min.js"></script><!-- Datatable -->
     <script src="js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
-    <script src="js/chart.js"></script><!-- Chart -->
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
     <script src="js/notification.js"></script>
-
 </body>
 
 </html>

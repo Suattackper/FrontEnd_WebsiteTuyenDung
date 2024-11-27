@@ -2046,6 +2046,7 @@ progress {
     vertical-align: top;
     border-color: #dee2e6;
     table-layout: auto;
+    
 }
 
 .table>:not(caption)>*>* {

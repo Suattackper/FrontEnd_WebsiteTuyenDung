@@ -295,8 +295,8 @@
         <div id="content">
             <div class="content-admin-main">
                 <div class="wt-admin-right-page-header clearfix">
-                    <h2>Hello, Nikola Tesla</h2>
-                    <div class="breadcrumbs"><a href="index.html">Home</a><span>Dasboard</span></div>
+                    <h2>Hello <span> Huynh Nhu</span></h2>
+                    <div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>Dasboard</span></div>
                 </div>
 
                 <div class="twm-dash-b-blocks mb-5">
@@ -355,24 +355,124 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-        <!--Delete Profile Popup-->
-        <div class="modal fade twm-model-popup" id="delete-dash-profile" data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="col-lg-12">
+                    <div class="user-profile-card">
+                        <div class="panel-heading wt-panel-heading p-a20">
+                            <h4 class="panel-tittle m-a0"><i class="fa fa-bell"></i> Các thông báo</h4>
+                        </div>
+                        <div class="user-notification mt-4">
+                            <div class="user-notification-item">
+                                     <div class="user-notification-icon"> 
+                                        <img src="images/jobs-company/axon-active-logo.jpg" alt="">
+                                    </div>
+                                    <div class="user-notification-info">
+                                        <p>You Have New Application For <b>Web Designer</b>!</p>
+                                        <span>just now</span>
+                                    </div>
+                                    <i class="feather-trash delete-icon-btn"></i>
+                            </div>                          
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <h4 class="modal-title">Do you want to delete your profile?</h4>
+                </div>
+                <div class="twm-pro-view-chart-wrap">
+                    <div class="panel-body wt-panel-body m-b30 ">
+                        <div class="user-profile-card">
+                            <div class="panel-heading wt-panel-heading p-a20">
+                                <h4 class="panel-tittle m-a0"><i class="fa fa-briefcase"></i> Các công việc ứng tuyển gần đây</h4>
+                            </div>
+                            <div class="table-responsive profile-applied-job">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Thông tin công việc</th>
+                                            <th>Ngày ứng tuyển</th>
+                                            <th>Hồ sơ đính kèm</th>
+                                            <th>Trạng thái</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="profile-job-info">
+                                                    <img src="images/jobs-company/03.jpg" alt="">
+                                                    <div class="profile-job-content">
+                                                        <div class="job-title">
+                                                            <h6><a href="job-detail.html">Lập trình viên Android - Kotin/ Java</a></h6>
+                                                            <a href="company-detail.html" class="job-employer"><i class="far fa-building"></i>
+                                                                Axon Active</a>
+                                                        </div>
+                                                        <ul class="profile-job-list">
+                                                            <li><i class="far fa-money-bill-alt"></i> 40 - 50 triệu</li>
+                                                            <li><i class="feather-map-pin"></i>  Hồ Chí Minh
+                                                            </li>
+                                                            <li><i class="feather-calendar"></i>  20/11/2024
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>30/09/2024</td>
+                                            <td><a href="files/pdf-sample.pdf" title="Download" target="blank" data-bs-toggle="tooltip" data-bs-placement="top" class="btn btn-outline-danger btn-sm"><i
+                                                class="feather-download"></i> Hồ sơ</a>
+                                            </td>
+                                            <td><span class="job-tag-pending">Chờ xem xét</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>                                   
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="site-button outline-primary">Yes</button>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading wt-panel-heading p-a20">
+                        <h4 class="panel-tittle m-a0"><i class="feather-save"></i> Công ty đang theo dõi
+                        </h4>
+                    </div>
+
+                    <div class="panel-body wt-panel-body m-b30 ">
+                        <div class="user-profile-card">
+                            <div class="table-responsive profile-applied-job">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Tên công ty</th>
+                                            <th>Ngày theo dõi</th>
+                                            <th>Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="profile-job-info">
+                                                    <img src="images/jobs-company/03.jpg" alt="">
+                                                    <div class="profile-job-content">
+                                                        <h6><a href="job-detail.html">Senior - Lập trình android</a></h6>
+                                                        <ul class="profile-job-list">
+                                                            <li><i class="far fa-building"></i> Axon Active</li>
+                                                            <li><i class="far fa-money-bill-alt"></i> 40 - 50 triệu</li>
+                                                            <li><i class="feather-map-pin"></i>  Hồ Chí Minh
+                                                            </li>
+                                                            <li><i class="feather-calendar"></i>  20/11/2024
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>30/09/2024</td>
+                                            <td>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                    class="feather-heart"></i> Hủy lưu</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -386,7 +486,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h4 class="modal-title">Bạn có muốn đăng xuất</h4>
+                        <h4 class="modal-title">Bạn có muốn đăng xuất không?</h4>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="theme-btn theme-btn2 mt-3" data-bs-dismiss="modal">Không</button>
@@ -420,10 +520,6 @@
     <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-    <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
-
-    </script>
-
 </body>
 
 </html>
