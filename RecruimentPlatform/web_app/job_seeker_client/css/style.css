@@ -304,7 +304,7 @@ h5 {
 
 h6 {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /*---Text align--- */
@@ -7480,11 +7480,12 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .job-item {
   background: #fff;
   border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 25px;
+  padding: 15px;
+  margin-bottom: 23px;
   position: relative;
   transition: all .5s ease-in-out;
-  box-shadow: 0px 0px 25px rgba(56, 152, 226, 0.3);
+  /* box-shadow: 0px 0px 25px rgba(56, 152, 226, 0.3); */
+  border: 1px solid rgba(0, 0, 0, .08);
 }
 
 .job-item:hover {
@@ -8092,6 +8093,60 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     opacity: 0;
     transform: translate(calc(100% + 32px));
   }
+}
+
+/* ===================
+candidate css 
+====================== */
+.candidate-item{
+  background: #fff;
+  border-radius: 15px;
+  padding: 17px;
+  position: relative;
+  margin-bottom: 25px;
+  box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+  transition: all .5s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.candidate-item:hover{
+  transform: translateY(-7px);
+}
+
+
+.candidate-bio{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.candidate-bio-content h5 a:hover{
+  color: #3C65F5;
+}
+
+
+.candidate-img{
+  width: 95px;
+}
+
+.candidate-img img{
+  border-radius: 50%;
+}
+
+.candidate-content p{
+  margin-top: 15px;
+}
+
+.candidate-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.candidate-bottom .theme-btn{
+  padding: 6px 15px;
 }
 
 /*============= profile job list ==================*/
