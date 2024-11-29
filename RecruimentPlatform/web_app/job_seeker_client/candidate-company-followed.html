@@ -243,169 +243,132 @@
             </div>
         </header>
 
-        <nav id="sidebar-admin-wraper">
-            <div class="page-logo d-flex align-items-center">
-                <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
-                <h3 class="m-l10">Grabwork</h3>
-            </div>
+       <!-- Sidebar Holder -->
+       <nav id="sidebar-admin-wraper">
+        <div class="page-logo d-flex align-items-center">
+            <a href="index.html"><img src="images/job_seeker_logo.png" alt=""></a>
+            <h3 class="m-l10">Grabwork</h3>
+        </div>
 
-            <div class="admin-nav scrollbar-macosx">
-                <ul>
-                    <li>
-                        <a href="admin-dashboard.html"><i class="feather-home"></i><span
-                                class="admin-nav-text">Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="admin-notification.html"><i class="feather-bell"></i><span class="admin-nav-text">Thông
-                                báo
-                                <sup class="twm-msg-noti">5</sup></span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="admin-company-managed.html"><i class="feather-file-text"></i><span
-                                class="admin-nav-text">Quản lý doanh
-                                nghiệp</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="admin-job-posting.html"><i class="feather-briefcase"></i><span
-                                class="admin-nav-text">Quản lý các
-                                bài đăng</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="admin-job-category.html"><i class="feather-briefcase"></i><span
-                                class="admin-nav-text">Quản lý ngành nghề</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="admin-job-field.html"><i class="feather-briefcase"></i><span
-                                class="admin-nav-text">Quản lý lĩnh vực hoạt động</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="admin-blog.html"><i class="feather-book-open"></i><span
-                                class="admin-nav-text">Quản lý bài blog</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="admin-account-managed.html"><i class="feather-users"></i><span
-                                class="admin-nav-text">Quản lý tài khoản</span>
-                        </a>
-                    </li>                   
-                    <li>
-                        <a href="admin-account.html"><i class="feather-user-check"></i><span class="admin-nav-text">Tài
-                                khoản</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#logout-dash-profile"><i
-                                class="feather-log-out"></i><span class="admin-nav-text">Logout</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="admin-nav scrollbar-macosx">
+            <ul>
+                <li>
+                    <a href="candidate-dashboard.html"><i class="feather-home"></i><span
+                            class="admin-nav-text">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="candidate-profile.html"><i class="feather-user"></i><span class="admin-nav-text">Hồ sơ
+                            của tôi</span></a>
+                </li>
+                <li class="active">
+                    <a href="javascript:;"><i class="feather-briefcase"></i><span class="admin-nav-text">Việc làm
+                            của tôi</span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="candidate-jobs-applied.html"><span class="admin-nav-text">Danh sách ứng
+                                    tuyển</span></a>
+                        </li>
+                        <li>
+                            <a href="candidate-saved-jobs.html"><span class="admin-nav-text">Việc làm đã
+                                    lưu</span></a>
+                        </li>
+                        <li>
+                            <a href="candidate-saved-jobs.html"><span class="admin-nav-text">Công ty đã
+                                    theo dõi</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="candidate-chat.html"><i class="feather-mail"></i><span class="admin-nav-text">Tin nhắn
+                            <sup class="twm-msg-noti">5</sup></span></a>
+                </li>
+                <li>
+                    <a href="candidate-alert.html"><i class="feather-bell"></i><span class="admin-nav-text">Thông
+                            báo</span></a>
+                </li>
+                <li>
+                    <a href="candidate-account.html"><i class="feather-settings"></i><span
+                            class="admin-nav-text">Tài
+                            khoản &amp; Cài đặt</span></a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#logout-dash-profile"><i
+                            class="feather-log-out"></i><span class="admin-nav-text">Logout</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
         <div id="content">
             <div class="content-admin-main">
                 <div class="wt-admin-right-page-header clearfix">
-                    <h3>Danh sách thông tin các doanh nghiệp</h3>
+                    <h3>Danh sách công ty đang theo dõi</h3>
                     <div class="breadcrumbs"><a href="index.html">Trang chủ</a><a
-                            href="admin-dashboard.html">Dashboard</a><span>Danh
-                            sách doanh nghiệp</span></div>
+                            href="candidate-dashboard.html">Dashboard</a><span>Công ty đang theo dõi</span></div>
                 </div>
 
                  <!--Basic Information-->
                  <div class="panel panel-default">
                     <div class="panel-heading-with-btn  wt-panel-heading p-a20">
-                        <h4 class="panel-tittle m-a0"><i class="fa fa-suitcase"></i> Danh sách doanh nghiệp</h4>
+                        <h4 class="panel-tittle m-a0"><i class="far fa-building"></i> Danh sách công ty đang theo dõi</h4>
                     </div>
                     <div class="panel-body wt-panel-body m-b30 ">
-                        <div class="user-profile-card">
-                            <div class="user-profile-card-header-right">
-                                <div class="user-profile-search">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search...">
-                                        <i class="feather-search"></i>
-                                    </div>
-                                </div>
-                                <div class="user-profile-sort">
-                                    <form action="#">
-                                        <div class="form-group">
-                                            <select class="wt-select-bar-large selectpicker"
-                                                data-live-search="true" data-bv-field="size">
-                                                <option disabled selected value="">Trạng thái kiểm duyệt
-                                                </option>
-                                                <option>Chưa kiểm duyệt</option>
-                                                <option>Chờ kiểm duyệt</option>
-                                                <option>Đã kiểm duyệt</option>               
-                                            </select>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="user-profile-sort m-b30">
-                                    <button type="submit" class="theme-btn w-100">Tìm kiếm</button>
-                                </div>
-                            </div>
-                            <div class="table-responsive profile-applied-job">
-                                <table class="table text-nowrap">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Tên doanh nghiệp</th>
-                                            <th>Email</th>
-                                            <th>Số điện thoại</th>
-                                            <th>Logo</th>
-                                            <th>Ngày đăng ký</th>
-                                            <th>Trạng thái</th>              
-                                            <th>Kiểm duyệt</th>              
-                                            <th>Hành động</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td class="candidate-name">
-                                                <a data-bs-toggle="modal" href="#CompanyDetailModal">Axon Active</a>
-                                            </td>
-                                            <td>info@axonactive.com</td>
-                                            <td>0358255617</td>
-                                            <td>
-                                                <img class="logo-company" src="images/jobs-company/axon-active-logo.jpg" alt="">
-                                            </td>
-                                            <td>21/10/2024</td>
-                                            <td><span class="job-tag-new">Đã kích hoạt</span></td>
-                                            <td><span class="job-tag-danger">Chưa kiểm duyệt</span></td>
-                                            <td>
-                                                <a data-bs-toggle="modal" href="#CompanyDetailModal"
-                                                    class="btn btn-outline-secondary btn-sm"><i
-                                                        class="feather-eye"></i></a>
-                                            </td>
-                                        </tr>
-                                       
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="col-lg-12">                            
+                            <div class="user-profile-card">
+                                <div class="table-responsive profile-applied-job">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Thông tin công ty</th>
+                                                <th>Ngày theo dõi</th>
+                                                <th>Hành động</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="profile-job-info">
+                                                        <img src="images/jobs-company/03.jpg" alt="">
+                                                        <div class="profile-job-content">
+                                                            <h6><a href="company-detail.html">Axon Active</a></h6>
+                                                            <ul class="profile-job-list">
+                                                                <li><i class="feather-briefcase"></i>  IT Phần mềm
+                                                                </li>
+                                                                <li><i class="feather-map-pin"></i>  Hồ Chí Minh
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>30/09/2024</td>
+                                                <td>
+                                                    <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="feather-heart"></i> Hủy theo dõi</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
-                            <!-- pagination -->
-                            <div class="pagination-outer">
-                                <div class="pagination-style1">
-                                    <ul class="clearfix">
-                                        <li class="prev"><a href="javascript:;"><span> <i
-                                                        class="fa fa-angle-left"></i>
-                                                </span></a></li>
-                                        <li><a href="javascript:;">1</a></li>
-                                        <li class="active"><a href="javascript:;">2</a></li>
-                                        <li><a href="javascript:;">3</a></li>
-                                        <li><a class="javascript:;" href="javascript:;"><i
-                                                    class="fa fa-ellipsis-h"></i></a></li>
-                                        <li><a href="javascript:;">5</a></li>
-                                        <li class="next"><a href="javascript:;"><span> <i
-                                                        class="fa fa-angle-right"></i>
-                                                </span></a></li>
-                                    </ul>
+                                    <div class="pagination-outer">
+                                        <div class="pagination-style1">
+                                            <ul class="clearfix">
+                                                <li class="prev"><a href="javascript:;"><span> <i
+                                                                class="fa fa-angle-left"></i>
+                                                        </span></a></li>
+                                                <li><a href="javascript:;">1</a></li>
+                                                <li class="active"><a href="javascript:;">2</a></li>
+                                                <li><a href="javascript:;">3</a></li>
+                                                <li><a class="javascript:;" href="javascript:;"><i
+                                                            class="fa fa-ellipsis-h"></i></a></li>
+                                                <li><a href="javascript:;">5</a></li>
+                                                <li class="next"><a href="javascript:;"><span> <i
+                                                                class="fa fa-angle-right"></i>
+                                                        </span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -846,6 +809,7 @@
     <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
     <script src="js/script.js"></script>
-  </body>
+    <script src="js/nice-select.min.js"></script>
+</body>
 
 </html>
