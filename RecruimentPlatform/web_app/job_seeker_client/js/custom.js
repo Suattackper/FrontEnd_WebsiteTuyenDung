@@ -8,10 +8,15 @@ All JavaScript fuctions Start
 	document.ready ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/	
 
-//  selectpicker function by = bootstrap-select.min.js ========================== //
+//  nice-select function by = nice-select.js ========================== //
 	function select_picker_select(){
-		jQuery('.my-select').selectpicker();
+		jQuery('.select').niceSelect();
 	}
+
+	//  selectpicker function by = bootstrap-select.min.js ========================== //
+	// function select_picker_select(){
+	// 	jQuery('.my-select').selectpicker();
+	// }
 
 //  Home 1 Banner Carousel function by = owl.carousel.js ========================== //
 	function twm_h1_bnr_carousal(){

@@ -7349,6 +7349,50 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: relative;
 }
 
+/* profile form */
+.nice-select,
+.form-group {
+  margin-bottom: 20px;
+}
+
+.card-login .form-group label {
+  color: #05264E;
+  margin-bottom: 5px;
+}
+
+.card-login .form-control {
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.nice-select {
+  border-radius: 12px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  box-shadow: none;
+  /* border: 1px solid #ced4da; */
+}
+
+.nice-select::after{
+  width: 9px;
+  height: 9px;
+  margin-top: -6px;
+  right: 15px;
+}
+
+.nice-select .list{
+  width: 100%;
+  border-radius: 12px;
+}
+
+.nice-select:focus,
+.form-control:focus {
+  border-color: #3C65F5;
+}
+
+
 /*=== TAG STATUS ===*/
 .job-tag-new {
   border-radius: 50px;

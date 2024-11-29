@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/job_seeker_logo.png" />
+
+    <!-- PAGE TITLE HERE -->
+    <title>Đăng nhập</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/feather.css"><!-- FEATHER ICON SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css"><!-- Lc light box popup -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"><!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap5.min.css"><!-- DATA table STYLE SHEET  -->
+
+    <!-- DASHBOARD select bootstrap  STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css"><!-- DROPZONE STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/scrollbar.css"><!-- CUSTOM SCROLL BAR STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"><!-- DATEPICKER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css"> <!-- Flaticon -->
+    <link rel="stylesheet" type="text/css" href="css/nice-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><!-- Swiper Slider -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
+
+    <style>
+        /* Container */
+        .combobox-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Label */
+        .combobox-label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Input field for ComboBox */
+        .combobox-wrapper {
+            position: relative;
+        }
+
+        .combobox-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        .combobox-input:focus {
+            outline: none;
+            border-color: #5b9bd5;
+            /* Blue border on focus */
+        }
+
+        /* Arrow icon for dropdown */
+        .combobox-arrow {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            color: #888;
+            pointer-events: none;
+        }
+
+        /* Dropdown styles */
+        .combobox-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .combobox-dropdown.active {
+            display: block;
+        }
+
+        /* Search input inside dropdown */
+        .combobox-search {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        /* Options list */
+        .combobox-options {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .combobox-option {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .combobox-option:hover {
+            background-color: #f0f0f0;
+        }
+
+        .combobox-option.selected {
+            background-color: #e0e0e0;
+        }
+
+        /* For large screens */
+        @media (min-width: 768px) {
+            .combobox-container {
+                max-width: 500px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .combobox-input {
+                font-size: 12px;
+            }
+
+            .combobox-arrow {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="wrapper">
+                <div class="cssload-loader"></div>
+            </div>
+        </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->
+
+    <div class="page-wraper">
+        <!-- CONTENT START -->
+        <div class="page-content">
+
+            <div class="section-full site-bg-white">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-5 twm-log-reg-media-wrap">
+                            <div class="twm-log-reg-media">
+                                <div class="twm-l-media">
+                                    <img src="images/login-bg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-6 col-md-7">
+                            <!-- Info Section -->
+                            <div class="login-section">
+                                <div class="container">
+                                    <div class="card-login">
+                                        <h4 class="card-title text-center mb-4">Đăng ký tài khoản nhà tuyển dụng</h4>
+
+                                        <!-- Step Progress Bar -->
+                                        <div class="step-progress">
+                                            <div class="step-item-login">
+                                                <div class="circle" id="circle-1">1</div>
+                                                <span>Thông tin đăng nhập</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="step-item-login">
+                                                <div class="circle inactive" id="circle-2">2</div>
+                                                <span>Thông tin công ty</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Step 1: User Information -->
+                                        <div class="form-step active" id="step-1">
+                                            <form id="loginForm">
+                                                <div class="mb-3">
+                                                    <label for="fullname" class="form-label">Họ và tên <span
+                                                            class="required">*</span></label>
+                                                    <input type="text" class="form-control" id="fullname"
+                                                        placeholder="Nhập họ và tên" required>
+                                                </div>
+
+                                                <!-- Email and Gender (Giới tính) on the same row -->
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="email" class="form-label">Email <span
+                                                                class="required">*</span></label>
+                                                        <input type="email" class="form-control" id="email"
+                                                            placeholder="Nhập email" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label class="form-label">Giới tính <span
+                                                                class="required">*</span></label>
+                                                        <div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="gender" id="male" value="male" required>
+                                                                <label class="form-check-label" for="male">Nam</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="gender" id="female" value="female" required>
+                                                                <label class="form-check-label" for="female">Nữ</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="phone" class="form-label">Số điện thoại cá nhân<span
+                                                            class="required">*</span></label>
+                                                    <input type="tel" class="form-control" id="phone"
+                                                        placeholder="Nhập số điện thoại cá nhân" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="password" class="form-label">Mật khẩu <span
+                                                            class="required">*</span></label>
+                                                    <input type="password" class="form-control" id="password"
+                                                        placeholder="Nhập mật khẩu" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="confirm-password" class="form-label">Mật khẩu xác nhận
+                                                        <span class="required">*</span></label>
+                                                    <input type="password" class="form-control" id="confirm-password"
+                                                        placeholder="Nhập mật khẩu xác nhận" required>
+                                                </div>
+                                                <div class="text-end">
+                                                    <button type="button" class="btn btn-primary btn-custom"
+                                                        onclick="goToNextStep()">Tiếp tục</button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <!-- Step 2: Company Information -->
+                                        <div class="form-step" id="step-2">
+                                            <form id="companyForm">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Country</label>
+                                                            <select class="select" id="provinceSelect">
+                                                                <option value="">Choose Province</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="address" class="form-label">Địa chỉ</label>
+                                                    <input type="text" class="form-control" id="address"
+                                                        placeholder="Nhập địa chỉ">
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <button type="button" class="btn btn-secondary btn-custom"
+                                                        onclick="goToPreviousStep()">Quay
+                                                        lại</button>
+                                                    <button type="submit" class="btn btn-primary btn-custom">Đăng
+                                                        ký</button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="text-center mt-4 mb-4">
+                                            <a href="login.html" class="site-text-primary">Đã có tài khoản? Đăng
+                                                nhập</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script><!-- STICKY HEADER -->
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
+    <script src="js/dropzone.js"></script><!-- IMAGE UPLOAD  -->
+    <script src="js/jquery.scrollbar.js"></script><!-- scroller -->
+    <script src="js/bootstrap-datepicker.js"></script><!-- scroller -->
+    <script src="js/jquery.dataTables.min.js"></script><!-- Datatable -->
+    <script src="js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
+    <script src="js/chart.js"></script><!-- Chart -->
+    <script src="js/bootstrap-slider.min.js"></script><!-- Price range slider -->
+    <script src="js/swiper-bundle.min.js"></script><!-- Swiper JS -->
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
+
+    <script>
+        // Sử dụng fetch để lấy dữ liệu từ API và cập nhật vào select
+        // Dữ liệu thủ công
+        const provinces = [
+            { id: 1, name: 'Australia' },
+            { id: 2, name: 'Germany' },
+            { id: 3, name: 'Canada' },
+            { id: 4, name: 'United States' },
+            { id: 5, name: 'United Kingdom' }
+        ];
+
+        // Hàm để cập nhật các option vào thẻ <select>
+        function loadProvinces() {
+            const selectElement = document.getElementById('provinceSelect');
+
+            // Xóa các option hiện tại (ngoài trừ "Choose Province")
+            selectElement.innerHTML = '<option value="">Choose Province</option>';
+
+            // Duyệt qua dữ liệu provinces và tạo các option mới
+            provinces.forEach(province => {
+                const option = document.createElement('option');
+                option.value = province.id;
+                option.textContent = province.name;
+                selectElement.appendChild(option);
+            });
+
+            // Chọn giá trị mặc định 
+            selectElement.value = "1"; 
+        }
+
+        // Gọi hàm để load dữ liệu vào select
+        loadProvinces();
+    </script>
+
+</body>
+
+</html>
